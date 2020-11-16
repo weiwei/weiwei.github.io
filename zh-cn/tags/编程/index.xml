@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on Weiwei的日志</title><link>https://weiwei.github.io/zh-cn/tags/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on Weiwei的日志</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 May 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://weiwei.github.io/zh-cn/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>reStructuredText 和中文写作</title><link>https://weiwei.github.io/zh-cn/posts/chinese-text-and-restructuredtext/</link><pubDate>Fri, 27 May 2011 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh-cn/posts/chinese-text-and-restructuredtext/</guid><description>TL;DR: 反斜杠可以解决一切中文多余空格的问题。
+最近的几个翻译项目的工作对象都是 reStructuredText (RST) 。RST 是个好东东，不过编辑中文是在有些不便，大部分问题都跟多出来的空格有关。空格在 Arial 字体下可谓相当不明显，不过用了这么长时间的 Python，整个人都变得空格过敏了。以下就是俺碰到的问题。
+首先是格式修饰符，比如加粗，加斜。这种时候，RST 的语法规定修饰符的左右必须有空格，于是就会导致被修饰的字符前后多出两个空格来。拿例子讲吧：猪八戒*真的*很懒这句中的斜体是不会正确显示出来的，因为它前后没有空格（或者半角的括号或引号），要让它正常工作，你需要写成这样：猪八戒\*真的\* 很懒（注意空格）。
+然而写成这样，输出就不令人满意了，如果你转成 HTML，它的输出会是：“猪八戒 真的 很懒”，斜体字前后会空出两个空格来，这是完全不符合汉语习惯的。
+另外一种情况是创建链接。RST 的链接创建相当简便，比如请查看维基百科 天蓬元帅_ 条目这句，看到了吧，天蓬元帅_前后也需要有空格。HTML的输出样式则变成了 请查看维基百科 天蓬元帅 条目，一样的，头尾多了空格。
+这两种情况其实是一个问题，我在 StackOverflow 上面问了，没找到答案，不过后来被自己侥幸找到了，那就是用反斜杠\\。例如：
+猪八戒\\ \*真的\*\\很懒 请查看维基百科\\ 天蓬元帅\_\\条目 很笨，不过总算管用，不过还是很笨。
+另外一个问题，是换行的地方会被添加空格。2005年，洪强宁同学在邮件列表里问过这个问题，结果 docutils 的维护者 David Goodger 认为不是问题，Felix Wiemann 倒是提出了 workaround ，就是在每个行尾都放一个反斜杠。Felix 也提出了长期对策的建议，但后来似乎没人继续讨论下去了，于是就一直没有解决。
+其他例如标点符号要在半角全角之间切来切去就不算啥问题了……</description></item></channel></rss>
