@@ -1,7 +1,6 @@
 +++ 
 date = "2015-09-09"
 title = "怎样进一步增加英语词汇量"
-slug = "further-improve-vocabulary-howto"
 tags = ["英语学习","词汇"]
 authors = ["Weiwei"]
 categories = []
