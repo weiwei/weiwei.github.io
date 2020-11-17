@@ -956,7 +956,15 @@ Absolem，爱丽丝故事里的那只虫子，他吸的就是鸦片。
 猪八戒\\ \*真的\*\\很懒 请查看维基百科\\ 天蓬元帅\_\\条目 很笨，不过总算管用，不过还是很笨。
 另外一个问题，是换行的地方会被添加空格。2005年，洪强宁同学在邮件列表里问过这个问题，结果 docutils 的维护者 David Goodger 认为不是问题，Felix Wiemann 倒是提出了 workaround ，就是在每个行尾都放一个反斜杠。Felix 也提出了长期对策的建议，但后来似乎没人继续讨论下去了，于是就一直没有解决。
 其他例如标点符号要在半角全角之间切来切去就不算啥问题了……</description></item><item><title>Excel条件格式化</title><link>https://weiwei.github.io/zh/posts/2008-excel-conditional-formatting/</link><pubDate>Wed, 10 Sep 2008 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2008-excel-conditional-formatting/</guid><description>刚才下载了最近在KGS的对局记录，表格格式如下：
-White Black Type Result Hactar [3d] Artem [1d] Ranked W+Res. Hactar [3d] dariari [2d] Ranked W+Res. Hactar [3d] oayamado [3d] Ranked W+17.5 Hactar [3d] gukkei [3d] Ranked W+Res. Hactar [3d] hansuiob [2d] Ranked W+Res. Hactar [3d] matane11 [3d] Ranked B+11.5 Hactar [3d] gokichiB [2d] Ranked W+Res. Hactar [3d] man8888 [?</description></item><item><title>男女有别</title><link>https://weiwei.github.io/zh/posts/2007-men-women-difference/</link><pubDate>Sun, 29 Apr 2007 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2007-men-women-difference/</guid><description>#2 甜点 女人通常会赞美一盘装饰美观的甜点，夸它做得多么漂亮，再等一段合适的时间，她才会不情愿地从边上拿一小块吃掉。男人会直接去拿盘子中间的那粒樱桃。
+White Black Type Result Hactar [3d] Artem [1d] Ranked W+Res. Hactar [3d] dariari [2d] Ranked W+Res. Hactar [3d] oayamado [3d] Ranked W+17.5 Hactar [3d] gukkei [3d] Ranked W+Res. Hactar [3d] hansuiob [2d] Ranked W+Res. Hactar [3d] matane11 [3d] Ranked B+11.5 Hactar [3d] gokichiB [2d] Ranked W+Res. Hactar [3d] man8888 [?</description></item><item><title>好的翻译是很重要的</title><link>https://weiwei.github.io/zh/posts/2007-%E5%A5%BD%E7%9A%84%E7%BF%BB%E8%AF%91%E6%98%AF%E5%BE%88%E9%87%8D%E8%A6%81%E7%9A%84/</link><pubDate>Wed, 02 May 2007 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2007-%E5%A5%BD%E7%9A%84%E7%BF%BB%E8%AF%91%E6%98%AF%E5%BE%88%E9%87%8D%E8%A6%81%E7%9A%84/</guid><description>走在街上，他们都希望能牵对方的手。他来自匈牙利，她来自美国，他们俩都在一所匈牙利学校教英语。几个月过去了，他们渐渐喜欢上了对方。
+她讲到了一个她认识的男人，他有些担忧这个可能的潜在竞争者，终于忍不住问她：“你们俩有没有点浪漫史啊？”
+“不，”来自美国的她对来自匈牙利的他说，“只是柏拉图式的关系而已。”[1]
+来自匈牙利的他心碎了。在匈牙利语中，柏拉图式的爱情[2]是指不求回报的爱情，但双方还是互相渴望着的。而英语中的柏拉图式的爱情是指“不切实际的，全无吸引力的，或者是纯友谊的关系”。
+于是他们那天再没有牵手，此后也再没有牵手，直到一年以后的某一天他们才发现之前都误会了。 都是因为一个词的误会。
+幸运的是，他们总算发现了这个错误，而且最近我听说他们已经要结婚了。
+[1] 原文为 &amp;ldquo;it was platonic.&amp;rdquo;
+[2] 匈牙利语&amp;quot;plátói&amp;quot;
+本帖翻译自mykzilla的The Importance of Good Translation</description></item><item><title>男女有别</title><link>https://weiwei.github.io/zh/posts/2007-men-women-difference/</link><pubDate>Sun, 29 Apr 2007 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2007-men-women-difference/</guid><description>#2 甜点 女人通常会赞美一盘装饰美观的甜点，夸它做得多么漂亮，再等一段合适的时间，她才会不情愿地从边上拿一小块吃掉。男人会直接去拿盘子中间的那粒樱桃。
 修车 男人认为他的Y染色体中包含着完整的、从二战至今所有车型的修车说明书。他会自己去解决问题，直到问题消失，或者变成了“如果没有特殊工具，就不好弄了”的那种问题。
 女人认为“那怪怪的扑扑声”是对于汽车故障的精确描述。然而，她会隔一段时间把车送去做适当的保养，因此，碰到出问题的时候要比男人少一些。
 #4 衣服 男人不会丢弃衣服。一般的男人都会留着自己在高中穿过的运动衫。他认为夹克在肘部磨出破洞的时候是正适合穿的时候。男人会把新衬衫原封不动地放在柜子里几年才拿出来穿，希望它放的时间越长，穿着就越舒服。
@@ -976,7 +984,15 @@ White Black Type Result Hactar [3d] Artem [1d] Ranked W+Res. Hactar [3d] dariari
 打扮 女人会在去购物前先打扮好，给植物浇水，把垃圾倒掉，接一两个电话，读一会书，收一下邮件。男人只在两种场合下会做打扮自己：婚礼和葬礼。说到婚礼，当回忆起婚礼来，女人会谈论“那场典礼”，男人会嘲笑“那场单身汉聚会”。
 #16 感情 首先，男人不会把一段感情称作“一段感情”——他称之为“我和Suzie有规律地在一起的那段时间”。
 当一段感情结束的时候，女人会哭泣，会向她的女友倾泻诉苦，然后她会写一首诗，题目是“男人都是白痴”。然后她会继续她的生活。
-男人要放弃就有点难了。分手后6个月的某个周末，夜里三点钟，他会打电话过去说：“我想让你知道你毁了我的生活，我永远都不会原谅你，我恨你，你这个坏女人。但我想让你知道，只要你愿意，我们之间还是有机会的。” 这样的“我恨你/我爱你”式的酒后电话，99%的男人都至少打过一次。有一些专门的公共课来帮助男人摆脱这种需要，呜呼，这些课程很少被证明是有效的。</description></item><item><title>中学作文中最坏的类比句</title><link>https://weiwei.github.io/zh/posts/2006-worst-analogies/</link><pubDate>Tue, 07 Nov 2006 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2006-worst-analogies/</guid><description>The Worst Analogies Ever Written in a High School Essay
+男人要放弃就有点难了。分手后6个月的某个周末，夜里三点钟，他会打电话过去说：“我想让你知道你毁了我的生活，我永远都不会原谅你，我恨你，你这个坏女人。但我想让你知道，只要你愿意，我们之间还是有机会的。” 这样的“我恨你/我爱你”式的酒后电话，99%的男人都至少打过一次。有一些专门的公共课来帮助男人摆脱这种需要，呜呼，这些课程很少被证明是有效的。</description></item><item><title>TED笔记——Peter Donnelly</title><link>https://weiwei.github.io/zh/posts/2006-ted-peter-donnelly/</link><pubDate>Thu, 16 Nov 2006 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2006-ted-peter-donnelly/</guid><description>上周TED放了Peter Donnelly的演讲，其中讲到一个例子：抛硬币时哪个结果更容易得到，是&amp;quot;正-反-正&amp;quot;还是&amp;quot;正-反-反&amp;quot;？
+答案出乎大多数人意料：后者&amp;quot;正-反-反&amp;quot;更容易得到。Donnelly说&amp;quot;正-反-正&amp;quot;平均抛10次硬币就可以获得一次，而&amp;quot;正-反-反&amp;quot;需要8次就可以获得一次。
+Donnelly讲，不一样的地方在于&amp;quot;正-反-正&amp;quot;是一个自我交迭序列。
+通俗的讲，如果你投&amp;quot;正-反-正&amp;quot;，当你最后一次投错，投到&amp;quot;正-反-反&amp;quot;时，你要寄希望于第四次从&amp;quot;正&amp;quot;开始，至少再来三次才可能得到&amp;quot;正-反-正&amp;quot;。
+而如果你投&amp;quot;正-反-反&amp;quot;最后一次投错，得到&amp;quot;正-反-正&amp;quot;时，你只要寄希望于后两次得到&amp;quot;反-反&amp;quot;，也就是说，至少需要再来两次就可以得到&amp;quot;正-反-反&amp;quot;。
+Donnelly讲得其实还生动一些。有兴趣的可以去TED下载他的演讲。
+偶还写了一个死算的Python小程序来做验证，当测试5000次平均值时，答案已经相当接近Donnelly的结果了。</description></item><item><title>蜈蚣</title><link>https://weiwei.github.io/zh/posts/2006-%E8%9C%88%E8%9A%A3/</link><pubDate>Thu, 16 Nov 2006 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2006-%E8%9C%88%E8%9A%A3/</guid><description>从前有一只蜈蚣，我们都知道蜈蚣有很多的腿而且爬得飞快，这只蜈蚣也一样。他也从来没有想过自己是怎么走路的，直到有一天，一只路过的黑甲虫问他“老大，这么多的腿你还能跑这么快，你是怎么调节步子的？”
+黑甲虫迈着他的六条腿，摇摇晃晃的走远了，可蜈蚣还呆在那想这个问题“怎么就从来没想到过呢？我是怎么走路的？先迈哪条腿，接着是哪条腿，接着是……天啊，我过去是怎么走路的？”
+他动动这只脚，迈迈那只脚，始终觉得不对劲。从那以后，这只蜈蚣再也不会走路了。</description></item><item><title>中学作文中最坏的类比句</title><link>https://weiwei.github.io/zh/posts/2006-worst-analogies/</link><pubDate>Tue, 07 Nov 2006 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/zh/posts/2006-worst-analogies/</guid><description>The Worst Analogies Ever Written in a High School Essay
 这个东西似乎没人翻译过。正好睡不着，正好翻译一下。肯定有错的和不合适的地方，但偶的水平就到这儿了。
 They lived in a typical suburban neighborhood with picket fences that resembled Nancy Kerrigan&amp;rsquo;s teeth.
 他们住在典型的城市近郊，有着像Nancy Kerrigan的牙一般的栅栏墙。[注1]
