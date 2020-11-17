@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "为上帝工作的程序员"
-slug = "2018-temple-os-terry-davis"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

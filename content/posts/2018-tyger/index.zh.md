@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "老虎老虎明灿灿"
-slug = "tyger"
 tags = ["英语"]
 authors = ["Weiwei"]
 categories = []

@@ -1,7 +1,6 @@
 +++ 
 date = "2007-04-29"
 title = "男女有别"
-slug = "men-women-difference"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

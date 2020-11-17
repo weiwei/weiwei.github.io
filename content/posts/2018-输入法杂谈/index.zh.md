@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "输入法杂谈"
-slug = "ime"
 tags = []
 authors = ["Weiwei"]
 categories = []

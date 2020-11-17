@@ -1,7 +1,6 @@
 +++ 
 date = "2006-11-07"
 title = "中学作文中最坏的类比句"
-slug = "worst-analogies"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

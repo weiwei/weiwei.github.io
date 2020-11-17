@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "癫痫"
-slug = "ceasure"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

@@ -2,7 +2,6 @@
 +++ 
 date = "2011-05-27"
 title = "reStructuredText 和中文写作"
-slug = "chinese-text-and-restructuredtext"
 tags = ["编程"]
 authors = ["Weiwei"]
 categories = []

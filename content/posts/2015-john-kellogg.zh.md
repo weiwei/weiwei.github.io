@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "John Kellogg的保健良方"
-slug = "john-kellogg"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

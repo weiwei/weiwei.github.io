@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "日常的设计：从门把手到计算机应用"
-slug = "book-review-the-design-of-everyday-things"
 tags = []
 authors = ["Weiwei"]
 categories = []

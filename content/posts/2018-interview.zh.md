@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "如果用面试程序员的方式面试翻译"
-slug = "interview"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

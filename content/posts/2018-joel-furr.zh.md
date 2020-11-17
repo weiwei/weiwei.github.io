@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "Joel Furr的故事"
-slug = "joel-furr"
 tags = ["IT考古"]
 authors = ["Weiwei"]
 categories = []

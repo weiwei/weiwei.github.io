@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "你很可能不需要“亲密育儿法”"
-slug = "no-sears"
 tags = []
 authors = ["Weiwei"]
 categories = []

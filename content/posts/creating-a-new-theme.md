@@ -1,7 +1,6 @@
 +++ 
 date = "2014-09-28"
 title = "Creating a New Theme"
-slug = "creating-a-new-theme"
 tags = []
 categories = []
 series = ["Theme", "Hugo"]
@@ -907,7 +906,6 @@ $ vi content/about.md
 title = "about"
 description = "about this site"
 date = "2014-09-27"
-slug = "about time"
 +++
 
 ## about us

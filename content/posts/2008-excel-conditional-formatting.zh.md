@@ -1,7 +1,6 @@
 +++ 
 date = "2008-09-10"
 title = "Excel条件格式化"
-slug = "excel-conditional-formatting"
 tags = ["excel"]
 authors = ["Weiwei"]
 categories = []

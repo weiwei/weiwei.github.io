@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "近距离感受两河流域的古代医学文化"
-slug = "mesopotamia-medicine"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

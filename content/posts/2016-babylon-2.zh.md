@@ -1,7 +1,6 @@
 +++ 
 date = "2016-03-16"
 title = "汉莫拉比三部曲之二——征服"
-slug = "hammurabi-2"
 tags = []
 authors = ["Weiwei"]
 categories = []

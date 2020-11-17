@@ -1,7 +1,6 @@
 +++ 
 date = "2016-03-17"
 title = "汉莫拉比三部曲之三——法典"
-slug = "hammurabi-3"
 tags = []
 authors = ["Weiwei"]
 categories = []

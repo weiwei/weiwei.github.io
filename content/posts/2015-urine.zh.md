@@ -2,7 +2,6 @@
 +++ 
 date = "2015-03-26"
 title = "尿"
-slug = "urine"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

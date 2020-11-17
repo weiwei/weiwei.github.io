@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "放血"
-slug = "blood-letting"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "额叶切割"
-slug = "lobotomy"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

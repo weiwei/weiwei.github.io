@@ -2,7 +2,6 @@
 +++ 
 date = "2014-03-26"
 title = "魔兽争霸3人族单位台词"
-slug = "human-piss"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

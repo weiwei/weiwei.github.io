@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "华人与狗不得入内：谁在自取其辱？"
-slug = "no-entrance"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "莎拉·柯勒律治和她的《美丽的课》"
-slug = "sara-coleridge"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

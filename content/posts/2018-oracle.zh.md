@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "互联网先知的故事"
-slug = "oracle"
 tags = ["IT考古"]
 authors = ["Weiwei"]
 categories = []

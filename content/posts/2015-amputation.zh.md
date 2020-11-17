@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "截肢"
-slug = "amputation"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

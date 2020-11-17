@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "江河万古流"
-slug = "forever"
 tags = []
 authors = ["Weiwei"]
 categories = []

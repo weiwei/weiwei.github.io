@@ -1,7 +1,6 @@
 +++ 
 date = "2013-08-27"
 title = "化疗食品指南"
-slug = "chemo-diet"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

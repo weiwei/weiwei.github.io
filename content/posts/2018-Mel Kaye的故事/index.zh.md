@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "Mel Kaye的故事"
-slug = "story-of-a-real-hacker"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

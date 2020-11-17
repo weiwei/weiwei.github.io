@@ -2,7 +2,6 @@
 +++ 
 date = "2015-03-26"
 title = "苏格兰疾病名称一览"
-slug = "scottish-disease-names"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

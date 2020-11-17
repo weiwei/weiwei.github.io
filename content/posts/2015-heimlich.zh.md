@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "海姆立克的故事"
-slug = "heimlich"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []

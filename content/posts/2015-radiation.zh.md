@@ -1,7 +1,6 @@
 +++ 
 date = "2015-03-26"
 title = "放射疗法"
-slug = "radiation"
 tags = ["翻译"]
 authors = ["Weiwei"]
 categories = []
