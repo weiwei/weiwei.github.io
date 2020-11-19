@@ -6,7 +6,7 @@ theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
 
-googleAnalytics = "G-8MH709GCCZ"
+# googleAnalytics = "G-8MH709GCCZ"
 
 paginate = 20
 
@@ -76,8 +76,8 @@ permalinks = "/:year/:month/:title/"
 #     serverURL = "analytics.example.com"
 
 # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
-# [params.goatCounter]
-#     code = "code"
+[params.goatCounter]
+    code = "weiwei"
 
 [taxonomies]
   category = "categories"
