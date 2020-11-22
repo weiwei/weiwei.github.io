@@ -3,4 +3,4 @@ title = "联系"
 slug = "contact"
 +++
 
-Follow me, @weydoble.
+我的 Twitter ID 是 @weydoble.
