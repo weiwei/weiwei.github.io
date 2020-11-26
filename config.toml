@@ -79,6 +79,11 @@ permalinks = "/:year/:month/:title/"
 [params.goatCounter]
     code = "weiwei"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [taxonomies]
   category = "categories"
   series = "series"
