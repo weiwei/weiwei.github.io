@@ -1,5 +1,5 @@
 +++
-date = "2021-5-31"
+date = "2021-05-31"
 title = "Chinese names of early jesuits"
 tags = [
     "Chinese"
