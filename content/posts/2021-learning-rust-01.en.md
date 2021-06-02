@@ -1,16 +1,19 @@
-+++
-date = "2021-06-01"
-title = "Learning Rust 01 - implementing is_vowel"
-tags = [
+---
+date: "2021-06-01"
+title: "Learning Rust 01"
+subtitle: "Implementing is_vowel"
+tags: [
     "rust"
 ]
-series = ["Learning Rust"]
-authors = ["Weiwei"]
-+++
+series: ["Learning Rust"]
+authors: ["Weiwei"]
+---
 
-Recently I'm trying to learn rust by rewriting one of my typescript projects into rust. The project is [silabacion](https://www.npmjs.com/package/silabacion). It divides Spanish words into syllables, and tries to provide as many phonetic features as possible. There isn't much about it, just lots of string manipulation and pattern matching. It should be a good exercise to rewrite it with rust, and the result could be useful for those 5 people who process Spanish words with rust, so why not?
+Recently I'm trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i'd be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
 
-Starting small. First I want to convert some easy utility functions. I fixated to this one:
+The project I'm rewriting is [silabacion](https://www.npmjs.com/package/silabacion). It divides Spanish words into syllables, and tries to provide as many phonetic features as possible. There isn't much about it, just lots of string manipulation and pattern matching. It should be a good exercise to rewrite it with rust, and the result could be useful for those 5 people who process Spanish words with rust, so why not?
+
+Starting small. First I want to convert some easy utility functions. For example this one:
 
 ```typescript
 const ACCENTED_VOWELS = ['á', 'é', 'í', 'ó', 'ú'];
@@ -24,7 +27,7 @@ export function isVowel(char: string) {
 }
 ```
 
-Let's dive in. Note that until now I just have read the first few chapters of [the book](https://doc.rust-lang.org/book/title-page.html) and a few articles online. I don't know a lot of things.
+Let's (or let me, because this is just me trying to sort things out) dive in. Note that until now I just have read the first few chapters of [the book](https://doc.rust-lang.org/book/title-page.html) and a few articles online. I don't know a lot of things.
 
 ## Creating global constants
 
@@ -55,9 +58,9 @@ pub fn is_vowel0(ch: &char) -> bool {
 
 Note how much work we have to do with this. We have to turn the `to_lowercase()` result (an iterator) to a string, then to an iterator of `char`s, then get its first item, then check if it matches the predefined list.
 
-## A Dumber, but Better Way
+## Dumber, but Better Implementations
 
-The above approach is enough to make the rust implementation slower than its node.js counterpart. So I did the dumb method by letting `ALL_VOWELS` contain both upper and lower case letters.
+The above approach is enough to make the rust implementation slower than its node.js counterpart (I could be wrong, I haven't tested). So I did the dumb method by letting `ALL_VOWELS` contain both upper and lower case letters.
 
 ```rust
 pub const ALL_VOWELS: [char; 22] = ['á', 'é', 'í', 'ó', 'ú', 'a', 'e', 'i', 'o', 'u', 'ü', 'Á', 'É', 'Í', 'Ó', 'Ú', 'A', 'E', 'I', 'O', 'U', 'Ü'];
@@ -81,7 +84,7 @@ pub fn is_vowel2(c: &char) -> bool {
 }
 ```
 
-With Spanish, considering upper case, that char list will be long, but the result code appears to be 10 to 20 times faster than the previous implementation. I don't know why.
+The result code appears to be 10 to 20 times faster than the previous implementation. I don't know why.
 
 Another implementation could be using equals test:
 
@@ -113,6 +116,12 @@ pub fn is_vowel3(c: &char) -> bool {
 }
 ```
 
-This is slower than the previous one, probably because I had to `clone` the character.
+This is slower than the previous one, probably because I had to `clone` the character. Or something else. Anyway, it's too ugly, I think I'll forget about it.
 
-I still don't know which is more idiomatic. I still don't fully understand the performance result. For now I'll stick with `is_vowel2` because it appears to be the fastest.
+For now I'll stick with `is_vowel1` or `is_vowel2` because they appear to be fast enough and not too ugly.
+
+## TODOs
+
+* I still don't know which is more idiomatic.
+* I still don't fully understand the performance result.
+  
