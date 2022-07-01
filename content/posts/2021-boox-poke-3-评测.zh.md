@@ -1,6 +1,6 @@
 ---
 date: "2021-11-20"
-title: "Boox Poke 3 上手评测"
+title: "Boox Poke 3 评测"
 tags: [
     "评测"
 ]
