@@ -1,5 +1,5 @@
 baseURL = "https://weiwei.github.io/"
-title = "Field notes"
+title = "Keyboard And Me"
 
 theme = "hugo-coder"
 
@@ -19,8 +19,8 @@ permalinks = "/:year/:month/:title/"
 
 [params]
     author = "Weiwei"
-    description = "Weiwei's field notes"
-    keywords = "blog,developer,personal,translation"
+    description = "Weiwei's blog and stuff"
+    keywords = "blog,developer,translation,python,rust,javascript,typescript"
     info = "Programmer, translator"
     avatarURL = "images/avatar.jpg"
     #gravatar = "gastlygem@gmail.com"
