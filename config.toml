@@ -22,11 +22,11 @@ permalinks = "/:year/:month/:title/"
     description = "Weiwei's blog and stuff"
     keywords = "blog,developer,translation,python,rust,javascript,typescript"
     info = "Programmer, translator"
-    avatarURL = "images/avatar.jpg"
-    #gravatar = "gastlygem@gmail.com"
+    # avatarURL = "images/avatar.jpg"
+    # gravatar = "gastlygem@gmail.com"
     #footerContent = "Enter a text here."
 
-    dateFormat = "January 2, 2006"
+    dateFormat = "2006-01-02"
 
     hideFooter = false
     hideCredits = false
