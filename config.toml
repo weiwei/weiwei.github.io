@@ -104,7 +104,7 @@ permalinks = "/:year/:month/:title/"
     name = "Twitter"
     icon = "fa fa-twitter"
     weight = 3
-    url = "https://twitter.com/weydoble/"
+    url = "https://twitter.com/@wei2748"
 [[params.social]]
     name = "LinkedIn"
     icon = "fa fa-linkedin"
@@ -190,7 +190,7 @@ permalinks = "/:year/:month/:title/"
 
         [languages.es.params]
             author = "Weiwei"
-            info = "Programador，traductor"
+            info = "Programador, traductor"
             description = "Weiwei"
             keywords = ""
             #footerContent = ""
