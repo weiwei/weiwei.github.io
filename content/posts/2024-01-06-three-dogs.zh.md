@@ -52,8 +52,8 @@ Hangs magnificently in the Lin Pavilion.
 霍嫖姚的肖像，雄伟地悬挂在了麟阁。
 ```
 
-《松花笺》是美国诗人洛威尔（Amy Lowell）与汉学家艾斯珂（Florence Ayscough）合译的一本中国古诗的英译，这本书出版于1921年，当时可以说是一本畅销书。洛威尔自己并不懂中文，艾斯珂作为汉学家似乎也没理解部分原句。但这两位作者的翻译又一个新奇的特点，那就是他们试图翻译出汉字本来的韵味。因此，我们可以看到作者把“飙”象形化（不是形象化）地翻译成了“三犬之风”，把表示声响的“鸣”润色成“像鸟儿尖锐的叫声”，如此种种。
+《松花笺》是美国诗人洛威尔（Amy Lowell）与汉学家艾斯珂（Florence Ayscough）合作的一本中国古诗的英译，这本书出版于1921年，当时可以说是一本畅销书。洛威尔自己并不懂中文，艾斯珂作为汉学家似乎也没理解部分原句。但这两位作者的翻译有一个新奇的特点，那就是他们试图翻译出汉字本来的韵味。因此，我们可以看到作者把“飙”象形化（不是形象化）地翻译成了“三犬之风”，把表示声响的“鸣”润色成“像鸟儿尖锐的叫声”，如此种种。
 
-中国石油大学（华东）海外汉学研究所的任增强也写了一篇短论文探讨这种神奇翻译方式，推荐阅读：[原文](http://www.sinologystudy.com/html/yjxl/322.html)，[存档](https://web.archive.org/web/20230202091927/http://www.sinologystudy.com/html/yjxl/322.html)。
+文学和翻译研究专家任增强老师写了一篇小论文探讨这种神奇翻译方式，推荐阅读：[原文](http://www.sinologystudy.com/html/yjxl/322.html)，[存档](https://web.archive.org/web/20230202091927/http://www.sinologystudy.com/html/yjxl/322.html)。
 
 《松花笺》全书在[古腾堡网站](https://www.gutenberg.org/ebooks/48222)可以看到。
