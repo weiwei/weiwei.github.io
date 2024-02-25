@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Keyboard And Me</title><link>https://weiwei.github.io/posts/</link><description>Recent content in Posts on Keyboard And Me</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://weiwei.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>这是一篇讲透明代理配置的文章</title><link>https://weiwei.github.io/posts/2024-01-22-%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86.zh.draft/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/2024-01-22-%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86.zh.draft/</guid><description>但是我也不知道自己是怎么配置成功的。甚至我都不知道我是不是配置成功了。我只知道我现在可以用透明代理了。
 但是 GitHub 没法正常使用。连不上。现在还没想明白是怎么回事。
-也许等整明白后再写这篇吧。</description></item><item><title>Dinosaurio Anacleto</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</guid><description>我是一只恐龙我名叫阿纳克来多 命运安排我活过了漫长冰河期 我的朋友都已灭绝只剩下我一个 这种情况我也没法只好去接受 我很无聊因为连一个亲戚都没有 没有一个认识的人一起出去玩 只好编造一些朋友用来自娱自乐 坐在一面镜子面前跟自己聊天
+也许等整明白后再写这篇吧。</description></item><item><title>论程序员的逻辑能力</title><link>https://weiwei.github.io/posts/old-articles/2023-08-27-%E8%AE%BA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E9%80%BB%E8%BE%91%E8%83%BD%E5%8A%9B.zh-copy/</link><pubDate>Sun, 27 Aug 2023 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2023-08-27-%E8%AE%BA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E9%80%BB%E8%BE%91%E8%83%BD%E5%8A%9B.zh-copy/</guid><description>扯淡,逻辑推理作为编程的核心能力之一,技术好的程序员逻辑推理必然强,你这句话说得就像“他单车骑得很好但他平衡能力很差”一样,自相矛盾。
+不想直接at这位雄辩的知名网友，以俺的辩力，必然被其定义为鼠窜之辈😅
+不过俺只想贴一个covid时期的德国论文。
+重点引用一下：
+healthcare professionals, non-healthcare professionals, and students both with and without healthcare background perform similarly in distinguishing between true and false news stories.
+换句话说就是：个人在自己专业领域内，对于虚假信息的判断能力，和非专业人员相比也不会更高。
+影响判断能力有两个更重要的因素，一个是“分析式思维”的能力（有能力分析多维多源数据），一个是“开放式思维”的能力（有意愿改变自己之前的观点）。
+黄程序员引以为傲的逻辑能力并不在其内，原因一例而明：基督教的神学也是一门特别讲逻辑的学问，但他们的逻辑杂技只是为了证明一样东西。
+没有前面提到的那两个能力，你的强大的逻辑能力只会服务于你的偏见。你个人也不会有什么进步。
+另外, 程序员掌握的逻辑，除了多一个本就不难的布尔运算以外，和绝大部分工科专业是差不多的。程序员的平均逻辑水平，应该低于大部分理科专业，更低于比如法律，哲学等文科专业。
+再抬杠一下“技术好的程序员逻辑一定强”这就逻辑严密的话。
+我国著名的程序员比如胡正、王垠，技术应该很好吧，逻辑能力想必也很强吧，你想成为那样吗？说不准你已经是那样了而不自知呢。</description></item><item><title>Dinosaurio Anacleto</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</guid><description>我是一只恐龙我名叫阿纳克来多 命运安排我活过了漫长冰河期 我的朋友都已灭绝只剩下我一个 这种情况我也没法只好去接受 我很无聊因为连一个亲戚都没有 没有一个认识的人一起出去玩 只好编造一些朋友用来自娱自乐 坐在一面镜子面前跟自己聊天
 但是一天早上我决定要改变运气 寄出一份电视节目的策划文书 这个节目主要面向的是家庭观众 载歌载舞还有激烈的竞赛项目 渠道经理把我叫到了他的办公室 他挺喜欢这个节目就让我开拍 我们签了合同然后过了好几个月 我就变成了电视里的著名人物
 我认识了很多 封面明星，呜呜呜 我沉浸在名气 和享乐中，呜呜呜 我买了昂贵的跑车 还有海景房 但是我不开心 但是我不开心&amp;hellip; 我不开心。
 我还是想念着我的那些恐龙伙伴 还有那些想追捕我们的原始人 所以一天天气不错我住到了乡下 放弃名利希望我能找到真朋友</description></item><item><title>Mi mama me lo teje todo</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-mi-mama-me-lo-teje-todo/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-mi-mama-me-lo-teje-todo/</guid><description>开始只是 一只简单袜子 用来遮蔽 我麻木的脚丫 羊毛做的 是美丽的紫色 小心翼翼 用钩针钩出来 然后妈妈 织另一只袜子 因为寒冷 啃噬另一只脚 织的更长 但也更窄 还不是紫色的 是咖啡色 从那一刻开始 再没停下来过 坐在电视机前 她织，她织，她织
