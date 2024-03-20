@@ -1,14 +1,8 @@
-<!doctype html><html lang=zh>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=content-language content="zh">
-<meta name=author content="Weiwei">
-<meta name=description content="真·程序员用十六进制码编程
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=Content-Language content="zh"><meta name=author content="Weiwei"><meta name=description content="真·程序员用十六进制码编程
 主角Mel Kaye，后排最右
 【这是一篇翻译，原文链接在此，这是1983年的一篇仿史诗体文章，所以里边提到“当今”指的都是80年代早期。作者Ed Nather，主角Mel Kaye均已年长去世。TLDR:真·程序员用机器代码编程，真·程序员一个字节一个字节地手动优化存储器物理寻址，真·程序员不但技术高超，而且有原则有个性。】
 最近有一篇展现编程的“大丈夫”一面的文章，里边有这么一句粗暴直接的话：
-真·程序员用FORTRAN编程  也许现在的程序员是这样吧， 在这个堕落腐朽的年代 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件 但是在过去美好的日子里， “软件”还是一个听上去有点滑稽的新词 而真·计算机是使用磁鼓和真空管组装起来的， 真·程序员写的则是机器代码。 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。 机器·代码。 实实在在、原汁原味、深不可测的十六进制代码。 直截了当。
+真·程序员用FORTRAN编程 也许现在的程序员是这样吧， 在这个堕落腐朽的年代 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件 但是在过去美好的日子里， “软件”还是一个听上去有点滑稽的新词 而真·计算机是使用磁鼓和真空管组装起来的， 真·程序员写的则是机器代码。 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。 机器·代码。 实实在在、原汁原味、深不可测的十六进制代码。 直截了当。
 为了避免新一代程序员 对这段辉煌的历史一无所知 我觉得自己义不容辞，我要用文字 努力填补这一段代沟， 真·程序员是怎样写代码的 我把这个程序员叫做Mel， 因为这就是他的名字。 LGP-30
 我是在Royal McBee计算机公司上班时第一次碰到Mel的， 这是隶属于Royal Typewriter的一家子公司，现在已经解散了 Royal Typewriter制造了LGP-30， 一种小型的，低价的（以当时的标准） 磁鼓存储计算机， 而且刚刚开始制造 RPC-4000，一种大大改进了的 更大、更好、更快的——磁鼓存储计算机。 RPC-4000
 我当时被雇来为这个新机器 写一个Fortran编译器，而Mel则负责引导我了解这台新机器。
@@ -16,15 +10,11 @@ Mel对编译器不感冒。 “如果程序不能重写自己的代码，” Mel
 用十六进制代码， Mel写了公司最受欢迎的计算机程序 程序运行在LGP-30上面 能跟人玩“二十一点”， 每次计算机展会上 它都能戏剧般的吸引到不少人 IBM的销售都会围成一圈，对它指指点点 究竟展览对于销售有没有帮助 我们从来没有讨论过 21点的程序是用打印机输出的，当时还不知道什么叫显示器
 Mel的任务，是为 RPC-4000重写二十一点游戏 (平台移植是什么意思？没听说过) 新机器有一个一加一寻址模式， 每一个机器指令 和它的操作代码 以及操作所需的内存 都拥有一个第二地址，用来告诉你 下一个指令在旋转磁鼓上的具体位置
 用现代术语讲 就是相当于每个指令都捆绑了一个goto 放到Pascal的烟管里抽一口吧 磁鼓
-Mel对RPC-4000情有独钟 因为他可以优化自己的代码 他可以手动设置指令在磁鼓上的存储位置， 然后当一条指令执行完的时候， 磁头会正好停到下一条指令所处的位置上 然后下条指令就可以好不耽误时间地立即执行了 有一个程序也可以做这件事 叫做“优化汇编器” 但Mel拒绝使用它。">
-<meta name=keywords content="博客,开发,翻译">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Mel Kaye的故事">
-<meta name=twitter:description content="真·程序员用十六进制码编程
+Mel对RPC-4000情有独钟 因为他可以优化自己的代码 他可以手动设置指令在磁鼓上的存储位置， 然后当一条指令执行完的时候， 磁头会正好停到下一条指令所处的位置上 然后下条指令就可以好不耽误时间地立即执行了 有一个程序也可以做这件事 叫做“优化汇编器” 但Mel拒绝使用它。"><meta name=keywords content="博客,开发,翻译"><meta name=twitter:card content="summary"><meta name=twitter:title content="Mel Kaye的故事"><meta name=twitter:description content="真·程序员用十六进制码编程
 主角Mel Kaye，后排最右
 【这是一篇翻译，原文链接在此，这是1983年的一篇仿史诗体文章，所以里边提到“当今”指的都是80年代早期。作者Ed Nather，主角Mel Kaye均已年长去世。TLDR:真·程序员用机器代码编程，真·程序员一个字节一个字节地手动优化存储器物理寻址，真·程序员不但技术高超，而且有原则有个性。】
 最近有一篇展现编程的“大丈夫”一面的文章，里边有这么一句粗暴直接的话：
-真·程序员用FORTRAN编程  也许现在的程序员是这样吧， 在这个堕落腐朽的年代 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件 但是在过去美好的日子里， “软件”还是一个听上去有点滑稽的新词 而真·计算机是使用磁鼓和真空管组装起来的， 真·程序员写的则是机器代码。 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。 机器·代码。 实实在在、原汁原味、深不可测的十六进制代码。 直截了当。
+真·程序员用FORTRAN编程 也许现在的程序员是这样吧， 在这个堕落腐朽的年代 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件 但是在过去美好的日子里， “软件”还是一个听上去有点滑稽的新词 而真·计算机是使用磁鼓和真空管组装起来的， 真·程序员写的则是机器代码。 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。 机器·代码。 实实在在、原汁原味、深不可测的十六进制代码。 直截了当。
 为了避免新一代程序员 对这段辉煌的历史一无所知 我觉得自己义不容辞，我要用文字 努力填补这一段代沟， 真·程序员是怎样写代码的 我把这个程序员叫做Mel， 因为这就是他的名字。 LGP-30
 我是在Royal McBee计算机公司上班时第一次碰到Mel的， 这是隶属于Royal Typewriter的一家子公司，现在已经解散了 Royal Typewriter制造了LGP-30， 一种小型的，低价的（以当时的标准） 磁鼓存储计算机， 而且刚刚开始制造 RPC-4000，一种大大改进了的 更大、更好、更快的——磁鼓存储计算机。 RPC-4000
 我当时被雇来为这个新机器 写一个Fortran编译器，而Mel则负责引导我了解这台新机器。
@@ -32,13 +22,11 @@ Mel对编译器不感冒。 “如果程序不能重写自己的代码，” Mel
 用十六进制代码， Mel写了公司最受欢迎的计算机程序 程序运行在LGP-30上面 能跟人玩“二十一点”， 每次计算机展会上 它都能戏剧般的吸引到不少人 IBM的销售都会围成一圈，对它指指点点 究竟展览对于销售有没有帮助 我们从来没有讨论过 21点的程序是用打印机输出的，当时还不知道什么叫显示器
 Mel的任务，是为 RPC-4000重写二十一点游戏 (平台移植是什么意思？没听说过) 新机器有一个一加一寻址模式， 每一个机器指令 和它的操作代码 以及操作所需的内存 都拥有一个第二地址，用来告诉你 下一个指令在旋转磁鼓上的具体位置
 用现代术语讲 就是相当于每个指令都捆绑了一个goto 放到Pascal的烟管里抽一口吧 磁鼓
-Mel对RPC-4000情有独钟 因为他可以优化自己的代码 他可以手动设置指令在磁鼓上的存储位置， 然后当一条指令执行完的时候， 磁头会正好停到下一条指令所处的位置上 然后下条指令就可以好不耽误时间地立即执行了 有一个程序也可以做这件事 叫做“优化汇编器” 但Mel拒绝使用它。">
-<meta property="og:title" content="Mel Kaye的故事">
-<meta property="og:description" content="真·程序员用十六进制码编程
+Mel对RPC-4000情有独钟 因为他可以优化自己的代码 他可以手动设置指令在磁鼓上的存储位置， 然后当一条指令执行完的时候， 磁头会正好停到下一条指令所处的位置上 然后下条指令就可以好不耽误时间地立即执行了 有一个程序也可以做这件事 叫做“优化汇编器” 但Mel拒绝使用它。"><meta property="og:title" content="Mel Kaye的故事"><meta property="og:description" content="真·程序员用十六进制码编程
 主角Mel Kaye，后排最右
 【这是一篇翻译，原文链接在此，这是1983年的一篇仿史诗体文章，所以里边提到“当今”指的都是80年代早期。作者Ed Nather，主角Mel Kaye均已年长去世。TLDR:真·程序员用机器代码编程，真·程序员一个字节一个字节地手动优化存储器物理寻址，真·程序员不但技术高超，而且有原则有个性。】
 最近有一篇展现编程的“大丈夫”一面的文章，里边有这么一句粗暴直接的话：
-真·程序员用FORTRAN编程  也许现在的程序员是这样吧， 在这个堕落腐朽的年代 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件 但是在过去美好的日子里， “软件”还是一个听上去有点滑稽的新词 而真·计算机是使用磁鼓和真空管组装起来的， 真·程序员写的则是机器代码。 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。 机器·代码。 实实在在、原汁原味、深不可测的十六进制代码。 直截了当。
+真·程序员用FORTRAN编程 也许现在的程序员是这样吧， 在这个堕落腐朽的年代 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件 但是在过去美好的日子里， “软件”还是一个听上去有点滑稽的新词 而真·计算机是使用磁鼓和真空管组装起来的， 真·程序员写的则是机器代码。 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。 机器·代码。 实实在在、原汁原味、深不可测的十六进制代码。 直截了当。
 为了避免新一代程序员 对这段辉煌的历史一无所知 我觉得自己义不容辞，我要用文字 努力填补这一段代沟， 真·程序员是怎样写代码的 我把这个程序员叫做Mel， 因为这就是他的名字。 LGP-30
 我是在Royal McBee计算机公司上班时第一次碰到Mel的， 这是隶属于Royal Typewriter的一家子公司，现在已经解散了 Royal Typewriter制造了LGP-30， 一种小型的，低价的（以当时的标准） 磁鼓存储计算机， 而且刚刚开始制造 RPC-4000，一种大大改进了的 更大、更好、更快的——磁鼓存储计算机。 RPC-4000
 我当时被雇来为这个新机器 写一个Fortran编译器，而Mel则负责引导我了解这台新机器。
@@ -46,101 +34,16 @@ Mel对编译器不感冒。 “如果程序不能重写自己的代码，” Mel
 用十六进制代码， Mel写了公司最受欢迎的计算机程序 程序运行在LGP-30上面 能跟人玩“二十一点”， 每次计算机展会上 它都能戏剧般的吸引到不少人 IBM的销售都会围成一圈，对它指指点点 究竟展览对于销售有没有帮助 我们从来没有讨论过 21点的程序是用打印机输出的，当时还不知道什么叫显示器
 Mel的任务，是为 RPC-4000重写二十一点游戏 (平台移植是什么意思？没听说过) 新机器有一个一加一寻址模式， 每一个机器指令 和它的操作代码 以及操作所需的内存 都拥有一个第二地址，用来告诉你 下一个指令在旋转磁鼓上的具体位置
 用现代术语讲 就是相当于每个指令都捆绑了一个goto 放到Pascal的烟管里抽一口吧 磁鼓
-Mel对RPC-4000情有独钟 因为他可以优化自己的代码 他可以手动设置指令在磁鼓上的存储位置， 然后当一条指令执行完的时候， 磁头会正好停到下一条指令所处的位置上 然后下条指令就可以好不耽误时间地立即执行了 有一个程序也可以做这件事 叫做“优化汇编器” 但Mel拒绝使用它。">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://weiwei.github.io/zh/posts/old-articles/2018-mel-kaye%E7%9A%84%E6%95%85%E4%BA%8B/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2015-03-26T00:00:00+00:00">
-<meta property="article:modified_time" content="2015-03-26T00:00:00+00:00"><meta property="og:site_name" content="Weiwei的日志">
-<title>
-Mel Kaye的故事 · Weiwei的日志
-</title>
-<link rel=canonical href=https://weiwei.github.io/zh/posts/old-articles/2018-mel-kaye%E7%9A%84%E6%95%85%E4%BA%8B/>
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin=anonymous>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous>
-<link rel=stylesheet href=/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz+OMl98=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin=anonymous media=screen>
-<link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32>
-<link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16>
-<link rel=apple-touch-icon href=/images/apple-touch-icon.png>
-<link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
-<script src=https://twemoji.maxcdn.com/v/latest/twemoji.min.js crossorigin=anonymous></script>
-<meta name=generator content="Hugo 0.91.2">
-</head>
-<body class=colorscheme-auto onload=twemoji.parse(document.body)>
-<div class=float-container>
-<a id=dark-mode-toggle class=colorscheme-toggle>
-<i class="fa fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</div>
-<main class=wrapper>
-<nav class=navigation>
-<section class=container>
-<a class=navigation-title href=/zh>
-Weiwei的日志
-</a>
-<input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle>
-<i class="fa fa-bars fa-fw" aria-hidden=true></i>
-</label>
-<ul class=navigation-list>
-<li class=navigation-item>
-<a class=navigation-link href=/zh/about/>关于</a>
-</li>
-<li class=navigation-item>
-<a class=navigation-link href=/zh/posts/>文章</a>
-</li>
-<li class=navigation-item>
-<a class=navigation-link href=/zh/projects/>项目</a>
-</li>
-<li class="navigation-item menu-separator">
-<span>|</span>
-</li>
-<li class=navigation-item>
-<a href=https://weiwei.github.io/>English</a>
-</li>
-<li class=navigation-item>
-<a href=https://weiwei.github.io/es/>Español</a>
-</li>
-</ul>
-</section>
-</nav>
-<div class=content>
-<section class="container post">
-<article>
-<header>
-<div class=post-title>
-<h1 class=title>Mel Kaye的故事</h1>
-</div>
-<div class=post-meta>
-<div class=date>
-<span class=posted-on>
-<i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2015-03-26T00:00:00Z>
-2015-03-26
-</time>
-</span>
-<span class=reading-time>
-<i class="fa fa-clock-o" aria-hidden=true></i>
-9-minute read
-</span>
-</div>
-<div class=authors>
-<i class="fa fa-user" aria-hidden=true></i>
-<a href=/zh/authors/weiwei/>Weiwei</a></div>
-<div class=tags>
-<i class="fa fa-tag" aria-hidden=true></i>
-<a href=/zh/tags/%E7%BF%BB%E8%AF%91/>翻译</a></div>
-</div>
-</header>
-<div>
-<p>真·程序员用十六进制码编程</p>
-<p>主角Mel Kaye，后排最右</p>
-<p>【这是一篇翻译，原文链接<a href=http://www.cs.utah.edu/~elb/folklore/mel.html>在此</a>，这是1983年的一篇仿史诗体文章，所以里边提到“当今”指的都是80年代早期。作者Ed Nather，主角Mel Kaye均已年长去世。TLDR:真·程序员用机器代码编程，真·程序员一个字节一个字节地手动优化存储器物理寻址，真·程序员不但技术高超，而且有原则有个性。】</p>
-<p>最近有一篇展现编程的“大丈夫”一面的文章，里边有这么一句粗暴直接的话：</p>
-<pre><code>真·程序员用FORTRAN编程
-</code></pre>
-<p>也许现在的程序员是这样吧，
+Mel对RPC-4000情有独钟 因为他可以优化自己的代码 他可以手动设置指令在磁鼓上的存储位置， 然后当一条指令执行完的时候， 磁头会正好停到下一条指令所处的位置上 然后下条指令就可以好不耽误时间地立即执行了 有一个程序也可以做这件事 叫做“优化汇编器” 但Mel拒绝使用它。"><meta property="og:type" content="article"><meta property="og:url" content="https://weiwei.github.io/zh/posts/old-articles/2018-mel-kaye%E7%9A%84%E6%95%85%E4%BA%8B/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-03-26T00:00:00+00:00"><meta property="article:modified_time" content="2015-03-26T00:00:00+00:00"><title>Mel Kaye的故事 · Weiwei的日志
+</title><link rel=canonical href=https://weiwei.github.io/zh/posts/old-articles/2018-mel-kaye%E7%9A%84%E6%95%85%E4%BA%8B/><link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous><link rel=stylesheet href=/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz+OMl98=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><script src=https://twemoji.maxcdn.com/v/latest/twemoji.min.js crossorigin=anonymous></script><meta name=generator content="Hugo 0.124.0"></head><body class=colorscheme-auto onload=twemoji.parse(document.body)><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/zh>Weiwei的日志
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/zh/about/>关于</a></li><li class=navigation-item><a class=navigation-link href=/zh/posts/>文章</a></li><li class=navigation-item><a class=navigation-link href=/zh/projects/>项目</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=https://weiwei.github.io/>English</a></li><li class=navigation-item><a href=https://weiwei.github.io/es/>Español</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title>Mel Kaye的故事</h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2015-03-26T00:00:00Z>2015-03-26
+</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+9-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/zh/authors/weiwei/>Weiwei</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
+<a href=/zh/tags/%E7%BF%BB%E8%AF%91/>翻译</a></div></div></header><div><p>真·程序员用十六进制码编程</p><p>主角Mel Kaye，后排最右</p><p>【这是一篇翻译，原文链接<a href=http://www.cs.utah.edu/~elb/folklore/mel.html>在此</a>，这是1983年的一篇仿史诗体文章，所以里边提到“当今”指的都是80年代早期。作者Ed Nather，主角Mel Kaye均已年长去世。TLDR:真·程序员用机器代码编程，真·程序员一个字节一个字节地手动优化存储器物理寻址，真·程序员不但技术高超，而且有原则有个性。】</p><p>最近有一篇展现编程的“大丈夫”一面的文章，里边有这么一句粗暴直接的话：</p><pre><code>真·程序员用FORTRAN编程
+</code></pre><p>也许现在的程序员是这样吧，
 在这个堕落腐朽的年代
 到处都充斥着淡啤酒、计算器、还有“用户友好”的软件
 但是在过去美好的日子里，
@@ -150,16 +53,14 @@ Weiwei的日志
 不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。
 机器·代码。
 实实在在、原汁原味、深不可测的十六进制代码。
-直截了当。</p>
-<p>为了避免新一代程序员
+直截了当。</p><p>为了避免新一代程序员
 对这段辉煌的历史一无所知
 我觉得自己义不容辞，我要用文字
 努力填补这一段代沟，
 真·程序员是怎样写代码的
 我把这个程序员叫做Mel，
 因为这就是他的名字。
-LGP-30</p>
-<p>我是在Royal McBee计算机公司上班时第一次碰到Mel的，
+LGP-30</p><p>我是在Royal McBee计算机公司上班时第一次碰到Mel的，
 这是隶属于Royal Typewriter的一家子公司，现在已经解散了
 Royal Typewriter制造了LGP-30，
 一种小型的，低价的（以当时的标准）
@@ -167,13 +68,10 @@ Royal Typewriter制造了LGP-30，
 而且刚刚开始制造
 RPC-4000，一种大大改进了的
 更大、更好、更快的——磁鼓存储计算机。
-RPC-4000</p>
-<p>我当时被雇来为这个新机器
-写一个Fortran编译器，而Mel则负责引导我了解这台新机器。</p>
-<p>Mel对编译器不感冒。
+RPC-4000</p><p>我当时被雇来为这个新机器
+写一个Fortran编译器，而Mel则负责引导我了解这台新机器。</p><p>Mel对编译器不感冒。
 “如果程序不能重写自己的代码，”
-Mel说，“那它能有多挫啊？”</p>
-<p>用十六进制代码，
+Mel说，“那它能有多挫啊？”</p><p>用十六进制代码，
 Mel写了公司最受欢迎的计算机程序
 程序运行在LGP-30上面
 能跟人玩“二十一点”，
@@ -182,8 +80,7 @@ Mel写了公司最受欢迎的计算机程序
 IBM的销售都会围成一圈，对它指指点点
 究竟展览对于销售有没有帮助
 我们从来没有讨论过
-21点的程序是用打印机输出的，当时还不知道什么叫显示器</p>
-<p>Mel的任务，是为
+21点的程序是用打印机输出的，当时还不知道什么叫显示器</p><p>Mel的任务，是为
 RPC-4000重写二十一点游戏
 (平台移植是什么意思？没听说过)
 新机器有一个一加一寻址模式，
@@ -191,12 +88,10 @@ RPC-4000重写二十一点游戏
 和它的操作代码
 以及操作所需的内存
 都拥有一个第二地址，用来告诉你
-下一个指令在旋转磁鼓上的具体位置</p>
-<p>用现代术语讲
+下一个指令在旋转磁鼓上的具体位置</p><p>用现代术语讲
 就是相当于每个指令都捆绑了一个goto
 放到Pascal的烟管里抽一口吧
-磁鼓</p>
-<p>Mel对RPC-4000情有独钟
+磁鼓</p><p>Mel对RPC-4000情有独钟
 因为他可以优化自己的代码
 他可以手动设置指令在磁鼓上的存储位置，
 然后当一条指令执行完的时候，
@@ -204,10 +99,8 @@ RPC-4000重写二十一点游戏
 然后下条指令就可以好不耽误时间地立即执行了
 有一个程序也可以做这件事
 叫做“优化汇编器”
-但Mel拒绝使用它。</p>
-<p>“你永远不知道它会把东西放到哪里，”
-他解释道，“所以你只能使用不同的常量。”</p>
-<p>这句评论我花了很久才明白是什么意思，
+但Mel拒绝使用它。</p><p>“你永远不知道它会把东西放到哪里，”
+他解释道，“所以你只能使用不同的常量。”</p><p>这句评论我花了很久才明白是什么意思，
 因为Mel知道每一条
 操作指令的数字值，
 而且手动分配了磁鼓的存储地址，
@@ -216,22 +109,19 @@ RPC-4000重写二十一点游戏
 他可以把比如说一条“加值”指令，
 当作一个数值去做乘法，
 如果“加值”指令对应的正好是一个合适数值的话。
-别人要改他的代码可不容易。</p>
-<p>我把Mel手动优化过的代码
+别人要改他的代码可不容易。</p><p>我把Mel手动优化过的代码
 和优化汇编器“按摩”过的代码比较了一下，
 Mel的总是跑得更快。
 因为在那会“自顶向下”的程序设计
 还没被发明，
-而且就算发明了，Mel也不会去使用的。</p>
-<p>他会先把程序循环中最里层的部分写好，
+而且就算发明了，Mel也不会去使用的。</p><p>他会先把程序循环中最里层的部分写好，
 让这部分内容优先
 运行在磁鼓最合适的位置上。
 优化汇编器做不到这点，它没有这么聪明。
 Mel也从来不会去写延时循环，
 即使Flexowriter这种笨重的输出设备
 需要在输出之间延时才能工作正常。
-新式磁鼓</p>
-<p>他只需把磁鼓上的指令放在特殊位置上，
+新式磁鼓</p><p>他只需把磁鼓上的指令放在特殊位置上，
 这样下一条指令会刚好跳过磁头，
 然后磁鼓只能重新旋转一圈
 才能找到这条指令。这样就正好实现了延时。
@@ -241,8 +131,7 @@ Mel也从来不会去写延时循环，
 它也变得相对化了：
 “不是特别最优”或“不够最优”
 或者“不是特别最优”。
-Mel把导致磁鼓最大延时的存储地址叫做“最劣”址。</p>
-<p>当他写完“二十一点”程序
+Mel把导致磁鼓最大延时的存储地址叫做“最劣”址。</p><p>当他写完“二十一点”程序
 并且让它运行起来后
 （就连初始程序都被优化过了，
 他骄傲地说），
@@ -254,8 +143,7 @@ Mel把导致磁鼓最大延时的存储地址叫做“最劣”址。</p>
 因为有时候客户会输掉。
 他们想要Mel修改程序，
 让可以通过控制台的感知开关
-调整获胜几率，这样就可以让客户能赢了。</p>
-<p>Mel很抗拒
+调整获胜几率，这样就可以让客户能赢了。</p><p>Mel很抗拒
 他觉得这是绝对的不诚实，
 的确也是
 他还觉得这是对他作为一个程序员的人格侮辱，
@@ -269,8 +157,7 @@ Mel把导致磁鼓最大延时的存储地址叫做“最劣”址。</p>
 程序就会作弊，不是会输，而是次次会赢。
 Mel对他的杰作相当满意，
 说他潜意识里有无法控制的道德感，
-并且坚决拒绝修正这个问题。</p>
-<p>Mel离职另谋高就以后，
+并且坚决拒绝修正这个问题。</p><p>Mel离职另谋高就以后，
 大·老板让我看看代码
 看能不能把这个条件判断修改过来。
 虽然不怎么情愿，我还是答应了。
@@ -284,16 +171,14 @@ Mel对他的杰作相当满意，
 通过阅读一个人的代码，
 你可以了解很多关于这个人的东西，
 即使十六进制代码也是一样的。
-Mel在我的眼里，就是一个不为外人所知的天才。</p>
-<p>也许最让我吃惊的
+Mel在我的眼里，就是一个不为外人所知的天才。</p><p>也许最让我吃惊的
 是我在里边找到了一个没有条件判断的循环。
 没有条件判断。没有
 常识告诉我这必须是一个闭循环，
 程序走到这里会永远不停地循环下去。
 但实际情况是，程序可以直接跑进这段代码
 然后再安全地抵达了另外一边。
-我花了两个星期才弄明白这是怎么回事。</p>
-<p>RPC-4000计算机有一个相当现代化的功能
+我花了两个星期才弄明白这是怎么回事。</p><p>RPC-4000计算机有一个相当现代化的功能
 叫做索引注册器。
 它可以让程序员写一个循环，
 在里边使用索引过的指令；
@@ -304,8 +189,7 @@ Mel在我的眼里，就是一个不为外人所知的天才。</p>
 序列中的下一条数据。
 不过他就需要每次
 手动为索引注册器增值。
-Mel从来没这么做过。</p>
-<p>取而代之的是，他会把指令拖到一个机器注册器里，
+Mel从来没这么做过。</p><p>取而代之的是，他会把指令拖到一个机器注册器里，
 为它的地址加1，
 再把它存储回来。
 然后他再直接从注册器中
@@ -315,15 +199,13 @@ Mel从来没这么做过。</p>
 这条指令执行完后，
 下一条就会刚好处在磁头的阅读位置上，
 可以直接继续。
-但循环里边没有条件判断。</p>
-<p>最重要的线索出现了，
+但循环里边没有条件判断。</p><p>最重要的线索出现了，
 当我我注意到索引注册器位元的时候，
 这个位元处在指令的地址码和操作码之间，
 而且是开启的——
 尽管Mel从来没使用过索引注册器，
 所以此处一直是为0的。
-当我看明白的时候，我简直被亮瞎了。</p>
-<p>他把工作的数据
+当我看明白的时候，我简直被亮瞎了。</p><p>他把工作的数据
 放在了存储的最顶端——
 指令能处理的最大的地址值——
 所以，当最后一条数据处理完以后，
@@ -334,8 +216,7 @@ Mel从来没这么做过。</p>
 一条跳过指令。
 于是理所当然，下一条程序指令
 就到了地址位置0，
-然后程序就开心地运行下去了。</p>
-<p>我没有和Mel再联系过，
+然后程序就开心地运行下去了。</p><p>我没有和Mel再联系过，
 所以我不知道他是不是
 面对着洪水般的编程技术变革
 已经让步了。
@@ -344,19 +225,12 @@ Mel从来没这么做过。</p>
 我已经被他的技术深深折服，
 不想再去找那处有问题的条件判断了。
 我告诉大·老板我找不出。
-大·老板听了也没觉得奇怪。</p>
-<p>当我离开这家公司的时候，
+大·老板听了也没觉得奇怪。</p><p>当我离开这家公司的时候，
 在你打开对应的感知开关以后，
 “二十一点”还是会作弊的，
 我觉得这样挺不错。
 深入研究了真·程序员的代码，
-我觉得自己有点心累。</p>
-<hr>
-<p>原文</p>
-<p>The Story of Mel, a Real Programmer</p>
-<p>This was posted to USENET by its author, Ed Nather (utastro!nather), on May 21, 1983.</p>
-<p>A recent article devoted to the <em>macho</em> side of programming made the bald and unvarnished statement:</p>
-<pre><code>     Real Programmers write in FORTRAN.
+我觉得自己有点心累。</p><hr><p>原文</p><p>The Story of Mel, a Real Programmer</p><p>This was posted to USENET by its author, Ed Nather (utastro!nather), on May 21, 1983.</p><p>A recent article devoted to the <em>macho</em> side of programming made the bald and unvarnished statement:</p><pre><code>     Real Programmers write in FORTRAN.
 
  Maybe they do now,
  in this decadent era of
@@ -599,27 +473,9 @@ Mel从来没这么做过。</p>
  and I think that's how it should be.
  I didn't feel comfortable
  hacking up the code of a Real Programmer.
-</code></pre>
-<p>This is one of hackerdom&rsquo;s great heroic epics, free verse or no. In a few spare images it captures more about the esthetics and psychology of hacking than all the scholarly volumes on the subject put together.</p>
-<p>[1992 postscript &mdash; the author writes: &ldquo;The original submission to the net was not in free verse, nor any approximation to it &mdash; it was straight prose style, in non-justified paragraphs. In bouncing around the net it apparently got modified into the `free verse' form now popular. In other words, it got hacked on the net. That seems appropriate, somehow."]</p>
-</div>
-<footer>
-</footer>
-</article>
-</section>
-</div>
-<footer class=footer>
-<section class=container>
-©
+</code></pre><p>This is one of hackerdom&rsquo;s great heroic epics, free verse or no. In a few spare images it captures more about the esthetics and psychology of hacking than all the scholarly volumes on the subject put together.</p><p>[1992 postscript &mdash; the author writes: &ldquo;The original submission to the net was not in free verse, nor any approximation to it &mdash; it was straight prose style, in non-justified paragraphs. In bouncing around the net it apparently got modified into the `free verse&rsquo; form now popular. In other words, it got hacked on the net. That seems appropriate, somehow.&rdquo;]</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
 2006 -
 2024
 Weiwei
 ·
-Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
-</section>
-</footer>
-</main>
-<script src=/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js></script>
-<script data-goatcounter=https://weiwei.goatcounter.com/count async src=//gc.zgo.at/count.js></script>
-</body>
-</html>
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/dark-mode.min.c2d8a1f8f2660e4a46d776277c72695a1e0ca65939d79f754441d47551604af5.js></script><script data-goatcounter=https://weiwei.goatcounter.com/count async src=//gc.zgo.at/count.js></script></body></html>

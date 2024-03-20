@@ -1,213 +1,70 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=content-language content="en">
-<meta name=author content="Weiwei">
-<meta name=description content="Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
-The project I&rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible.">
-<meta name=keywords content="blog,developer,translation,python,rust,javascript,typescript">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Learning Rust 01">
-<meta name=twitter:description content="Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
-The project I&rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible.">
-<meta property="og:title" content="Learning Rust 01">
-<meta property="og:description" content="Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
-The project I&rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-06-01T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-06-01T00:00:00+00:00">
-<meta property="og:see_also" content="https://weiwei.github.io/posts/old-articles/2021-learning-rust-02/">
-<title>
-Learning Rust 01 · Keyboard And Me
-</title>
-<link rel=canonical href=https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/>
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin=anonymous>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous>
-<link rel=stylesheet href=/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz+OMl98=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin=anonymous media=screen>
-<link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32>
-<link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16>
-<link rel=apple-touch-icon href=/images/apple-touch-icon.png>
-<link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
-<script src=https://twemoji.maxcdn.com/v/latest/twemoji.min.js crossorigin=anonymous></script>
-<meta name=generator content="Hugo 0.91.2">
-</head>
-<body class=colorscheme-auto onload=twemoji.parse(document.body)>
-<div class=float-container>
-<a id=dark-mode-toggle class=colorscheme-toggle>
-<i class="fa fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</div>
-<main class=wrapper>
-<nav class=navigation>
-<section class=container>
-<a class=navigation-title href=/>
-Keyboard And Me
-</a>
-<input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle>
-<i class="fa fa-bars fa-fw" aria-hidden=true></i>
-</label>
-<ul class=navigation-list>
-<li class=navigation-item>
-<a class=navigation-link href=/about/>About</a>
-</li>
-<li class=navigation-item>
-<a class=navigation-link href=/posts/>Blog</a>
-</li>
-<li class=navigation-item>
-<a class=navigation-link href=/projects/>Projects</a>
-</li>
-<li class="navigation-item menu-separator">
-<span>|</span>
-</li>
-<li class=navigation-item>
-<a href=https://weiwei.github.io/zh/>中文</a>
-</li>
-<li class=navigation-item>
-<a href=https://weiwei.github.io/es/>Español</a>
-</li>
-</ul>
-</section>
-</nav>
-<div class=content>
-<section class="container post">
-<article>
-<header>
-<div class=post-title>
-<h1 class=title>Learning Rust 01</h1>
-</div>
-<div class=post-meta>
-<div class=date>
-<span class=posted-on>
-<i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2021-06-01T00:00:00Z>
-2021-06-01
-</time>
-</span>
-<span class=reading-time>
-<i class="fa fa-clock-o" aria-hidden=true></i>
-4-minute read
-</span>
-</div>
-<div class=authors>
-<i class="fa fa-user" aria-hidden=true></i>
-<a href=/authors/weiwei/>Weiwei</a></div>
-<div class=tags>
-<i class="fa fa-tag" aria-hidden=true></i>
-<a href=/tags/rust/>rust</a></div>
-</div>
-</header>
-<div>
-<p>Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.</p>
-<p>The project I&rsquo;m rewriting is <a href=https://www.npmjs.com/package/silabacion>silabacion</a>. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible. There isn&rsquo;t much about it, just lots of string manipulation and pattern matching. It should be a good exercise to rewrite it with rust, and the result could be useful for those 5 people who process Spanish words with rust, so why not?</p>
-<p>Starting small. First I want to convert some easy utility functions. For example this one:</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=color:#fff;font-weight:700>const</span> ACCENTED_VOWELS = [<span style=color:#0ff;font-weight:700>&#39;á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>];
-<span style=color:#fff;font-weight:700>const</span> NON_ACCENTED_VOWELS = [<span style=color:#0ff;font-weight:700>&#39;a&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>];
-<span style=color:#fff;font-weight:700>const</span> ALL_VOWELS = [...ACCENTED_VOWELS, ...NON_ACCENTED_VOWELS];
-
-<span style=color:#007f7f>// ...
-</span><span style=color:#007f7f></span>
-<span style=color:#fff;font-weight:700>export</span> <span style=color:#fff;font-weight:700>function</span> isVowel(char: <span style=color:#fff;font-weight:700>string</span>) {
-  <span style=color:#fff;font-weight:700>return</span> ALL_VOWELS.includes(char.toLowerCase());
-}
-</code></pre></div><p>Let&rsquo;s (or let me, because this is just me trying to sort things out) dive in. Note that until now I just have read the first few chapters of <a href=https://doc.rust-lang.org/book/title-page.html>the book</a> and a few articles online. I don&rsquo;t know a lot of things.</p>
-<h2 id=creating-global-constants>Creating global constants</h2>
-<p>The lesson: You can&rsquo;t create new constants based on existing constants.</p>
-<p>In the typescript code, I created <code>ALL_VOWELS</code> with two existing arrays. However, with rust, if I want to define a <code>const</code> with a similar way, I&rsquo;m out of luck. According to the <a href=https://doc.rust-lang.org/reference/const_eval.html>documentation</a>, only constant expressions are allowed for <code>const</code> definition. Rust&rsquo;s equivalent of spreading isn&rsquo;t a constant expression. So no luck, we have to do it the hard way:</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>const</span> ALL_VOWELS: [<span style=color:#fff;font-weight:700>char</span>; <span style=color:#ff0;font-weight:700>11</span>] = [<span style=color:#0ff;font-weight:700>&#39;á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;a&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>];
-</code></pre></div><h2 id=getting-lowercase>Getting lowercase</h2>
-<p>The lesson: <code>ch.to_lowercase</code> returns an iterator of <code>char</code>s, not a simple <code>char</code>.</p>
-<p>It is necessary because in some languages, one upper case letter may have a lower case counterpart that consists of multiple letters, or vice versa. In German for example, the lower case letter <code>ß</code> is usually turned to <code>SS</code> in upper case.</p>
-<p>In typescript, you get the lower case character by simply calling a function. Because typescript doesn&rsquo;t distinguish between char and string, it doesn&rsquo;t hurt if it doesn&rsquo;t return an iterator. But in rust, that wouldn&rsquo;t do.</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel0(ch: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
-    <span style=color:#fff;font-weight:700>match</span> &amp;ch.to_lowercase().to_string().chars().next() {
-        <span style=color:#fff;font-weight:700>Some</span>(x) =&gt; ALL_VOWELS.contains(x),
-        <span style=color:#fff;font-weight:700>None</span> =&gt; <span style=color:#fff;font-weight:700>false</span>,
-    }
-}
-</code></pre></div><p>Note how much work we have to do with this. We have to turn the <code>to_lowercase()</code> result (an iterator) to a string, then to an iterator of <code>char</code>s, then get its first item, then check if it matches the predefined list.</p>
-<h2 id=dumber-but-better-implementations>Dumber, but Better Implementations</h2>
-<p>The above approach is enough to make the rust implementation slower than its node.js counterpart (I could be wrong, I haven&rsquo;t tested). So I did the dumb method by letting <code>ALL_VOWELS</code> contain both upper and lower case letters.</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>const</span> ALL_VOWELS: [<span style=color:#fff;font-weight:700>char</span>; <span style=color:#ff0;font-weight:700>22</span>] = [<span style=color:#0ff;font-weight:700>&#39;á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;a&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;É&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Ú&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;A&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;E&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;I&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;O&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;U&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Ü&#39;</span>];
-
-<span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel1(ch: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
-    ALL_VOWELS.contains(ch)
-}
-</code></pre></div><p>This version is about 4 times faster than the previous implementation in my naive performance test. I believe it would be even faster in optimized release build.</p>
-<p>Another implementation I&rsquo;ve seen is like <a href=https://gist.github.com/Kushagra-0801/1ffbded3f8a03d9841f42fbb9e8c4bc9>this</a>, and I&rsquo;ve created a similar one to test:</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel2(c: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
-    <span style=color:#fff;font-weight:700>match</span> c {
-        <span style=color:#0ff;font-weight:700>&#39;á&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;é&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;í&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;a&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;e&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;i&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;o&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;u&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Á&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;É&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Í&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Ó&#39;</span>
-        | <span style=color:#0ff;font-weight:700>&#39;Ú&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;A&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;E&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;I&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;O&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;U&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Ü&#39;</span> =&gt; <span style=color:#fff;font-weight:700>true</span>,
-        _ =&gt; <span style=color:#fff;font-weight:700>false</span>,
-    }
-}
-</code></pre></div><p>The result code appears to be 10 to 20 times faster than the previous implementation. I don&rsquo;t know why.</p>
-<p>Another implementation could be using equals test:</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel3(c: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
-    <span style=color:#fff;font-weight:700>let</span> c = c.clone();
-    c == <span style=color:#0ff;font-weight:700>&#39;á&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;a&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;Á&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;É&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;Í&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;Ó&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;Ú&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;A&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;E&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;I&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;O&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;U&#39;</span>
-        || c == <span style=color:#0ff;font-weight:700>&#39;Ü&#39;</span>
-}
-</code></pre></div><p>This is slower than the previous one, probably because I had to <code>clone</code> the character. Or something else. Anyway, it&rsquo;s too ugly, I think I&rsquo;ll forget about it.</p>
-<p>For now I&rsquo;ll stick with <code>is_vowel1</code> or <code>is_vowel2</code> because they appear to be fast enough and not too ugly.</p>
-<h2 id=todos>TODOs</h2>
-<ul>
-<li>I still don&rsquo;t know which is more idiomatic.</li>
-<li>I still don&rsquo;t fully understand the performance result.</li>
-</ul>
-</div>
-<footer>
-<section class=see-also>
-<h3>See also in Learning Rust</h3>
-<nav>
-<ul>
-<li>
-<a href=/posts/old-articles/2021-learning-rust-02/>Learning Rust 02</a>
-</li>
-</ul>
-</nav>
-</section>
-</footer>
-</article>
-</section>
-</div>
-<footer class=footer>
-<section class=container>
-©
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=Content-Language content="en"><meta name=author content="Weiwei"><meta name=description content="Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
+The project I&rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible."><meta name=keywords content="blog,developer,translation,python,rust,javascript,typescript"><meta name=twitter:card content="summary"><meta name=twitter:title content="Learning Rust 01"><meta name=twitter:description content="Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
+The project I&rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible."><meta property="og:title" content="Learning Rust 01"><meta property="og:description" content="Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
+The project I&rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible."><meta property="og:type" content="article"><meta property="og:url" content="https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-06-01T00:00:00+00:00"><meta property="article:modified_time" content="2021-06-01T00:00:00+00:00"><title>Learning Rust 01 · Keyboard And Me
+</title><link rel=canonical href=https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/><link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous><link rel=stylesheet href=/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz+OMl98=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><script src=https://twemoji.maxcdn.com/v/latest/twemoji.min.js crossorigin=anonymous></script><meta name=generator content="Hugo 0.124.0"></head><body class=colorscheme-auto onload=twemoji.parse(document.body)><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Keyboard And Me
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/about/>About</a></li><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/projects/>Projects</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=https://weiwei.github.io/zh/>中文</a></li><li class=navigation-item><a href=https://weiwei.github.io/es/>Español</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title>Learning Rust 01</h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2021-06-01T00:00:00Z>2021-06-01
+</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+4-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/authors/weiwei/>Weiwei</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
+<a href=/tags/rust/>rust</a></div></div></header><div><p>Recently I&rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.</p><p>The project I&rsquo;m rewriting is <a href=https://www.npmjs.com/package/silabacion>silabacion</a>. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible. There isn&rsquo;t much about it, just lots of string manipulation and pattern matching. It should be a good exercise to rewrite it with rust, and the result could be useful for those 5 people who process Spanish words with rust, so why not?</p><p>Starting small. First I want to convert some easy utility functions. For example this one:</p><div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#fff;font-weight:700>const</span> ACCENTED_VOWELS = [<span style=color:#0ff;font-weight:700>&#39;á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>];
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>const</span> NON_ACCENTED_VOWELS = [<span style=color:#0ff;font-weight:700>&#39;a&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>];
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>const</span> ALL_VOWELS = [...ACCENTED_VOWELS, ...NON_ACCENTED_VOWELS];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#007f7f>// ...
+</span></span></span><span style=display:flex><span><span style=color:#007f7f></span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>export</span> <span style=color:#fff;font-weight:700>function</span> isVowel(char: <span style=color:#fff;font-weight:700>string</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#fff;font-weight:700>return</span> ALL_VOWELS.includes(char.toLowerCase());
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Let&rsquo;s (or let me, because this is just me trying to sort things out) dive in. Note that until now I just have read the first few chapters of <a href=https://doc.rust-lang.org/book/title-page.html>the book</a> and a few articles online. I don&rsquo;t know a lot of things.</p><h2 id=creating-global-constants>Creating global constants</h2><p>The lesson: You can&rsquo;t create new constants based on existing constants.</p><p>In the typescript code, I created <code>ALL_VOWELS</code> with two existing arrays. However, with rust, if I want to define a <code>const</code> with a similar way, I&rsquo;m out of luck. According to the <a href=https://doc.rust-lang.org/reference/const_eval.html>documentation</a>, only constant expressions are allowed for <code>const</code> definition. Rust&rsquo;s equivalent of spreading isn&rsquo;t a constant expression. So no luck, we have to do it the hard way:</p><div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>const</span> ALL_VOWELS: [<span style=color:#fff;font-weight:700>char</span>; <span style=color:#ff0;font-weight:700>11</span>] = [<span style=color:#0ff;font-weight:700>&#39;á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;a&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>];
+</span></span></code></pre></div><h2 id=getting-lowercase>Getting lowercase</h2><p>The lesson: <code>ch.to_lowercase</code> returns an iterator of <code>char</code>s, not a simple <code>char</code>.</p><p>It is necessary because in some languages, one upper case letter may have a lower case counterpart that consists of multiple letters, or vice versa. In German for example, the lower case letter <code>ß</code> is usually turned to <code>SS</code> in upper case.</p><p>In typescript, you get the lower case character by simply calling a function. Because typescript doesn&rsquo;t distinguish between char and string, it doesn&rsquo;t hurt if it doesn&rsquo;t return an iterator. But in rust, that wouldn&rsquo;t do.</p><div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel0(ch: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>match</span> &amp;ch.to_lowercase().to_string().chars().next() {
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>Some</span>(x) =&gt; ALL_VOWELS.contains(x),
+</span></span><span style=display:flex><span>        <span style=color:#fff;font-weight:700>None</span> =&gt; <span style=color:#fff;font-weight:700>false</span>,
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Note how much work we have to do with this. We have to turn the <code>to_lowercase()</code> result (an iterator) to a string, then to an iterator of <code>char</code>s, then get its first item, then check if it matches the predefined list.</p><h2 id=dumber-but-better-implementations>Dumber, but Better Implementations</h2><p>The above approach is enough to make the rust implementation slower than its node.js counterpart (I could be wrong, I haven&rsquo;t tested). So I did the dumb method by letting <code>ALL_VOWELS</code> contain both upper and lower case letters.</p><div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>const</span> ALL_VOWELS: [<span style=color:#fff;font-weight:700>char</span>; <span style=color:#ff0;font-weight:700>22</span>] = [<span style=color:#0ff;font-weight:700>&#39;á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;a&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Á&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;É&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Í&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Ó&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Ú&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;A&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;E&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;I&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;O&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;U&#39;</span>, <span style=color:#0ff;font-weight:700>&#39;Ü&#39;</span>];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel1(ch: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
+</span></span><span style=display:flex><span>    ALL_VOWELS.contains(ch)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This version is about 4 times faster than the previous implementation in my naive performance test. I believe it would be even faster in optimized release build.</p><p>Another implementation I&rsquo;ve seen is like <a href=https://gist.github.com/Kushagra-0801/1ffbded3f8a03d9841f42fbb9e8c4bc9>this</a>, and I&rsquo;ve created a similar one to test:</p><div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel2(c: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>match</span> c {
+</span></span><span style=display:flex><span>        <span style=color:#0ff;font-weight:700>&#39;á&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;é&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;í&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;a&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;e&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;i&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;o&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;u&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Á&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;É&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Í&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Ó&#39;</span>
+</span></span><span style=display:flex><span>        | <span style=color:#0ff;font-weight:700>&#39;Ú&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;A&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;E&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;I&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;O&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;U&#39;</span> | <span style=color:#0ff;font-weight:700>&#39;Ü&#39;</span> =&gt; <span style=color:#fff;font-weight:700>true</span>,
+</span></span><span style=display:flex><span>        _ =&gt; <span style=color:#fff;font-weight:700>false</span>,
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>The result code appears to be 10 to 20 times faster than the previous implementation. I don&rsquo;t know why.</p><p>Another implementation could be using equals test:</p><div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#fff;font-weight:700>pub</span> <span style=color:#fff;font-weight:700>fn</span> is_vowel3(c: <span style=color:#fff;font-weight:700>&amp;</span><span style=color:#fff;font-weight:700>char</span>) -&gt; <span style=color:#fff;font-weight:700>bool</span> {
+</span></span><span style=display:flex><span>    <span style=color:#fff;font-weight:700>let</span> c = c.clone();
+</span></span><span style=display:flex><span>    c == <span style=color:#0ff;font-weight:700>&#39;á&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;é&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;í&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;ó&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;ú&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;a&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;e&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;i&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;o&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;u&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;ü&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;Á&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;É&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;Í&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;Ó&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;Ú&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;A&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;E&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;I&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;O&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;U&#39;</span>
+</span></span><span style=display:flex><span>        || c == <span style=color:#0ff;font-weight:700>&#39;Ü&#39;</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>This is slower than the previous one, probably because I had to <code>clone</code> the character. Or something else. Anyway, it&rsquo;s too ugly, I think I&rsquo;ll forget about it.</p><p>For now I&rsquo;ll stick with <code>is_vowel1</code> or <code>is_vowel2</code> because they appear to be fast enough and not too ugly.</p><h2 id=todos>TODOs</h2><ul><li>I still don&rsquo;t know which is more idiomatic.</li><li>I still don&rsquo;t fully understand the performance result.</li></ul></div><footer><section class=see-also></section></footer></article></section></div><footer class=footer><section class=container>©
 2006 -
 2024
 Weiwei
 ·
-Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
-</section>
-</footer>
-</main>
-<script src=/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js></script>
-<script data-goatcounter=https://weiwei.goatcounter.com/count async src=//gc.zgo.at/count.js></script>
-</body>
-</html>
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/dark-mode.min.c2d8a1f8f2660e4a46d776277c72695a1e0ca65939d79f754441d47551604af5.js></script><script data-goatcounter=https://weiwei.goatcounter.com/count async src=//gc.zgo.at/count.js></script></body></html>
