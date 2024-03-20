@@ -1,11 +1,11 @@
-+++ 
-date = "2006-11-07"
-title = "中学作文中最坏的类比句"
-tags = ["翻译"]
-authors = ["Weiwei"]
-categories = []
-series = []
-+++
+---
+date: "2006-11-07"
+title: "中学作文中最坏的类比句"
+tags: ["翻译"]
+authors: ["Weiwei"]
+categories: []
+series: []
+---
 
 **The Worst Analogies
  Ever Written in a High School Essay**

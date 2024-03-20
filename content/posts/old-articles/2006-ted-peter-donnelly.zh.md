@@ -1,12 +1,11 @@
-+++ 
-date = "2006-11-16"
-title = "TED笔记——Peter Donnelly"
-tags = []
-authors = ["Weiwei"]
-categories = []
-series = []
-+++
-
+---
+date: "2006-11-16"
+title: "TED笔记——Peter Donnelly"
+tags: []
+authors: ["Weiwei"]
+categories: []
+series: []
+---
 
 上周[TED](http://www.ted.com/tedtalks/)放了Peter Donnelly的演讲，其中讲到一个例子：抛硬币时哪个结果更容易得到，是"正-反-正"还是"正-反-反"？
 
