@@ -1,26 +1,28 @@
 baseURL = "https://weiwei.github.io/"
 title = "Keyboard And Me"
-
 theme = "hugo-coder"
-
 languageCode = "en"
 defaultContentLanguage = "en"
-
 # googleAnalytics = "G-8MH709GCCZ"
+paginate = 8
+# enableEmoji = true
+# Enable Disqus comments
+# disqusShortname = "kindaslow"
 
-paginate = 20
+[markup.highlight]
+noClasses = false
 
 pygmentsStyle = "b2"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 
 permalinks = "/:year/:month/:title/"
-# disqusShortname = "kindaslow"
 
 [params]
     author = "Weiwei"
-    description = "Weiwei's blog and stuff"
-    keywords = "blog,developer,translation,python,rust,javascript,typescript"
+    # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
+    description = "Weiwei's personal website"
+    keywords = "blog,developer,translation,python,javascript,typescript,frontend"
     info = "Programmer, translator"
     # avatarURL = "images/avatar.jpg"
     # gravatar = "gastlygem@gmail.com"
@@ -78,6 +80,65 @@ permalinks = "/:year/:month/:title/"
 # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
 [params.goatCounter]
     code = "weiwei"
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+# [params.cloudflare]
+# token = "token"
+
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+# [params.matomo]
+# siteID = "ABCDE" # Default value is "1", overwrite this if you are cloud-hosting
+# serverURL = "analytics.example.com" # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+# [params.googleTagManager]
+# id = "gid"
+
+# If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
+# [params.yandexMetrika]
+# id = "gid"
+
+# If you want to use Application Insights(https://azure.com/) for analytics, add this section
+# [params.applicationInsights]
+# connectionString = "connectionString"
+
+# If you want to use microanalytics.io for analytics, add this section
+# [params.microAnalytics]
+# id = "ABCDE"
+# dnt = "false" # respect DNT tracker, "true" by default
+
+# If you want to use Pirsch(https://pirsch.io) for analytics, add this section
+# [params.pirsch]
+# code = "ABCDE"
+
+# If you want to use Umami(https://umami.is) for analytics, add this section
+# [params.umami]
+# siteID = "ABCDE"
+# scriptURL = "analytics.REGION.umami.is/SCRIPTNAME.js"
+
+# If you want to implement a Content-Security-Policy, add this section
+# [params.csp]
+# childsrc = ["'self'"]
+# fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+# formaction = ["'self'"]
+# framesrc = ["'self'", "https://www.youtube.com"]
+# imgsrc = ["'self'"]
+# objectsrc = ["'none'"]
+# stylesrc = [
+#   "'self'",
+#   "'unsafe-inline'",
+#   "https://fonts.googleapis.com/",
+#   "https://cdn.jsdelivr.net/",
+# ]
+# scriptsrc = [
+#   "'self'",
+#   "'unsafe-inline'",
+#   "https://www.google-analytics.com",
+#   "https://cdn.jsdelivr.net/",
+# ]
+# prefetchsrc = ["'self'"]
+# # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
+# connectsrc = ["'self'", "https://www.google-analytics.com"]
 
 [markup]
   [markup.goldmark]
