@@ -20,7 +20,7 @@
 
 ## Write
 
-* Add or update files under `content`. Change `config.toml` accordingly. 
+* Add or update files under `content`. Change `hugo.toml` accordingly. 
 * Run `hugo serve` to confirm the edit locally.
 * Commit and push. GitHub will build it automatically with actions. 
 
