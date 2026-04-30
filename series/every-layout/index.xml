@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Every Layout on Keyboard And Me</title><link>https://weiwei.github.io/series/every-layout/</link><description>Recent content in Every Layout on Keyboard And Me</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://weiwei.github.io/series/every-layout/index.xml" rel="self" type="application/rss+xml"/><item><title>The Layout of Docusaurus</title><link>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</guid><description>Docusaurus is Meta&amp;rsquo;s open source document authoring platform. It generates clean and modern document sites written in markdown.
-The Major Takeaway Link to heading It uses semantic HTML tags for each major part of the screen.
-This is so clean we can copy over to any website we want to create.
-It is React Link to heading In fact it is a React Single Page App with local routing. AND it is powerful.</description></item><item><title>The Layout of Hacker News</title><link>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</guid><description>Hacker News is probably one of the few top sites with a table layout. A call from the distant past.
-The Front Page Link to heading The front page is just a table inside &amp;lt;center&amp;gt; tag. The &amp;ldquo;More&amp;rdquo; button at the bottom leads to another page, which is loaded with a new HTTP request.
-The main content is again a &amp;lt;table&amp;gt; inside &amp;lt;tr&amp;gt;, with each of its row as a news entry.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Every Layout on Keyboard And Me</title><link>https://weiwei.github.io/series/every-layout/</link><description>Recent content in Every Layout on Keyboard And Me</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://weiwei.github.io/series/every-layout/index.xml" rel="self" type="application/rss+xml"/><item><title>The Layout of Docusaurus</title><link>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</guid><description>&lt;p&gt;&lt;a href="https://docusaurus.io/" class="external-link" target="_blank" rel="noopener"&gt;Docusaurus&lt;/a&gt; is Meta&amp;rsquo;s open source document authoring
+platform. It generates clean and modern document sites written in markdown.&lt;/p&gt;
+&lt;h2 id="the-major-takeaway"&gt;
+ The Major Takeaway
+ &lt;a class="heading-link" href="#the-major-takeaway"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;It uses semantic HTML tags for each major part of the screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="./docusaurus.svg" alt="Docusaurus Layout" title="Docusaurus main page layout"&gt;&lt;/p&gt;
+&lt;p&gt;This is so clean we can copy over to any website we want to create.&lt;/p&gt;
+&lt;h2 id="it-is-react"&gt;
+ It is React
+ &lt;a class="heading-link" href="#it-is-react"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In fact it is a React Single Page App with local routing. AND it is powerful. So powerful.&lt;/p&gt;</description></item><item><title>The Layout of Hacker News</title><link>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</guid><description>&lt;p&gt;&lt;a href="https://news.ycombinator.com/" class="external-link" target="_blank" rel="noopener"&gt;Hacker News&lt;/a&gt; is probably one of the few top sites
+with a table layout. A call from the distant past.&lt;/p&gt;
+&lt;h2 id="the-front-page"&gt;
+ The Front Page
+ &lt;a class="heading-link" href="#the-front-page"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The front page is just a table inside &lt;code&gt;&amp;lt;center&amp;gt;&lt;/code&gt; tag. The &amp;ldquo;More&amp;rdquo; button at the bottom leads to another page, which is loaded with a new HTTP request.&lt;/p&gt;
+&lt;p&gt;The main content is again a &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; inside &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt;, with each of its row as a
+news entry.&lt;/p&gt;</description></item></channel></rss>

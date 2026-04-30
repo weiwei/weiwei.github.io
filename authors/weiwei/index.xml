@@ -1,34 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Weiwei on Keyboard And Me</title><link>https://weiwei.github.io/authors/weiwei/</link><description>Recent content in Weiwei on Keyboard And Me</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://weiwei.github.io/authors/weiwei/index.xml" rel="self" type="application/rss+xml"/><item><title>The Layout of Docusaurus</title><link>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</guid><description>Docusaurus is Meta&amp;rsquo;s open source document authoring platform. It generates clean and modern document sites written in markdown.
-The Major Takeaway Link to heading It uses semantic HTML tags for each major part of the screen.
-This is so clean we can copy over to any website we want to create.
-It is React Link to heading In fact it is a React Single Page App with local routing. AND it is powerful.</description></item><item><title>The Layout of Hacker News</title><link>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</guid><description>Hacker News is probably one of the few top sites with a table layout. A call from the distant past.
-The Front Page Link to heading The front page is just a table inside &amp;lt;center&amp;gt; tag. The &amp;ldquo;More&amp;rdquo; button at the bottom leads to another page, which is loaded with a new HTTP request.
-The main content is again a &amp;lt;table&amp;gt; inside &amp;lt;tr&amp;gt;, with each of its row as a news entry.</description></item><item><title>Western grammatical influence on vernacular Chinese in the 20th century</title><link>https://weiwei.github.io/posts/old-articles/2016-se-western-grammatical-influence/</link><pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2016-se-western-grammatical-influence/</guid><description>Note: This is an answer to a StackExchange question: https://chinese.stackexchange.com/questions/20763/western-grammatical-influence-on-vernacular-chinese-in-the-20th-century
-Regarding to how early writers are influenced by western languages. The renowned poet and translator 余光中 has written quite a lot about it. Below are some examples he mentioned in his articles.
-Deliberate plurals. Traditionally plurals are only used when absolutely necessary. In the following sentence the reader doesn&amp;rsquo;t actually care whether it&amp;rsquo;s one fly, a group of flies, or fly as a species.</description></item><item><title>Dinosaurio Anacleto</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</guid><description>我是一只恐龙我名叫阿纳克来多 命运安排我活过了漫长冰河期 我的朋友都已灭绝只剩下我一个 这种情况我也没法只好去接受 我很无聊因为连一个亲戚都没有 没有一个认识的人一起出去玩 只好编造一些朋友用来自娱自乐 坐在一面镜子面前跟自己聊天
-但是一天早上我决定要改变运气 寄出一份电视节目的策划文书 这个节目主要面向的是家庭观众 载歌载舞还有激烈的竞赛项目 渠道经理把我叫到了他的办公室 他挺喜欢这个节目就让我开拍 我们签了合同然后过了好几个月 我就变成了电视里的著名人物
-我认识了很多 封面明星，呜呜呜 我沉浸在名气 和享乐中，呜呜呜 我买了昂贵的跑车 还有海景房 但是我不开心 但是我不开心&amp;hellip; 我不开心。
-我还是想念着我的那些恐龙伙伴 还有那些想追捕我们的原始人 所以一天天气不错我住到了乡下 放弃名利希望我能找到真朋友</description></item><item><title>Mi mama me lo teje todo</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-mi-mama-me-lo-teje-todo/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-mi-mama-me-lo-teje-todo/</guid><description>开始只是 一只简单袜子 用来遮蔽 我麻木的脚丫 羊毛做的 是美丽的紫色 小心翼翼 用钩针钩出来 然后妈妈 织另一只袜子 因为寒冷 啃噬另一只脚 织的更长 但也更窄 还不是紫色的 是咖啡色 从那一刻开始 再没停下来过 坐在电视机前 她织，她织，她织
-我妈妈给我编织一切 我妈妈编织手艺差
-她给我织了一条长围巾 把路过的人都给绊倒 还给我一顶让我头疼的编织帽 她给我织了个超大手套 现在我把它当帽子戴 因为那个疯婆子织了六根手指
-我妈妈给我编织一切 我妈妈编织手艺差
-她织了个底部打开的书包 我的作业本都已经见鬼去了 她做了件袖长到肘的背心 然后他们就叫我弗兰金斯坦
-我妈妈，我妈妈，我妈妈 我妈妈，我妈妈，我妈妈
-求你快停手妈妈 再织我就要爆炸 她看着我眼神充满了怀疑 她说这样吧儿啊 用不着跟我喊话 我给你编织是因为我爱你 我爱你，我爱你 咱俩是棒针和羊毛的关系 我爱你，我爱你 你不喜欢我就织给你妹妹
-（妹妹：）不——————————————
-我妈妈给我编织一切 我妈妈编织手艺差
-我的妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈—— 我的妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈——</description></item><item><title>Journal 2022-07-05</title><link>https://weiwei.github.io/posts/old-articles/2022-07-05-journal/</link><pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-05-journal/</guid><description>Today is the first day I went back office. The office computer is behaving weird. The LCD won&amp;rsquo;t light up during startup. I may need to get it fixed another day.
-And of course, I went for the wrong direction while taking the metro home.</description></item><item><title>Journal 2022-07-04</title><link>https://weiwei.github.io/posts/old-articles/2022-07-04-journal/</link><pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-04-journal/</guid><description>Biking has cured my back pain. I should do it more!
-Bought Mi 12s today. Went for the max config. Hope it won&amp;rsquo;t disappoint me.</description></item><item><title>Journal 2022-07-02</title><link>https://weiwei.github.io/posts/old-articles/2022-07-02-journal/</link><pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-02-journal/</guid><description>Weekend. Ate some good lunch w/ family. Long afternoon naps. 20km biking with wyh in the evening. The summer evening breeze is quite enjoyable.
-Things to buy:
-A folding bike. So hard to choose. A phone. Probably Mi 11 in 7/4.</description></item><item><title>Journal 2022-07-01</title><link>https://weiwei.github.io/posts/old-articles/2022-07-01-journal/</link><pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-01-journal/</guid><description>So the first half of the year consists of the lockdown, the work-from-home, and the generally slacking of because of my mental status. This should not continue. From the first day of the second half of the year, I will try to do more, like writing useless journals about what I do. This shall be the first, and this is what I did today:
-Introduced my son to the Chinese version of Hikaru No Go.</description></item><item><title>Remember to update playwright scripts</title><link>https://weiwei.github.io/posts/old-articles/2022-playwright-docker/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-playwright-docker/</guid><description>We&amp;rsquo;ve had a repo that uses playwright for testing. The test runs daily with Jenkins and Docker. It&amp;rsquo;s been quite stable and haven&amp;rsquo;t been updated for a good year. Yesterday I tried to update playwright to the most recent version, but after updating, CI stopped working:
-╔════════════════════════════════════════════════════════════╗ ║ Host system is missing a few dependencies to run browsers. ║ ║ Please install them with the following command: ║ ║ ║ ║ sudo npx playwright install-deps ║ ║ ║ ║ &amp;lt;3 Playwright Team ║ ╚════════════════════════════════════════════════════════════╝ I did feel the love from Playwright team.</description></item><item><title>Weekly Reading 2021-06-06</title><link>https://weiwei.github.io/posts/old-articles/2021-06-06-weekly-reading/</link><pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2021-06-06-weekly-reading/</guid><description>Chinese Language Link to heading If you want to read classical Chinese text printed or hand copied centuries ago:
-中国古籍保护网 is a project of the National library that incorporates all the links to local libraries that have open-access scans of classical books. It&amp;rsquo;s not that open though. Some of them requires you to have an account. 汉典重光 is a project by Alibaba that aims to digitize the rare classical copies.</description></item><item><title>Learning Rust 01</title><link>https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/</guid><description>Recently I&amp;rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&amp;rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.
-The project I&amp;rsquo;m rewriting is silabacion. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible.</description></item><item><title>Learning Rust 02</title><link>https://weiwei.github.io/posts/old-articles/2021-learning-rust-02/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2021-learning-rust-02/</guid><description>Today I found an implementation of is_vowel by BartMassey. It&amp;rsquo;s a much advanced implementation. I&amp;rsquo;ll try to analyze the code. Bear in mind that there is still much that I don&amp;rsquo;t know or understand.
-External dependencies Link to heading The Cargo.toml indicates that two external dependencies are used:
-once_cell that provides cell-like types. unicode-normalization that does what the name says. What is a cell-like type? See std::cell. It&amp;rsquo;s &amp;ldquo;shareable mutable container&amp;rdquo;, and the rest is a blur.</description></item><item><title>24 Days of Hanzi</title><link>https://weiwei.github.io/posts/old-articles/2020-24-days-of-hanzi/</link><pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2020-24-days-of-hanzi/</guid><description>Preface Link to heading 24 Days of Hanzi for Christmas 2020, originally published in Twitter.
-Day 1 Link to heading #24DaysOfHanzi 咖
-Have you noticed that 咖 is pronounced kā in 咖啡(kāfēi, coffee), and gā in 咖喱(gāli, curry)?
-I didn&amp;rsquo;t notice until yesterday, though I already knew. Human brains are funny devices.
-The word 咖喱 doesn&amp;rsquo;t sound much like the English &amp;ldquo;curry&amp;rdquo;, to the point that for long I&amp;rsquo;ve had a misconception that garlic means 咖喱.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Weiwei on Keyboard And Me</title><link>https://weiwei.github.io/authors/weiwei/</link><description>Recent content in Weiwei on Keyboard And Me</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://weiwei.github.io/authors/weiwei/index.xml" rel="self" type="application/rss+xml"/><item><title>The Layout of Docusaurus</title><link>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-13-docusaurus/</guid><description>&lt;p&gt;&lt;a href="https://docusaurus.io/" class="external-link" target="_blank" rel="noopener"&gt;Docusaurus&lt;/a&gt; is Meta&amp;rsquo;s open source document authoring
+platform. It generates clean and modern document sites written in markdown.&lt;/p&gt;
+&lt;h2 id="the-major-takeaway"&gt;
+ The Major Takeaway
+ &lt;a class="heading-link" href="#the-major-takeaway"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;It uses semantic HTML tags for each major part of the screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="./docusaurus.svg" alt="Docusaurus Layout" title="Docusaurus main page layout"&gt;&lt;/p&gt;
+&lt;p&gt;This is so clean we can copy over to any website we want to create.&lt;/p&gt;
+&lt;h2 id="it-is-react"&gt;
+ It is React
+ &lt;a class="heading-link" href="#it-is-react"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In fact it is a React Single Page App with local routing. AND it is powerful. So powerful.&lt;/p&gt;</description></item><item><title>The Layout of Hacker News</title><link>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/every-layout/2024-03-10-hacknews/</guid><description>&lt;p&gt;&lt;a href="https://news.ycombinator.com/" class="external-link" target="_blank" rel="noopener"&gt;Hacker News&lt;/a&gt; is probably one of the few top sites
+with a table layout. A call from the distant past.&lt;/p&gt;
+&lt;h2 id="the-front-page"&gt;
+ The Front Page
+ &lt;a class="heading-link" href="#the-front-page"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The front page is just a table inside &lt;code&gt;&amp;lt;center&amp;gt;&lt;/code&gt; tag. The &amp;ldquo;More&amp;rdquo; button at the bottom leads to another page, which is loaded with a new HTTP request.&lt;/p&gt;
+&lt;p&gt;The main content is again a &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; inside &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt;, with each of its row as a
+news entry.&lt;/p&gt;</description></item><item><title>Western grammatical influence on vernacular Chinese in the 20th century</title><link>https://weiwei.github.io/posts/old-articles/2016-se-western-grammatical-influence/</link><pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2016-se-western-grammatical-influence/</guid><description>&lt;p&gt;Note: This is an answer to a StackExchange question: &lt;a href="https://chinese.stackexchange.com/questions/20763/western-grammatical-influence-on-vernacular-chinese-in-the-20th-century" class="external-link" target="_blank" rel="noopener"&gt;https://chinese.stackexchange.com/questions/20763/western-grammatical-influence-on-vernacular-chinese-in-the-20th-century&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Regarding to how early writers are influenced by western languages. The renowned poet and translator 余光中 has written quite a lot about it. Below are some examples he mentioned in his articles.&lt;/p&gt;
+&lt;p&gt;Deliberate plurals. Traditionally plurals are only used when absolutely necessary. In the following sentence the reader doesn&amp;rsquo;t actually care whether it&amp;rsquo;s one fly, a group of flies, or fly as a species. Therefore, it&amp;rsquo;s better to leave it out.&lt;/p&gt;</description></item><item><title>Dinosaurio Anacleto</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-dinosaurio-anacleto/</guid><description>&lt;p&gt;我是一只恐龙我名叫阿纳克来多
+命运安排我活过了漫长冰河期
+我的朋友都已灭绝只剩下我一个
+这种情况我也没法只好去接受
+我很无聊因为连一个亲戚都没有
+没有一个认识的人一起出去玩
+只好编造一些朋友用来自娱自乐
+坐在一面镜子面前跟自己聊天&lt;/p&gt;
+&lt;p&gt;但是一天早上我决定要改变运气
+寄出一份电视节目的策划文书
+这个节目主要面向的是家庭观众
+载歌载舞还有激烈的竞赛项目
+渠道经理把我叫到了他的办公室
+他挺喜欢这个节目就让我开拍
+我们签了合同然后过了好几个月
+我就变成了电视里的著名人物&lt;/p&gt;
+&lt;p&gt;我认识了很多
+封面明星，呜呜呜
+我沉浸在名气
+和享乐中，呜呜呜
+我买了昂贵的跑车
+还有海景房
+但是我不开心
+但是我不开心&amp;hellip;
+我不开心。&lt;/p&gt;
+&lt;p&gt;我还是想念着我的那些恐龙伙伴
+还有那些想追捕我们的原始人
+所以一天天气不错我住到了乡下
+放弃名利希望我能找到真朋友&lt;/p&gt;</description></item><item><title>Mi mama me lo teje todo</title><link>https://weiwei.github.io/posts/old-articles/2022-07-28-mi-mama-me-lo-teje-todo/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-28-mi-mama-me-lo-teje-todo/</guid><description>&lt;p&gt;开始只是
+一只简单袜子
+用来遮蔽
+我麻木的脚丫
+羊毛做的
+是美丽的紫色
+小心翼翼
+用钩针钩出来
+然后妈妈
+织另一只袜子
+因为寒冷
+啃噬另一只脚
+织的更长
+但也更窄
+还不是紫色的
+是咖啡色
+从那一刻开始
+再没停下来过
+坐在电视机前
+她织，她织，她织&lt;/p&gt;
+&lt;p&gt;我妈妈给我编织一切
+我妈妈编织手艺差&lt;/p&gt;
+&lt;p&gt;她给我织了一条长围巾
+把路过的人都给绊倒
+还给我一顶让我头疼的编织帽
+她给我织了个超大手套
+现在我把它当帽子戴
+因为那个疯婆子织了六根手指&lt;/p&gt;
+&lt;p&gt;我妈妈给我编织一切
+我妈妈编织手艺差&lt;/p&gt;
+&lt;p&gt;她织了个底部打开的书包
+我的作业本都已经见鬼去了
+她做了件袖长到肘的背心
+然后他们就叫我弗兰金斯坦&lt;/p&gt;
+&lt;p&gt;我妈妈，我妈妈，我妈妈
+我妈妈，我妈妈，我妈妈&lt;/p&gt;
+&lt;p&gt;求你快停手妈妈
+再织我就要爆炸
+她看着我眼神充满了怀疑
+她说这样吧儿啊
+用不着跟我喊话
+我给你编织是因为我爱你
+我爱你，我爱你
+咱俩是棒针和羊毛的关系
+我爱你，我爱你
+你不喜欢我就织给你妹妹&lt;/p&gt;
+&lt;p&gt;（妹妹：）不——————————————&lt;/p&gt;
+&lt;p&gt;我妈妈给我编织一切
+我妈妈编织手艺差&lt;/p&gt;
+&lt;p&gt;我的妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈——
+我的妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈妈——&lt;/p&gt;</description></item><item><title>Journal 2022-07-05</title><link>https://weiwei.github.io/posts/old-articles/2022-07-05-journal/</link><pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-05-journal/</guid><description>&lt;p&gt;Today is the first day I went back office. The office computer is behaving weird. The LCD won&amp;rsquo;t light up during startup. I may need to get it fixed another day.&lt;/p&gt;
+&lt;p&gt;And of course, I went for the wrong direction while taking the metro home.&lt;/p&gt;</description></item><item><title>Journal 2022-07-04</title><link>https://weiwei.github.io/posts/old-articles/2022-07-04-journal/</link><pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-04-journal/</guid><description>&lt;p&gt;Biking has cured my back pain. I should do it more!&lt;/p&gt;
+&lt;p&gt;Bought Mi 12s today. Went for the max config. Hope it won&amp;rsquo;t disappoint me.&lt;/p&gt;</description></item><item><title>Journal 2022-07-02</title><link>https://weiwei.github.io/posts/old-articles/2022-07-02-journal/</link><pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-02-journal/</guid><description>&lt;p&gt;Weekend. Ate some good lunch w/ family. Long afternoon naps. 20km biking with wyh in the evening. The summer evening breeze is quite enjoyable.&lt;/p&gt;
+&lt;p&gt;Things to buy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A folding bike. So hard to choose.&lt;/li&gt;
+&lt;li&gt;A phone. Probably Mi 11 in 7/4.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Journal 2022-07-01</title><link>https://weiwei.github.io/posts/old-articles/2022-07-01-journal/</link><pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-07-01-journal/</guid><description>&lt;p&gt;So the first half of the year consists of the lockdown, the work-from-home, and the generally slacking of because of my mental status. This should not continue. From the first day of the second half of the year, I will try to do more, like writing useless journals about what I do. This shall be the first, and this is what I did today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced my son to the Chinese version of Hikaru No Go. In fact I&amp;rsquo;m trying to teach him how to play Go. He&amp;rsquo;s far less interested in it than for example meteoric events, but this TV drama is good fun.&lt;/li&gt;
+&lt;li&gt;Watched one episode of The Boys. I don&amp;rsquo;t quite like it.&lt;/li&gt;
+&lt;li&gt;Failed in upgrading Webpack 4 to Webpack 5 for the work project, again. Why does it have to be so complex.&lt;/li&gt;
+&lt;li&gt;Ate some good 馄饨 today, some exotic ingredients. Son says he liked the corn flavored ones.&lt;/li&gt;
+&lt;li&gt;I should plan for what&amp;rsquo;s going to do next.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Remember to update playwright scripts</title><link>https://weiwei.github.io/posts/old-articles/2022-playwright-docker/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2022-playwright-docker/</guid><description>&lt;p&gt;We&amp;rsquo;ve had a repo that uses playwright for testing. The test runs daily with
+Jenkins and Docker. It&amp;rsquo;s been quite stable and haven&amp;rsquo;t been updated for a good
+year. Yesterday I tried to update playwright to the most recent version, but
+after updating, CI stopped working:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ╔════════════════════════════════════════════════════════════╗
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ║ Host system is missing a few dependencies to run browsers. ║
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ║ Please install them with the following command: ║
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ║ ║
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ║ sudo npx playwright install-deps ║
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ║ ║
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ║ &amp;lt;&lt;span class="m"&gt;3&lt;/span&gt; Playwright Team ║
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ╚════════════════════════════════════════════════════════════╝
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I did feel the love from Playwright team. However, running the command in the
+Dockerfile solved nothing. It reported that every dependency was ready and
+up-to-date, and the test still kept failing as before.&lt;/p&gt;</description></item><item><title>Weekly Reading 2021-06-06</title><link>https://weiwei.github.io/posts/old-articles/2021-06-06-weekly-reading/</link><pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2021-06-06-weekly-reading/</guid><description>&lt;h2 id="chinese-language"&gt;
+ Chinese Language
+ &lt;a class="heading-link" href="#chinese-language"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;If you want to read classical Chinese text printed or hand copied centuries ago:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.nlc.cn/pcab/zy/szzy/" class="external-link" target="_blank" rel="noopener"&gt;中国古籍保护网&lt;/a&gt; is a project of the National library that incorporates all the links to local libraries that have open-access scans of classical books. It&amp;rsquo;s not that open though. Some of them requires you to have an account.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wenyuan.aliyun.com/home" class="external-link" target="_blank" rel="noopener"&gt;汉典重光&lt;/a&gt; is a project by Alibaba that aims to digitize the rare classical copies. It mainly focuses on the books that are located abroad.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="spanish-language"&gt;
+ Spanish Language
+ &lt;a class="heading-link" href="#spanish-language"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dr. Joaquim Llisterri&amp;rsquo;s &lt;a href="http://liceu.uab.es/~joaquim/" class="external-link" target="_blank" rel="noopener"&gt;homepage&lt;/a&gt; contains some linguistic resources about Spanish (as well as Catalan). There I found some useful terminologies that doesn&amp;rsquo;t exist in Wikipedia.&lt;/p&gt;</description></item><item><title>Learning Rust 01</title><link>https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2021-learning-rust-01/</guid><description>&lt;p&gt;Recently I&amp;rsquo;m trying to learn rust by rewriting one of my typescript libraries into rust. The purpose of the articles is that I record myself sorting things out and trying to understand stuff. They are mostly memos or notes that I serve myself. Though i&amp;rsquo;d be glad if you find it interesting, and even happier if you could point out errors and directions. Cheers.&lt;/p&gt;
+&lt;p&gt;The project I&amp;rsquo;m rewriting is &lt;a href="https://www.npmjs.com/package/silabacion" class="external-link" target="_blank" rel="noopener"&gt;silabacion&lt;/a&gt;. It divides Spanish words into syllables, and tries to provide as many phonetic features as possible. There isn&amp;rsquo;t much about it, just lots of string manipulation and pattern matching. It should be a good exercise to rewrite it with rust, and the result could be useful for those 5 people who process Spanish words with rust, so why not?&lt;/p&gt;</description></item><item><title>Learning Rust 02</title><link>https://weiwei.github.io/posts/old-articles/2021-learning-rust-02/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2021-learning-rust-02/</guid><description>&lt;p&gt;Today I found an implementation of &lt;code&gt;is_vowel&lt;/code&gt; by &lt;a href="https://github.com/BartMassey/is-vowel" class="external-link" target="_blank" rel="noopener"&gt;BartMassey&lt;/a&gt;. It&amp;rsquo;s a much advanced implementation. I&amp;rsquo;ll try to analyze the code. Bear in mind that there is still much that I don&amp;rsquo;t know or understand.&lt;/p&gt;
+&lt;h2 id="external-dependencies"&gt;
+ External dependencies
+ &lt;a class="heading-link" href="#external-dependencies"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;Cargo.toml&lt;/code&gt; indicates that two external dependencies are used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/matklad/once_cell" class="external-link" target="_blank" rel="noopener"&gt;&lt;code&gt;once_cell&lt;/code&gt;&lt;/a&gt; that provides cell-like types.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/unicode-rs/unicode-normalization" class="external-link" target="_blank" rel="noopener"&gt;&lt;code&gt;unicode-normalization&lt;/code&gt;&lt;/a&gt; that does what the name says.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What is a cell-like type? See &lt;a href="https://doc.rust-lang.org/std/cell/" class="external-link" target="_blank" rel="noopener"&gt;&lt;code&gt;std::cell&lt;/code&gt;&lt;/a&gt;. It&amp;rsquo;s &amp;ldquo;shareable mutable container&amp;rdquo;, and the rest is a blur. I think I&amp;rsquo;ll revisit it later.&lt;/p&gt;</description></item><item><title>24 Days of Hanzi</title><link>https://weiwei.github.io/posts/old-articles/2020-24-days-of-hanzi/</link><pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate><guid>https://weiwei.github.io/posts/old-articles/2020-24-days-of-hanzi/</guid><description>&lt;h2 id="preface"&gt;
+ Preface
+ &lt;a class="heading-link" href="#preface"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;24 Days of Hanzi for Christmas 2020, originally published in Twitter.&lt;/p&gt;
+&lt;h2 id="day-1"&gt;
+ Day 1
+ &lt;a class="heading-link" href="#day-1"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;#24DaysOfHanzi 咖&lt;/p&gt;
+&lt;img src="curry.jpg" /&gt;
+&lt;p&gt;Have you noticed that 咖 is pronounced kā in 咖啡(kāfēi, coffee), and gā in 咖喱(gāli, curry)?&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t notice until yesterday, though I already knew. Human brains are funny devices.&lt;/p&gt;
+&lt;p&gt;The word 咖喱 doesn&amp;rsquo;t sound much like the English &amp;ldquo;curry&amp;rdquo;, to the point that for long I&amp;rsquo;ve had a misconception that garlic means 咖喱. Now that I know 咖喱 is the phonetic translation of the Tamil word &amp;ldquo;kari&amp;rdquo;, I feel much better. Though I still don&amp;rsquo;t know why it has to be &amp;ldquo;gā&amp;rdquo;.&lt;/p&gt;</description></item></channel></rss>
