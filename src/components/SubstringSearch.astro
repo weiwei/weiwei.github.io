@@ -1,0 +1,197 @@
+---
+import { localeFileUrl } from "@/i18n/urls";
+import { useTranslations } from "@/i18n";
+import type { Locale } from "@/i18n/locales";
+
+type Props = {
+  locale: Locale;
+  /** Stored for the "Go back" button on posts, like the Pagefind search */
+  backUrl: string;
+};
+
+const { locale, backUrl } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<div
+  id="substring-search"
+  data-index-url={localeFileUrl(locale, "search-index.json")}
+  data-backurl={backUrl}
+  data-no-results={t.a11y.noResults}
+  data-results={t.pages.searchResults}
+>
+  <input
+    id="substring-search-input"
+    type="search"
+    autocomplete="off"
+    placeholder={t.a11y.searchPlaceholder}
+    aria-label={t.a11y.searchPlaceholder}
+    class="border-border bg-background focus-visible:outline-accent w-full rounded-md border px-4 py-3 text-lg focus-visible:outline-1"
+  />
+  <p
+    id="substring-search-status"
+    class="text-muted-foreground mt-4 text-sm"
+    aria-live="polite"
+  >
+  </p>
+  <ul id="substring-search-results"></ul>
+</div>
+
+<script>
+  import type { SearchIndexEntry } from "@/pages/[...locale]/search-index.json";
+
+  const MAX_RESULTS = 50;
+  const SNIPPET_BEFORE = 40;
+  const SNIPPET_AFTER = 100;
+
+  let indexPromise: Promise<SearchIndexEntry[]> | null = null;
+
+  function loadIndex(url: string) {
+    indexPromise ??= fetch(url).then(res => res.json());
+    return indexPromise;
+  }
+
+  function countOccurrences(haystack: string, needle: string) {
+    let count = 0;
+    for (let i = haystack.indexOf(needle); i !== -1;) {
+      count++;
+      i = haystack.indexOf(needle, i + needle.length);
+    }
+    return count;
+  }
+
+  /** Append `text` to `el`, wrapping case-insensitive matches of `query` in <mark>. */
+  function appendHighlighted(el: HTMLElement, text: string, query: string) {
+    const lower = text.toLowerCase();
+    let pos = 0;
+    for (
+      let i = lower.indexOf(query);
+      i !== -1;
+      i = lower.indexOf(query, pos)
+    ) {
+      el.append(text.slice(pos, i));
+      const mark = document.createElement("mark");
+      mark.className = "bg-accent/40 text-foreground rounded-sm";
+      mark.textContent = text.slice(i, i + query.length);
+      el.append(mark);
+      pos = i + query.length;
+    }
+    el.append(text.slice(pos));
+  }
+
+  function snippet(text: string, lowerText: string, query: string) {
+    const i = lowerText.indexOf(query);
+    if (i === -1) return text.slice(0, SNIPPET_BEFORE + SNIPPET_AFTER);
+    const start = Math.max(0, i - SNIPPET_BEFORE);
+    const end = Math.min(text.length, i + query.length + SNIPPET_AFTER);
+    return `${start > 0 ? "…" : ""}${text.slice(start, end)}${end < text.length ? "…" : ""}`;
+  }
+
+  function search(entries: SearchIndexEntry[], query: string) {
+    return entries
+      .map((entry, order) => {
+        const title = entry.t.toLowerCase();
+        const text = entry.x.toLowerCase();
+        const inTitle = title.includes(query);
+        const hits = countOccurrences(text, query);
+        return { entry, text, order, inTitle, hits };
+      })
+      .filter(r => r.inTitle || r.hits > 0)
+      .sort(
+        (a, b) =>
+          Number(b.inTitle) - Number(a.inTitle) ||
+          b.hits - a.hits ||
+          a.order - b.order
+      );
+  }
+
+  function renderResult(
+    { entry, text }: ReturnType<typeof search>[number],
+    query: string
+  ) {
+    const li = document.createElement("li");
+    li.className = "my-6";
+
+    const link = document.createElement("a");
+    link.href = entry.u;
+    link.className =
+      "text-accent inline-block text-lg font-medium decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline";
+    appendHighlighted(link, entry.t, query);
+
+    const date = document.createElement("div");
+    date.className = "text-muted-foreground text-sm";
+    date.textContent = entry.d;
+
+    const excerpt = document.createElement("p");
+    excerpt.className = "mt-1";
+    appendHighlighted(excerpt, snippet(entry.x, text, query), query);
+
+    li.append(link, date, excerpt);
+    return li;
+  }
+
+  function initSubstringSearch() {
+    const root = document.querySelector<HTMLElement>("#substring-search");
+    if (!root || root.dataset.ready) return;
+    root.dataset.ready = "true";
+
+    const input = root.querySelector<HTMLInputElement>(
+      "#substring-search-input"
+    )!;
+    const status = root.querySelector<HTMLElement>("#substring-search-status")!;
+    const list = root.querySelector<HTMLElement>("#substring-search-results")!;
+    const { indexUrl, backurl, noResults = "", results = "" } = root.dataset;
+
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
+    async function run() {
+      const raw = input.value.trim();
+      const query = raw.toLowerCase();
+
+      // Keep ?q= in the URL and remember it for the "Go back" button
+      const params = new URLSearchParams(window.location.search);
+      if (raw) params.set("q", raw);
+      else params.delete("q");
+      const qs = params.toString();
+      history.replaceState(
+        history.state,
+        "",
+        qs ? `?${qs}` : window.location.pathname
+      );
+      if (backurl) {
+        sessionStorage.setItem("backUrl", qs ? `${backurl}?${qs}` : backurl);
+      }
+
+      if (!query) {
+        status.textContent = "";
+        list.replaceChildren();
+        return;
+      }
+
+      const matches = search(await loadIndex(indexUrl!), query);
+      if (input.value.trim().toLowerCase() !== query) return; // stale
+
+      status.textContent =
+        matches.length === 0
+          ? noResults
+          : results.replace("{{count}}", String(matches.length));
+      list.replaceChildren(
+        ...matches.slice(0, MAX_RESULTS).map(m => renderResult(m, query))
+      );
+    }
+
+    input.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = setTimeout(run, 150);
+    });
+
+    const initial = new URLSearchParams(window.location.search).get("q");
+    if (initial) {
+      input.value = initial;
+      run();
+    }
+    input.focus();
+  }
+
+  document.addEventListener("astro:page-load", initSubstringSearch);
+</script>

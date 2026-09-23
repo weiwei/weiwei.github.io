@@ -1,0 +1,35 @@
+/*
+ * Chinese pages (<html lang="zh-CN">).
+ *
+ * The theme's UI font (Google Sans Code) is a Latin-only monospace font, so on
+ * Chinese pages the characters fell back to a system font while Latin words
+ * and digits stayed monospace. Use a proportional stack instead: Latin system
+ * fonts first, then the common Simplified Chinese fonts per platform.
+ *
+ * These rules are unlayered on purpose, so they win over the `font-app`
+ * utility class on <body>.
+ */
+:lang(zh) body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC",
+    "Noto Sans CJK SC", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/* Chinese reads better with a little more line spacing */
+:lang(zh) .app-prose {
+  line-height: 1.85;
+}
+
+/*
+ * Chinese fonts have no italics; browsers fake them by slanting the glyphs.
+ * Keep headings, quotes and page subtitles upright, and show emphasis with
+ * weight instead.
+ */
+:lang(zh) :is(.app-prose :is(h3, blockquote), em, i, cite, .italic) {
+  font-style: normal;
+}
+
+:lang(zh) :is(em, i) {
+  font-weight: 600;
+}

@@ -1,0 +1,108 @@
+---
+import type { GetStaticPaths } from "astro";
+import { render } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Datetime from "@/components/Datetime.astro";
+import Pagination from "@/components/Pagination.astro";
+import { getLocalePosts } from "@/utils/getLocalePosts";
+import { getPostUrl } from "@/utils/getPostPaths";
+import { toTransitionName } from "@/utils/toTransitionName";
+import { LOCALES, localeParam } from "@/i18n/locales";
+import { tplStr, useTranslations } from "@/i18n";
+import config from "@/config";
+
+// Homepage: full posts, newest first, `posts.perIndex` per page (/, /2/, /3/…)
+export const getStaticPaths = (async ({ paginate }) => {
+  const pages = await Promise.all(
+    LOCALES.map(async locale =>
+      paginate(await getLocalePosts(locale), {
+        params: { locale: localeParam(locale) },
+        props: { locale },
+        pageSize: config.posts.perIndex,
+      })
+    )
+  );
+  return pages.flat();
+}) satisfies GetStaticPaths;
+
+const { page, locale } = Astro.props;
+const t = useTranslations(locale);
+
+const posts = await Promise.all(
+  page.data.map(async post => ({
+    post,
+    url: getPostUrl(post),
+    Content: (await render(post)).Content,
+  }))
+);
+
+const title =
+  page.currentPage > 1
+    ? `${tplStr(t.pagination.pageN, { n: page.currentPage })} | ${config.site.title}`
+    : config.site.title;
+---
+
+<Layout {title}>
+  <Header />
+  <main
+    id="main-content"
+    data-layout="index"
+    data-home-path={Astro.url.pathname}
+    class="app-layout my-1"
+  >
+    {
+      posts.map(({ post, url, Content }) => (
+        <article class="border-border border-b py-10 last:border-b-0">
+          <a
+            href={url}
+            class:list={[
+              "text-accent inline-block",
+              "decoration-dashed underline-offset-4 hover:underline",
+              "focus-visible:no-underline focus-visible:underline-offset-0",
+            ]}
+          >
+            <h2
+              transition:name={toTransitionName(post.id)}
+              class="text-2xl font-bold sm:text-3xl"
+            >
+              {post.data.title}
+            </h2>
+          </a>
+          <Datetime
+            pubDatetime={post.data.pubDatetime}
+            modDatetime={post.data.modDatetime}
+            timezone={post.data.timezone}
+            class="my-2"
+          />
+          <div
+            class:list={[
+              "mt-6 w-full",
+              "app-prose max-w-app",
+              "prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)",
+            ]}
+          >
+            <Content />
+          </div>
+        </article>
+      ))
+    }
+  </main>
+
+  <Pagination {page} />
+
+  <Footer noMarginTop={page.lastPage > 1} />
+</Layout>
+
+<script>
+  // Remember which homepage page we're on, for the "Go back" button on posts
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+      ?.dataset;
+    const baseRoot = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+    if (indexLayout?.layout) {
+      sessionStorage.setItem("backUrl", indexLayout.homePath ?? baseRoot);
+    }
+  });
+</script>
