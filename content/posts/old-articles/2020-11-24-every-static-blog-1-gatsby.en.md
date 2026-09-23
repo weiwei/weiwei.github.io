@@ -1,9 +1,11 @@
-+++
-date = "2020-11-24"
-title = "Every Static Blog Engine 1 - Gatsby"
-description = "Gatsby setup is a nightmare"
-series = ["Every Static Blog Engine"]
-+++
+---
+date: "2020-11-24"
+title: "Every Static Blog Engine 1 - Gatsby"
+subtitle: "Gatsby setup is a nightmare"
+tags: []
+series: ["Every Static Blog Engine"]
+authors: ["Weiwei"]
+---
 
 ## Preparation
 
