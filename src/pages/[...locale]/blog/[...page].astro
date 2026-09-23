@@ -1,0 +1,46 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Card from "@/components/Card.astro";
+import Footer from "@/components/Footer.astro";
+import Pagination from "@/components/Pagination.astro";
+import { getLocalePosts } from "@/utils/getLocalePosts";
+import { LOCALES, localeParam } from "@/i18n/locales";
+import { useTranslations } from "@/i18n";
+import config from "@/config";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const pages = await Promise.all(
+    LOCALES.map(async locale =>
+      paginate(await getLocalePosts(locale), {
+        params: { locale: localeParam(locale) },
+        props: { locale },
+        pageSize: config.posts.perPage,
+      })
+    )
+  );
+  return pages.flat();
+}) satisfies GetStaticPaths;
+
+const { page, locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<Layout title={`${t.pages.postsTitle} | ${config.site.title}`}>
+  <Header />
+
+  <Breadcrumb />
+
+  <Main pageTitle={t.pages.postsTitle} pageDesc={t.pages.postsDesc}>
+    <ul>
+      {page.data.map(data => <Card {...data} />)}
+    </ul>
+  </Main>
+
+  <Pagination {page} />
+
+  <Footer noMarginTop={page.lastPage > 1} />
+</Layout>

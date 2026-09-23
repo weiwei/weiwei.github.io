@@ -1,30 +1,68 @@
-# Weiwei's personal website built with Hugo
+# Keyboard And Me
+
+Weiwei's personal website, built with [Astro](https://astro.build) on top of the
+[AstroPaper](https://github.com/satnaing/astro-paper) theme, in English and Chinese.
 
 ## Prepare
 
-* Install `scoop` or `choco` on Windows, or `brew` on Mac.
-* Install `hugo-extended` on Windows, or `hugo` on Mac, with one of the listed commands:
-  
-  `scoop install hugo-extended`
-  `choco install hugo-extended`
-  `brew install hugo`
+* Install [fnm](https://github.com/Schniz/fnm) and pnpm. The Node version is
+  pinned in `.node-version`; fnm switches to it when you `cd` into the repo.
 
-* Clone the repo.
-  
+  ```bash
+  brew install fnm
+  fnm install
+  npm i -g pnpm
+  ```
+
+* Clone the repo and install dependencies.
+
   ```bash
   git clone git@github.com:weiwei/weiwei.github.io.git
   cd weiwei.github.io
-  git submodule init
-  git submodule update
+  pnpm install
   ```
 
 ## Write
 
-* Add or update files under `content`. Change `hugo.toml` accordingly. 
-* Run `hugo serve` to confirm the edit locally.
-* Commit and push. GitHub will build it automatically with actions. 
+* Run `pnpm dev` and open http://localhost:4321.
+* Posts live in `src/content/blog/`. Folders are only for organizing; they
+  don't show up in URLs.
+* The file name decides the language and the URL:
 
-## Customization
+  | File                                  | URL                    |
+  | ------------------------------------- | ---------------------- |
+  | `2026/my-post.md`                     | `/blog/my-post/`       |
+  | `2026/my-post.zh.md`                  | `/zh/blog/my-post/`    |
+  | `2026/my-post/index.zh.md` (+ images) | `/zh/blog/my-post/`    |
 
-The site uses `hugo-coder` theme. Check the [docs](https://themes.gohugo.io/hugo-coder/)
-about how to customize it.
+  Posts with the same name in different languages are linked as translations.
+  Set `slug:` in the front matter to override the name.
+
+* Front matter:
+
+  ```yaml
+  ---
+  title: My post
+  pubDatetime: 2026-09-22
+  description: Optional one-line summary shown in lists
+  tags: [programming]
+  series: [Every Layout]   # optional
+  draft: true              # optional, hides the post
+  ---
+  ```
+
+* Pages (About) live in `src/content/pages/`, same naming rules.
+* Run `pnpm build` before committing; it type-checks, builds and indexes search.
+
+## Customize
+
+* Site settings: `astro-paper.config.ts`
+* Interface text per language: `src/i18n/lang/{en,zh}.ts`
+* Languages: `src/i18n/locales.ts`
+* Styles and colors: `src/styles/`
+
+See the [AstroPaper docs](https://github.com/satnaing/astro-paper#readme) for more.
+
+## Deploy
+
+Vercel builds every push with `pnpm build` (see `vercel.json`).
