@@ -33,3 +33,25 @@
 :lang(zh) :is(em, i) {
   font-weight: 600;
 }
+
+/*
+ * Chinese characters on English pages (e.g. posts about hanzi).
+ *
+ * The theme font stack ends in the generic `monospace`, which browsers map to
+ * a Song/serif font for CJK. This face only covers CJK code points
+ * (unicode-range), so Latin text keeps Google Sans Code and only Chinese
+ * characters use a system sans-serif Chinese font.
+ */
+@font-face {
+  font-family: "CJK Fallback";
+  src:
+    local("PingFang SC"), local("PingFangSC-Regular"), local("Microsoft YaHei"),
+    local("Microsoft YaHei UI"), local("Noto Sans CJK SC"),
+    local("NotoSansCJKsc-Regular"), local("Source Han Sans SC"),
+    local("WenQuanYi Micro Hei");
+  unicode-range: U+2E80-9FFF, U+F900-FAFF, U+FF00-FFEF;
+}
+
+:lang(en) body {
+  font-family: "CJK Fallback", var(--font-google-sans-code);
+}

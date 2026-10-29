@@ -4,6 +4,7 @@ pubDatetime: 2021-06-14
 description: o el festival del bote del dragón
 tags:
   - spanish
+lang: es
 ---
 
 Abajo es un [hilo](https://twitter.com/weydoble/status/1404320698940768256) de twitter y yo lo exporto aqui.

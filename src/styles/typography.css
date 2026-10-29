@@ -59,6 +59,13 @@
       @apply opacity-75;
     }
 
+    /* No automatic curly quotes around blockquotes: the left border already
+       marks them, and quoted text often brings its own quotation marks */
+    blockquote p:first-of-type::before,
+    blockquote p:last-of-type::after {
+      content: none;
+    }
+
     table {
       th,
       td {

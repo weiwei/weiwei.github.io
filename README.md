@@ -48,6 +48,7 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
   tags: [programming]
   series: [Every Layout]   # optional
   draft: true              # optional, hides the post
+  lang: es                 # optional, if the text isn't in the section's language
   ---
   ```
 
@@ -65,4 +66,7 @@ See the [AstroPaper docs](https://github.com/satnaing/astro-paper#readme) for mo
 
 ## Deploy
 
-Vercel builds every push with `pnpm build` (see `vercel.json`).
+* Vercel builds every push with `pnpm build` (see `vercel.json`): `main` goes
+  to production at https://keyboardand.me/, other branches get preview URLs.
+* GitHub Actions also publishes `main` to the `gh-pages` branch, served at
+  https://weiwei.github.io/ (see `.github/workflows/gh-pages.yml`).

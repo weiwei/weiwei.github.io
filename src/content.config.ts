@@ -51,6 +51,8 @@ const posts = defineCollection({
       draft: z.boolean().optional(),
       tags: z.array(z.string()).default([]),
       series: z.array(z.string()).default([]),
+      /** Language of the text when it differs from its section, e.g. "es" */
+      lang: z.string().optional(),
       slug: z.string().optional(),
       ogImage: image().or(z.string()).optional(),
       description: z.string().default(""),

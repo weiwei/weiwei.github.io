@@ -84,6 +84,7 @@ const {
   timezone,
   tags,
   series,
+  lang,
   hideEditPost,
 } = post.data;
 
@@ -126,6 +127,7 @@ const ogImage = ogImageUrl
     data-pagefind-body={usesSubstringSearch(locale) ? undefined : ""}
   >
     <h1
+      {lang}
       style={{ viewTransitionName: toTransitionName(post.id) }}
       class="text-accent inline-block text-2xl font-bold sm:text-3xl"
     >
@@ -176,6 +178,7 @@ const ogImage = ogImageUrl
 
     <article
       id="article"
+      {lang}
       class:list={[
         "mt-8 w-full",
         "app-prose max-w-app",

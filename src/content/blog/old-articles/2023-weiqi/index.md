@@ -3,6 +3,7 @@ title: El Nombre del Juego
 pubDatetime: 2023-01-17
 tags:
   - spanish
+lang: es
 ---
 
  Hoy hablo del nombre del juego tablero chino más antiguo y más avanzado a la vez, el juego conocido como "go" en varios idiomas del resto del mundo, incluso el español.

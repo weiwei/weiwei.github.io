@@ -54,7 +54,10 @@ const title =
   >
     {
       posts.map(({ post, url, Content }) => (
-        <article class="border-border border-b py-10 last:border-b-0">
+        <article
+          lang={post.data.lang}
+          class="border-border border-b py-10 last:border-b-0"
+        >
           <a
             href={url}
             class:list={[
