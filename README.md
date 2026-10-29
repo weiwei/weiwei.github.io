@@ -31,6 +31,7 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
   pnpm new-post my-post                  # src/content/blog/2026/my-post.md
   pnpm new-post my-post --zh             # src/content/blog/2026/my-post.zh.md
   pnpm new-post my-post --bundle         # src/content/blog/2026/my-post/index.md (+ images)
+  pnpm new-post my-post --mdx            # src/content/blog/2026/my-post.mdx (components)
   pnpm new-post my-post --title "My Post"
   ```
 
@@ -60,6 +61,16 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
   lang: es # optional, if the text isn't in the section's language
   ---
   ```
+
+- To embed a YouTube video, use an `.mdx` post (`pnpm new-post my-post --mdx`,
+  or rename `.md` to `.mdx`) and write, with no import needed:
+
+  ```mdx
+  <YouTube id="dQw4w9WgXcQ" title="Video title" />
+  ```
+
+  It shows the thumbnail and only loads YouTube's player when clicked.
+  Components available this way are listed in `src/utils/mdxComponents.ts`.
 
 - Pages (About) live in `src/content/pages/`, same naming rules.
 - Run `pnpm build` before committing; it type-checks, builds and indexes search.

@@ -1,4 +1,5 @@
 ---
+import { mdxComponents } from "@/utils/mdxComponents";
 import type { GetStaticPaths } from "astro";
 import { render } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
@@ -86,7 +87,7 @@ const title =
               "prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)",
             ]}
           >
-            <Content />
+            <Content components={mdxComponents} />
           </div>
         </article>
       ))

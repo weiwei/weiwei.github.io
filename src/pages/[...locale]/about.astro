@@ -1,4 +1,5 @@
 ---
+import { mdxComponents } from "@/utils/mdxComponents";
 import { getCollection, render } from "astro:content";
 import { DEFAULT_LOCALE, localePaths, type Locale } from "@/i18n/locales";
 import Layout from "@/layouts/Layout.astro";
@@ -40,7 +41,7 @@ const { Content } = await render(about);
   <Breadcrumb />
 
   <Main pageTitle={about.data.title} class="app-prose">
-    <Content />
+    <Content components={mdxComponents} />
   </Main>
 
   <Footer />

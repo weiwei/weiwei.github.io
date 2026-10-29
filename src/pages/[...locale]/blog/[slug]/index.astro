@@ -1,4 +1,5 @@
 ---
+import { mdxComponents } from "@/utils/mdxComponents";
 import { type CollectionEntry, render } from "astro:content";
 import PostLayout from "@/layouts/PostLayout.astro";
 import Header from "@/components/Header.astro";
@@ -185,7 +186,7 @@ const ogImage = ogImageUrl
         "prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)",
       ]}
     >
-      <Content />
+      <Content components={mdxComponents} />
     </article>
 
     <hr class="my-8 border-dashed" />

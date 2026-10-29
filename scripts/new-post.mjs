@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 // Create a new blog post from a template.
 //
-//   pnpm new-post <slug> [--zh] [--bundle] [--title "Post title"]
+//   pnpm new-post <slug> [--zh] [--bundle] [--mdx] [--title "Post title"]
 //
 //   pnpm new-post my-post             → src/content/blog/<year>/my-post.md
 //   pnpm new-post my-post --zh        → src/content/blog/<year>/my-post.zh.md
 //   pnpm new-post my-post --bundle    → src/content/blog/<year>/my-post/index.md
+//   pnpm new-post my-post --mdx       → src/content/blog/<year>/my-post.mdx
+//                                       (MDX can use components, e.g. <YouTube id="…" />)
 //
 // The post starts as a draft (hidden from the site); delete `draft: true`
 // to publish it.
@@ -19,7 +21,7 @@ const DEFAULT_LOCALE = "en";
 
 function fail(message) {
   console.error(`new-post: ${message}`);
-  console.error('usage: pnpm new-post <slug> [--zh] [--bundle] [--title "..."]');
+  console.error('usage: pnpm new-post <slug> [--zh] [--bundle] [--mdx] [--title "..."]');
   process.exit(1);
 }
 
@@ -28,6 +30,7 @@ const { values, positionals } = parseArgs({
   options: {
     zh: { type: "boolean", default: false },
     bundle: { type: "boolean", default: false },
+    mdx: { type: "boolean", default: false },
     title: { type: "string" },
   },
 });
@@ -70,10 +73,11 @@ if (clash) fail(`a post with slug "${slug}" (${locale}) already exists: ${clash}
 // Local date as YYYY-MM-DD
 const today = new Date().toLocaleDateString("en-CA");
 const year = today.slice(0, 4);
-const fileName = locale === DEFAULT_LOCALE ? "index.md" : `index.${locale}.md`;
+const ext = values.mdx ? "mdx" : "md";
+const langSuffix = locale === DEFAULT_LOCALE ? "" : `.${locale}`;
 const target = values.bundle
-  ? path.join(BLOG_DIR, year, slug, fileName)
-  : path.join(BLOG_DIR, year, locale === DEFAULT_LOCALE ? `${slug}.md` : `${slug}.${locale}.md`);
+  ? path.join(BLOG_DIR, year, slug, `index${langSuffix}.${ext}`)
+  : path.join(BLOG_DIR, year, `${slug}${langSuffix}.${ext}`);
 
 if (fs.existsSync(target)) fail(`${target} already exists`);
 
