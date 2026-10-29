@@ -1,0 +1,842 @@
+<!DOCTYPE html><html dir="ltr" lang="zh-CN" class="overflow-y-scroll scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"><link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><link rel="canonical" href="https://keyboardand.me/zh/10/"><meta name="generator" content="Astro v7.3.4"><!-- Font --><style>@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/2213c1e7fbe06cc7.woff") format("woff"), url("/_astro/fonts/b87f789471b4c602.ttf") format("truetype");font-display:swap;font-weight:300;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/c487dbd9c215141e.woff") format("woff"), url("/_astro/fonts/bb0c016d60298234.ttf") format("truetype");font-display:swap;font-weight:400;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/0976c79a1e97c08d.woff") format("woff"), url("/_astro/fonts/b3e69a4f03324880.ttf") format("truetype");font-display:swap;font-weight:500;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/3c46d5a1dde2929d.woff") format("woff"), url("/_astro/fonts/0ff1dfaf1dff21d0.ttf") format("truetype");font-display:swap;font-weight:600;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/e9aa617e80052f4b.woff") format("woff"), url("/_astro/fonts/d9a5ad8b8018e5de.ttf") format("truetype");font-display:swap;font-weight:700;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/5056f1a50e5e7744.woff") format("woff"), url("/_astro/fonts/3e4dac0d0220e48a.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/e734307f8c328338.woff") format("woff"), url("/_astro/fonts/ba3036786bf88603.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/dfa89044152f7da4.woff") format("woff"), url("/_astro/fonts/39aec4e7fc7cc077.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/8bbd58b325585200.woff") format("woff"), url("/_astro/fonts/b33609507afd910d.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/035035a9ddbd14aa.woff") format("woff"), url("/_astro/fonts/50fcf54bf575f53f.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}:root{--font-google-sans-code:"Google Sans Code-1a30c214885cb404","Google Sans Code-1a30c214885cb404 fallback: Courier New",monospace;}</style><!-- Primary meta --><title>第 10 页 | Keyboard And Me</title><meta name="title" content="第 10 页 | Keyboard And Me"><meta name="description" content="Weiwei的日志：编程、翻译和语言。"><meta name="author" content="Weiwei"><link rel="sitemap" href="/sitemap-index.xml"><!-- Language alternates --><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Keyboard And Me"><meta property="og:title" content="第 10 页 | Keyboard And Me"><meta property="og:description" content="Weiwei的日志：编程、翻译和语言。"><meta property="og:url" content="https://keyboardand.me/zh/10/"><meta property="og:image" content="https://keyboardand.me/og.png"><!-- Twitter / X --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://keyboardand.me/zh/10/"><meta property="twitter:title" content="第 10 页 | Keyboard And Me"><meta property="twitter:description" content="Weiwei的日志：编程、翻译和语言。"><meta property="twitter:image" content="https://keyboardand.me/og.png"><!-- RSS autodiscovery --><link rel="alternate" type="application/rss+xml" title="Keyboard And Me" href="https://keyboardand.me/zh/rss.xml"><!-- Filled at runtime by theme.ts to match the current background colour --><meta name="theme-color" content=""><!-- Extra head content injected by child layouts (e.g. JSON-LD, article meta) --><!--
+      Inline FOUC-prevention script: sets data-theme on <html> before
+      the browser paints. Runs synchronously, no defer/async.
+    --><script>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const theme = stored ?? (prefersDark ? "dark" : "light");
+        const root = document.firstElementChild;
+        root?.setAttribute("data-theme", theme);
+        root?.classList.toggle("dark", theme === "dark");
+        // Expose value so theme.ts can skip re-detection.
+        window.__theme = { value: theme };
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.C1dAp4S4.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><link rel="stylesheet" href="/_astro/Footer.BDxknAL0.css"><style>[data-astro-transition-scope="astro-pypwivhu-1"] { view-transition-name: zh2018-interview; }@layer astro { ::view-transition-old(zh2018-interview) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-interview) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-interview) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-interview) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-2"] { view-transition-name: zh2018-joel-furr; }@layer astro { ::view-transition-old(zh2018-joel-furr) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-joel-furr) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-joel-furr) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-joel-furr) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-3"] { view-transition-name: zh2018-kibo; }@layer astro { ::view-transition-old(zh2018-kibo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-kibo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-kibo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-kibo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-4"] { view-transition-name: zh-2018-mel-kayeu007684u006545u004e8b; }@layer astro { ::view-transition-old(zh-2018-mel-kayeu007684u006545u004e8b) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh-2018-mel-kayeu007684u006545u004e8b) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh-2018-mel-kayeu007684u006545u004e8b) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh-2018-mel-kayeu007684u006545u004e8b) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-5"] { view-transition-name: zh2018-no-entrance; }@layer astro { ::view-transition-old(zh2018-no-entrance) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-no-entrance) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-no-entrance) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-no-entrance) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"><a id="skip-to-content" href="#main-content" class="bg-background text-accent absolute inset-s-16 -top-full z-50 px-3 py-2 backdrop-blur-lg transition-all focus:top-4">跳到正文</a><header class="app-layout flex flex-col items-center justify-between sm:flex-row"><div class="border-border bg-background relative flex w-full items-baseline justify-between border-b py-4 sm:items-center sm:py-6"><a href="/zh/" class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none">Keyboard And Me</a><nav id="nav-menu" class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"><button id="menu-btn" class="focus-outline self-end p-2 sm:hidden" aria-label="打开菜单" aria-expanded="false" aria-controls="menu-items" data-label-open="打开菜单" data-label-close="关闭菜单"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="hidden" viewBox="0 0 24 24" id="close-icon"><path stroke="none" d="M0 0h24v24H0z" /><path d="M18 6 6 18M6 6l12 12" /></svg><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep" viewBox="0 0 24 24" id="menu-icon"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 6h16M7 12h13M10 18h10" /></svg></button><ul id="menu-items" class="[&amp;&gt;li&gt;a]:hover:text-accent mt-4 hidden w-44 grid-cols-2 place-content-center gap-2 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0 sm:[&amp;&gt;li]:h-8 [&amp;&gt;li&gt;a]:block [&amp;&gt;li&gt;a]:px-4 [&amp;&gt;li&gt;a]:py-3 [&amp;&gt;li&gt;a]:text-center [&amp;&gt;li&gt;a]:font-medium sm:[&amp;&gt;li&gt;a]:px-2 sm:[&amp;&gt;li&gt;a]:py-1"><li class="col-span-2"><a href="/zh/blog/">文章</a></li><li class="col-span-2"><a href="/zh/blog/tags/">标签</a></li><li class="col-span-2"><a href="/zh/about/">关于</a></li><li class="col-span-2"><a href="/zh/blog/archives/" title="归档" aria-label="归档" class="group inline-flex items-center gap-1 hover:text-accent focus-outline flex size-full justify-center p-3 sm:relative sm:size-8 sm:p-0"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="hidden sm:absolute sm:top-1/2 sm:left-1/2 sm:block sm:size-6 sm:-translate-x-1/2 sm:-translate-y-1/2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2 2 2 0 0 1-2 2H5a2 2 0 0 1-2-2M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M10 12h4" /></svg><span class="sm:sr-only">归档</span></a></li><li class="col-span-1 flex items-center justify-center"><a href="/zh/search/" title="搜索" aria-label="搜索" class="group inline-flex items-center gap-1 hover:text-accent focus-outline relative size-8"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-1/2 left-1/2 size-6 -translate-x-1/2 -translate-y-1/2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6" /></svg><span class="sr-only">搜索</span></a></li><li class="col-span-2 flex items-center justify-center gap-x-1 sm:gap-x-0" aria-label="语言"><a href="/" lang="en" hreflang="en" title="English" aria-label="English" class="text-sm">EN</a></li><li class="col-span-1 flex items-center justify-center"><button id="theme-btn" class="focus-outline hover:[&amp;&gt;svg]:stroke-accent relative size-12 p-4 sm:size-8" title="切换主题" aria-label="auto" aria-live="polite"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-[50%] left-[50%] translate-[-50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z" /></svg><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-[50%] left-[50%] translate-[-50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M14.828 14.828a4 4 0 1 0-5.656-5.656 4 4 0 0 0 5.656 5.656M6.343 17.657l-1.414 1.414M6.343 6.343 4.929 4.929M17.657 6.343l1.414-1.414M17.657 17.657l1.414 1.414M4 12H2M12 4V2M20 12h2M12 20v2" /></svg></button></li></ul></nav></div></header><script type="module">function e(){let e=document.querySelector(`#menu-btn`),t=document.querySelector(`#menu-items`),n=document.querySelector(`#menu-icon`),r=document.querySelector(`#close-icon`);if(!e||!t||!n||!r)return;let i=e.dataset.labelOpen??`Open menu`,a=e.dataset.labelClose??`Close menu`;e.addEventListener(`click`,()=>{let o=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,o?`false`:`true`),e.setAttribute(`aria-label`,o?i:a),t.classList.toggle(`hidden`),t.classList.toggle(`grid`),n.classList.toggle(`hidden`),r.classList.toggle(`hidden`)})}function t(){let e=document.getElementById(`skip-to-content`);e&&e.addEventListener(`click`,e=>{if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.button!==0)return;e.preventDefault();let t=document.getElementById(`main-content`);t&&(t.setAttribute(`tabindex`,`-1`),t.addEventListener(`blur`,()=>t.removeAttribute(`tabindex`),{once:!0}),t.focus(),t.scrollIntoView({behavior:`smooth`}))})}e(),document.addEventListener(`astro:after-swap`,e),t(),document.addEventListener(`astro:after-swap`,t);</script><main id="main-content" data-layout="index" data-home-path="/zh/10/" class="app-layout my-1"><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-interview/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-1" class="text-2xl font-bold sm:text-3xl">如果用面试程序员的方式面试翻译</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>会是什么样子的呢</p>
+<p><img src="http://ob7zbqpa6.qnssl.com/oxah5pvylhvkuwwlwjv2zehxh8a2c9db.jpg" alt="image"></p>
+<p>欢迎来到巴别塔公司。我们要求你会说所有人类语言。另外，周末无偿翻译你觉得怎样？图片来自维基百科</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——面试是在这里吧？</span></span></code></pre>
+<p>是的。早上好，史先生，请坐，你来的正是时候。你是来面试“高级技术翻译”这一职位的，没错吧？</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——没错。我会英语、法语、西班牙语、意大利语、德语，有七年的翻译经验，技术翻译和学术翻译都做过。我现在的翻译方向是医学论文，不过我也做过别的翻译，你在我简历里都能看到。</span></span></code></pre>
+<p>很好。你的经验和我们的职位似乎还蛮符合的。接下来，我们就例行地考考你的语言学知识吧，看看你的基础怎么样。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——据我了解，你们这份工作就是翻译药品的说明书和标签，对吧？</span></span></code></pre>
+<p>是的。我们只招最好的员工，我们要求他在职位需求的各个方面都有坚实的基础。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——好。那么……我们就开始吧？</span></span></code></pre>
+<p>嗯，首先是一些专门为面试准备的基础性问题。问题1：阿拉伯在 711 年到 1492 年之间入侵了伊比利亚半岛，这一事件对西班牙语产生了什么样的影响？</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——不好意思，你是说——？</span></span></code></pre>
+<p>想要重听一遍问题是吧？是这样的：阿拉伯在 711 年到 14……</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——请停一下，不用重听了，只是这问题有点出乎意料。我以为会问和职位相关的问题呢，不过这个问题的答案我也知道。伊斯兰在 8 世纪早期征服西班牙，直到收复失地运动之前，西班牙南部都有阿拉伯语人口居住，这段时间里西班牙语接纳了很多阿拉伯语词汇。比如西班牙语中的国际象棋，ajedrez，就来自于阿拉伯语的الشطرنج (ash shatranj)。</span></span></code></pre>
+<p><img src="http://ob7zbqpa6.qnssl.com/lt8k7d550uouipenhwzvsr174ejfft9d.jpg" alt="image">
+西班牙语的历史，万一下次面试用到呢。图片来自 Wikipedia <a href="https://en.wikipedia.org/wiki/History_of_the_Spanish_language">https://en.wikipedia.org/wiki/History_of_the_Spanish_language</a></p>
+<p>回答的很好，和我这里的答案完全一样，你的例子还能为你加分。第二个问题：该作者提出了一个语法正确但没有语义价值的例子，“Colorless green ideas sleep furiously”。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——这是一个问题吗？</span></span></code></pre>
+<p>当然是了。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——不好意思，我没注意到这是一个知识竞赛节目。乔姆斯基？</span></span></code></pre>
+<p>正确！那他是在哪本书里提到这个例子的呢？</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——啥？这我就不知道了，读乔姆斯基是我在学校时的事情，现在我的主攻方向是翻译，不需要知道……</span></span></code></pre>
+<p>很遗憾，答案是《语法结构》，1957年出版。不过说到这个问题，能答出来的大多是应届生。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——怪我咯……</span></span></code></pre>
+<p><img src="http://ob7zbqpa6.qnssl.com/y885fjy7nwczb598u29k3t2jysgmkfty.jpg" alt="逆转">
+这棵树逆转了也没有意义，图片来自 Wikipedia <a href="https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously#/media/File:Syntax_tree.svg">https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously#/media/File:Syntax_tree.svg</a></p>
+<p>好吧，下一个问题：“pater”、“father”、“Vater” 这几个单词分别来自拉丁语、英语、德语，我们可以看到，“p” 有时候演化成了 “v”，有时候演化成了 “f”。而 “piscis”, “fish”, “Fisch” 这几个单词……</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——对不起，打断一下，我先问一下？这些问题和工作有关吗？你们说是要招聘技术翻译，到现在你们问我的都是语言学问题，关于翻译的问题一个都没有问到。</span></span></code></pre>
+<p>嗯，我能理解你的疑惑。你看，我们要招的是最好的翻译，要做好科学翻译，需要在语言学、古典文学等方面有坚实的基础，这一点各大公司都已经证明过了。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——你说的没错，我拿了拉丁语和古希腊语的学士学位，语言学的硕士学位，只不过过去几年没从事过学术相关的工作。</span></span></code></pre>
+<p>哦，所以这些问题你应该能回答才对。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——是能回答没错，但我过去几年的工作并不需要这些方面的知识啊。难道这份工作和语言学的某个领域相关？</span></span></code></pre>
+<p>没有，我们的工作是为客户做药品相关的翻译。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——那就好，要不就考一下我的翻译能力呗？我相信你们也准备了翻译题，对吧？</span></span></code></pre>
+<p>当然了，好主意，那么我们就开始笔试吧。来，这里有白板，有马克笔，我们来几个翻译题，测验一下你的能力。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——白板？</span></span></code></pre>
+<p>是的，请翻译下面一句：</p>
+<p>ΠΕΡΙ ΤΟΥ ΠΑΙΔΟΣ ΤΟΥ ΕΠΙΒΙΟΝΤΟΣ</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——……这是古希腊文。</span></span></code></pre>
+<p>没错。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——难道这个职位要翻译古希腊文？</span></span></code></pre>
+<p>哈哈，当然不要了。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——那为啥……咳别提了。我可不可以借本字典？</span></span></code></pre>
+<p>哦，这个测试的目的是看你能不能直接翻译，不能使用参考资料。不过如果需要的话，你可以使用纸笔。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——等等你说啥？为什么？就连日常翻译的时候我都会偶尔查查字典的，考古希腊语还不给我查字典？</span></span></code></pre>
+<p>嗯，各大公司的研究表明……</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——当我什么都没说好了。让我想想，我觉得这句我在哪见过……“曾经生活过的男孩”？</span></span></code></pre>
+<p>正确，你很棒！</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——是哈利波特书里的吧？</span></span></code></pre>
+<p><img src="http://ob7zbqpa6.qnssl.com/lnq34zr649liispyd566idq8ojgdymtg.jpg" alt="image">
+你懂的，没准你想练习一下已经生疏了的古希腊语，图片来自Amazon <a href="https://www.amazon.com/Harry-Potter-Philosophers-Stone-Ancient/dp/158234826X">https://www.amazon.com/Harry-Potter-Philosophers-Stone-Ancient/dp/158234826X</a></p>
+<p>哦，不是，是我从一本《搞定翻译面试：语言学150问》里挑的。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——我不是这个意思，我是说这句话其实是《哈利波特》第一章的标题。</span></span></code></pre>
+<p>这我就不知道了，我不是做翻译的。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——我知道，我只是指出来一下，这句话来自一本名著，可能比较好认出来。</span></span></code></pre>
+<p>这样不是挺好嘛。这意味着大部分人都准备过这些面试问题。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——带剧本的面试问题嘛。其实我并不习惯这样直接回答，一般我都会花时间斟酌，找出最佳翻译方式。</span></span></code></pre>
+<p>我了解。呃，我们还有一些考核方向。你有没有赢过翻马？</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——你说的是？</span></span></code></pre>
+<p>嗯，你懂的，翻马，翻译马拉松。准备一堆梵语文档，供应一桌饮料和披萨，然后广招各路翻译，关他们整两天，看谁翻译的最快。有时候赢了还能拿到不值钱的小礼品。这种比赛你赢过没有？</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——没有，我没有参加过什么“翻译马拉松”。</span></span></code></pre>
+<p>太遗憾了，我们特别看重“翻马”的获奖者。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——拜托别说“翻马”了……</span></span></code></pre>
+<p>好吧，顺便问问，你的书法水平如何？</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——书法水平？</span></span></code></pre>
+<p>没错，你看，我们是一家大公司，但我们组是以独立的初创公司模式运行的，所以有时候我们的翻译还要做一些书写工作，所以我们期望候选人有很好的书法水平。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——所以你们是想让一个人干两个人的活呗，是不是最好还会点别的，比如说产品包装？</span></span></code></pre>
+<p>对了！我们称之为全栈翻译。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——唉……你刚说团队以初创模式工作，是什么意思？</span></span></code></pre>
+<p>意思是说我们走的是敏捷流程。一切都是扁平化的，薪水和职责除外。我们有一个翻译专家，他负责协调所有翻译人员在各个冲刺阶段的工作。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——翻译专家？听上去挺厉害的，他会几种语言？如果我们碰到难题，问他可不可以解决？</span></span></code></pre>
+<p>哦，其实他只会英语，有时候他说的我们也不都懂，他是澳大利亚人，口音比较特殊……不过他可是拿了敏捷证书的，人员组织能力超强，进度跟踪能力也很厉害。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——你开玩笑的吧？面试问我古希腊文，然后给我一个完全不懂古希腊文的领导？那你能不能给我一个理由，告诉我在你们这里工作究竟有什么好处？</span></span></code></pre>
+<p>哦，你可以在这里学到别处学不到的东西，你的工作会深度影响到这个世界。你的工作是有意义的，你永远不会觉得枯燥。我们为员工提供多方面的快速成长空间。</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>——翻译药品标签……</span></span></code></pre>
+<p>是的，我们正在改变世界，一次一个标签。</p>
+<p>（HR语录：拒绝信的反馈内容一定要非常模糊，这样不但对候选人毫无用处，还能避免各种官司。）</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-joel-furr/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-2" class="text-2xl font-bold sm:text-3xl">Joel Furr的故事</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>Usenet上的另一个名人</p>
+<hr>
+<p>Joel Furr是弗吉尼亚工理工大学的毕业生，是一名软件培训员。1990年后的一段时间里，Joel在Usenet上面相当活跃，于是就有了下面的故事。</p>
+<p><img src="http://i1.15yan.guokr.cn/gkd7w6nlxg8hl9gcyobeb0xgv7akxp3z.jpg" alt=""></p>
+<p>Joel出席了2010年的ROFLcon大会。这个“笑得满地滚大会”是一个邀请网络名人乐一乐的大会，一共举办了三届。</p>
+<h2 id="alt的统治者">alt.*的统治者</h2>
+<p><a href="http://www.15yan.com/topic/IT-kao-gu/cpDFZNeM9Rv/">之前写过</a>，alt.*是不同于其他六大类的一个“其他”类别。如果要在六大类下创建新闻组，你需要通过一个严密的投票过程，大家达成一致后才会创建这个新闻组。alt.*的创建则不然，你只要在alt.config新闻组下面发一个提议，如果哪个服务器的管理员觉得你这个提议合他胃口，就会在服务器上面创建这个新闻组。由于新闻组是分布式的，别的服务器在和它同步的时候会把上面新创建的新闻组也一并同步过去，然后它就成了人人都能看到的新闻组了。有时候就算你提提出的申请并没有值得一提的理由，就算你完全是在恶作剧，你的申请也可能会得到某个心不在焉的或者毫不在乎的管理员的批准。</p>
+<p>松散管理的结果就是alt.*下面的新闻组乱得一团糟。很多无聊的人都会跑到alt.config下面提出各种毫无价值的申请，有不少还被批准了。所以就有这样的一个说法，说alt并不是alternate（备选）的意思，而是无政府主义者（Anarchist）、疯子（Lunatic）、恐怖分子（Terrorist）三个单词的首字母缩写。</p>
+<p>Joel Furr对于这种状况很不爽，于是在很长的一段时间内，他都在alt.config新闻组里做义务审批，就跟皇帝审奏折一样。如果看到不合适的提议，他就耐心回帖说这个提议不合适。这样的事情Joel每天都要花半个小时到一个小时去做，回帖多了，Joel的“alt.*之王”的名声就传开了。这个国王本身并不是任何服务器的管理员，也没有什么实权。由于新闻组里的无政府主义者、疯子和恐怖分子数量巨大，Joel的努力并没有改变什么。过了一段时间，Joel就放弃去做别的事情了。</p>
+<h2 id="serdar-argic之战">Serdar Argic之战</h2>
+<p>Serdar Argic是Usenet上面的第一个spammer，也就是群发垃圾信息的人。</p>
+<p>现在说到垃圾信息，我们想到的是广告和诈骗，Serdar Argic发的垃圾信息则是政治口号。1914年，土耳其对亚美尼亚人发动了一场屠杀，这是大部分学历史的人的共识，但Serder认为其实是亚美尼亚人屠杀了土耳其人，并且在新闻组里疯狂地兜售自己的观点。Serdar用的方法也是<a href="http://www.15yan.com/story/iFRncNlebPg/">kibozing</a>，就是在所有新闻组里搜索带“土耳其”的关键字，然后在帖子下面回复一篇抹黑亚美尼亚并为土耳其洗白的文章。这么做的结果就是很多和历史相关的新闻组里充斥着垃圾帖，其中最惨的是soc.history和soc.culture.turkish，在垃圾帖横行最厉害的日子里，每200个帖子里，就有175个帖子是Serdar发的垃圾，剩下20个是骂Serdar的帖子，只有5个是正常讨论问题的。很多人因此被迫放弃了自己最常访问和浏览的新闻组。</p>
+<p>然后就爆发了针对Serdar Argic的战争，Joel是里边的主力军，他创建了alt.fan.serdar-argic作为反击的大本营，所有对Serdar不满的人都可以来这里抱怨，对于Serdar的人肉搜索活动也是在这里展开的。整个搜索活动也的确找出了几个嫌疑人，但在90年代，人们在网上的信息本来就不多，搜出来信息也没多大用处，只能骂几句出出气。90年代中期还没有免费邮箱可以申请，大部分人的邮箱都是挂在公司或者学校名下的，Joel和他战友通过投诉的方式废了Serdar的若干个邮箱地址，但垃圾帖并没有停止下来。</p>
+<p>然后忽然有一天，类似的垃圾帖就再也没冒出来了，就跟什么都没发生过一样，Serdar这个人也消失的无影无踪。</p>
+<p>为了纪念这次事件，Joel还设计了T恤，并且在网上卖出去了一两百件。</p>
+<p><img src="http://i1.15yan.guokr.cn/ng9nffe3jqaw8rzm63erm8e8fungyauz.jpg" alt=""></p>
+<p>T恤的图样。Serdar Argic至少影响到了这么多的新闻组。</p>
+<h2 id="关于狐猴的段子">关于狐猴的段子</h2>
+<p>alt.fan.lemurs是Joel Furr建立的一个新闻组。Lemur也就是狐猴，是一种生活在马达加斯加的拥有超级大眼睛的猴类。按理说新闻组里应该都是狐猴的粉丝，讨论大家对狐猴的喜爱的，实际上也是这样，但是在这个新闻组里，除了正经的对于这种动物的讨论，还有各种喝狐猴相关的段子。正是这些段子让这个新闻组显得与众不同。</p>
+<p>这一切起始于弗吉尼亚工理工大学的BBS，很久以前的一天，一群搞计算机的学生在校园BBS里边瞎聊，其中一个在帖子里说别人是“lamer（挫人）”，然后另一个回帖假装不知道他在说什么，说“你说的是lemur（狐猴）吧？”第三个人回帖说“狐猴不就那一种大眼睛毛茸茸的小动物嘛。”然后一切就开始了，许多人参与进来编造和狐猴有关的段子，这些段子飞快地从一个版块烧到另一个版块，狐猴的形象也逐渐形成了：大眼睛，喜欢吃Twinkie（一种手指状的注心蛋糕），喜欢喝Big K葡萄汽水，语言包含三个单词分别是“吱”、“嘤”、“嗒”，喜欢别的大眼睛，喜欢在吊灯上面荡秋千……</p>
+<p>Joel是狐猴段子最大的推手，但这些都仅限于校园网的BBS内部，不为外人所知。1991年后，Joel有了互联网账号并且开始泡Usenet新闻组，他觉得把这些段子的讨论搬到新闻组里应该很不错，就申请创建了alt.fan.lemurs这个新闻组，并且开始帖各种狐猴相关的段子。</p>
+<p>我们来欣赏一下一些典型的段子吧，首先是关于狐猴的语言：</p>
+<blockquote><p>根据科学杂志《无法复制的结果》中一篇研究的说法，狐猴的语言包含三个单词：</p></blockquote>
+<blockquote><p>嘤（形容词）：非常诱人，性感</p></blockquote>
+<blockquote><p>嘤（名词）：国家地理摄影师</p></blockquote>
+<blockquote><p>【注：在狐猴眼里，眼睛越大越性感，摄影师相机的镜头被狐猴当做巨大的眼睛，所以成了性感的名词。】</p></blockquote>
+<blockquote><p>嗒（动词）：和另一个物种性交，类似“兽交”的意思。</p></blockquote>
+<blockquote><p>吱、吱、吱（名词）：非常满足的性体验。</p></blockquote>
+<p>让我们来用这些知识翻译以下两只狐猴的对话：</p>
+<blockquote><p>狐猴甲：嗒嘤嘤</p></blockquote>
+<blockquote><p>狐猴乙：吱、吱、吱</p></blockquote>
+<blockquote><p>翻译：</p></blockquote>
+<blockquote><p>狐猴甲：听说你和那个超帅的国家地理摄影师做爱了？</p></blockquote>
+<blockquote><p>狐猴乙：是的，爽极了！</p></blockquote>
+<p>段子2，有人问怎样才能碰到一只狐猴，答案如下：</p>
+<blockquote><p>要在你家会见一只狐猴的成本并不高，在门口放几罐Big K葡萄汽水就可以了。你还可以故意激起它们的好奇心，在门前帖一个大告示，上面写着“马达加斯加原猴绝对禁止入内！”或者写一个“Twinkie快递员请注意：把我买的14箱超大包(tm)Twinkie放到厨房里，谢谢！”</p></blockquote>
+<p>BBS上面还有一个关于奶牛的笑话主题，后来也被纳入了狐猴的故事，讲的是奶牛有一艘飞船坠落在布莱克斯堡，钥匙丢了，奶牛进不去，但狐猴能从通风口钻进去，于是狐猴偷了奶牛飞船的设备，并且把奶牛用强大的<strong>哞语言</strong>（又叫MOO语言，Multi-Object Oriented Language，面向多对象语言）编写的飞船系统，让它能够接受狐猴语的指令。另外还有一个叫CIA（奶牛飞船调查局，Cowship Investigation Agency）的组织一直在调查奶牛飞船的问题。CIA的领导叫Allen Murphy，调查的主要对象是狐猴以及见过狐猴的人，因此就有人怀疑他是不是奶牛派来的卧底，对此Allen Murphy坚决否认：</p>
+<blockquote><p>现在我要借这个机会澄清一下：</p></blockquote>
+<blockquote><p>我不是奶牛！</p></blockquote>
+<blockquote><p>我不是奶牛！</p></blockquote>
+<blockquote><p>我不是奶牛！</p></blockquote>
+<blockquote><p>我不是奶牛！</p></blockquote>
+<blockquote><p>我还有证书能证明这一点，你们看：CIA工作证、驾照、疯牛病疫苗接种证明……</p></blockquote>
+<p>很明显最后一个证书露馅了……奶牛军团渗透到了社会的各个角落，就连微软也不能幸免。微软的一个程序叫COMMAND.COM，如果你把M倒过来，就成了COMMAND.COW！很明显这就是奶牛之间发送指令的工具，所以大家都要小心啊！</p>
+<p>虽然奶牛步步紧逼，但我们也无需为狐猴的处境担心，毕竟它们是灵长动物，比奶牛聪明多了……</p>
+<p>很多人都在给狐猴的段子添油加醋，于是这个狐猴的故事讲了多年还没讲完。不过除了讲段子，Joel也是会干正事的。一开始大家对狐猴这种动物所知甚少，后来才知道这是一种濒危动物，而且在杜克大学有一个繁殖中心，于是Joel还组织网友一起去参观了这个繁殖中心，并为狐猴保护项目捐了款。</p>
+<p>不过毕竟狐猴是一个冷门话题，alt.fan.lemurs在最火的时候，订阅人数能够排到所有新闻组“倒数四分之一里边的前几名”，对于一个冷门话题，这个排名已经是相当厉害了。</p>
+<h2 id="结尾">结尾</h2>
+<p>虽然Joel的名气没有James Parry大，但他一度也是很受欢迎的，在一次﻿<a href="http://www.15yan.com/story/iFRncNlebPg/">Kibo选举</a>﻿中，Joel获得的票数甚至超过了Kibo本人。</p>
+<p>Joel Furr是网上最早把垃圾信息叫做spam的人，但也可能是之一，说不清。</p>
+<p>现在Joel也不出没Usenet了，不过他还会偶尔写写博客。知道他名声的已经不多了。</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-kibo/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-3" class="text-2xl font-bold sm:text-3xl">Kibo的故事</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>Usenet一代教主的生平</p>
+<hr>
+<p><img src="http://i1.15yan.guokr.cn/j6ex04gzhy32jv6r4yhb5sbifsck3n61.jpg" alt=""></p>
+<p>Kibo在大约1989年的照片</p>
+<p>一样，不了解Usenet请先看<a href="http://www.15yan.com/topic/IT-kao-gu/cpDFZNeM9Rv/">这篇</a>。</p>
+<p>Kibo读作“开博”，是James Parry的网名。James Parry是一个来自纽约的有点内向的设计师，他的工作就是画画图做做字体。但在Usenet上面，Kibo的职业是教主。</p>
+<p>这里说的教主不是象征意义上的教主，而是真正的教主。Usenet上面有各种宗教相关的新闻组，有一次订阅人数统计显示，在各类宗教新闻组里面，基督教有29000人订阅排名第一，newage有26000人订阅排名第二，伊斯兰教和Kibology以21000的订阅人数并列排名第三。这个Kibology就是Kibo的教，我们就叫它Kibo教吧。</p>
+<h2 id="教主诞生">教主诞生</h2>
+<p>为什么Kibo这么出名呢？我们还要从很早的时候说起。1980年代末期Kibo就开始上Usenet了，算个早期的老用户。Kibo一开始算是个有趣的网友，但根本谈不上有什么名气。直到1988年的某一天，他忽然开始做一件前无古人的事情：他开始用搞怪的方式回复所有提到他的名字的帖子。</p>
+<p>这件事情做一次不要紧，但Kibo却坚持做了很长时间。1988年的Usenet新闻组规模都不太大，只要你坚持不停做一件事情，大家就会注意到你。如果你说话很有趣，大家就更会注意你了。Kibo的回复基本上都是幽默式的，但又装作很认真的样子。有时候Kibo这个拼写出现在别的语境里面，和Kibo本人没有任何关系，但Kibo也都会“认真”地回复。</p>
+<p>很多人都很奇怪，为什么Kibo能在众多的新闻组里找到提到他名字的帖子呢？难道他真的会去读Usenet上面所有新闻组里的帖子？难道他是传说中不知疲倦的人工智能？其实Kibo所做的，只不过把Usenet上面所有新闻组的内容都下载下来，用一个文本搜索工具（grep）在里边搜“Kibo”。由于这种做法是Kibo首创，所以就有了一个叫Kiboze的动词来表示这种做法。这种做法后来被很多人效仿，其中最著名的恐怕是创造Perl编程语言的Larry Wall了，他也会用这种方式搜索并且回答Usenet里边关于Perl编程的问题，当然，他的搜索是用自己的Perl语言写的。</p>
+<p>我们来看一个典型的Kibo回复的例子吧。原帖是这样的：</p>
+<blockquote><p>Mary Rose Campbell 写道:</p></blockquote>
+<blockquote><p>在卡内基梅隆大学，我们在Skibo中心（就是我们的学生会）还有一个叫“灰物质”的东西，就是一堆形状、墙体、孔洞、台阶，用一张深灰色地毯盖起来，看上去像一只巨大的猫玩偶。</p></blockquote>
+<p>然后是Kibo的回复：</p>
+<blockquote><p>其实这是S. Kibo的真人模型，也就是是我的高高祖叔父。几万亿年前他进化到“巨型元生界阿米巴”是就是这个样子的，现在他已经进化成三叶虫了。</p></blockquote>
+<blockquote><p>– K.</p></blockquote>
+<p>由于Kibo坚持不懈的回复，慢慢的他就成了Usenet上面的名人。根据Kibo自己的估计，在他使用Usenet的15年里，所有的回复加起来应该有780万词，足够塞满100本书了。</p>
+<p>1989年Kibo和他的的朋友们就开始谈论Kibo教了，alt.religion.kibology这个新闻组则是在1991年成立的。刚开始成立的时候，里边的主要内容是各种对Kibo教主的崇拜，就跟前一阵子的拜春哥教一样。自从1995年以后，这个新闻组逐渐变成了Kibo式幽默贴的集中营，其中不少帖子是Kibo本人发的。</p>
+<h2 id="happynet">HappyNet</h2>
+<p>1992年Kibo的名气已经很大了，他发起了一个HappyNet的倡议，目的是重组Usenet，把它变成一个Happy的地方。根据Kibo的倡议，HappyNet可以按照人群特征分成三大类，分别是：非傻叉、傻叉、大傻叉。用英语讲就是nonbozo、bozo、megabozo。根据Kibo的研究，这三者占用户比例分别是1%、90%、9%。Kibo在倡议书里还讲了一个很简单的判别方法，只要回答一个问题就行了：</p>
+<blockquote><p>你是一个傻叉吗？（单选） □是 □不是</p></blockquote>
+<p>如果你选了是，那你就会被分到“傻叉”组，如果你选了不是，那你就会被分到“大傻叉”组。</p>
+<p>为了维持HappyNet的美好秩序，Kibo还制定了一系列规章制度：</p>
+<blockquote><p>发帖签名超过四行的，罚以110波特的速度阅读《战争与和平》。</p></blockquote>
+<blockquote><p>签名包含巨大ASCII字符画的，罚以110波特的速度阅读《战争与和平》，书的内容是盲文，手指要用砂纸打磨过。</p></blockquote>
+<blockquote><p>回帖只写一句“Me too！”的，回帖者的真名改为“Me Too”。</p></blockquote>
+<blockquote><p>把新闻组叫做“bboard”或者“notesfile”的，罚背《韦伯词典》第九版。</p></blockquote>
+<blockquote><p>拼写错误，too写成to，it’s写成its，lose写成loose，you’re写成your……罚抄写《韦伯词典》第九版十次。</p></blockquote>
+<blockquote><p>……</p></blockquote>
+<blockquote><p>看不懂幽默的，就地正法。</p></blockquote>
+<p>HappyNet的倡议是很长的一个搞笑帖子，当时在网上引起了巨大的反响，各种讨论层出不穷。Kibo在1992年发了第一版，1994年又发了一版，最后一版是1998年发的。1999年Kibo还搞了一个类似的帖子叫HappyWeb，写的是怎样让Web也成为一个美好的地方，里边一样充满了Kibo式的幽默。</p>
+<h2 id="总统竞选">总统竞选</h2>
+<p>1992年，Kibo在网上发起了一场总统竞选活动，为此Usenet上面还建立了一个新闻组。1992年的总统参选人是克林顿和小布什，还有一个来自少数党派“自由党”的名叫佩洛特的人。Kibo当时年龄只有25岁，完全不具备总统竞选资格，他只是在网上玩玩而已。但后来他还真玩大了，他的竞选声明和其他几位的被一起放到一个FTP上面，后来还出现在白宫网站的链接中，直到后来自由党发出投诉，这个链接才被撤下去。</p>
+<p>虽然总统竞选失败了，但后来Usenet上面出现过一次投票，话题是当外星人降临时应该派谁作为人类的发言人，Kibo毫无疑问地以巨大票数当选了。</p>
+<h2 id="其他兼结尾">其他兼结尾</h2>
+<p>以Kibo命名的新闻组还有好几个，alt.politics.kibo是为竞选总统造势而创建的。还有两个alt.exploding.kibo和alt.imploding.kibo，是因为Kibo这个词像是爆炸的声音，于是就被无聊人士创建了。</p>
+<p><img src="http://i1.15yan.guokr.cn/jgw2cdwmwcctcbxxl7dwu4etgprc32g2.jpg" alt=""></p>
+<p>Kibo自己设计的个人Logo</p>
+<p>Kibo后来经常会很长时间不登陆Usenet，每当他不在的日子，新闻组里就会开展Kibo代理人竞选。等他回来以后代理人就要主动退位。有一阵子Joel Furr（下一个故事的主角）冒充了Kibo一阵子，被大家批评的够呛。</p>
+<p>现在的Kibo应该偶尔还会上一下Usenet，但已经不会回复带他名字的帖子了。</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-Mel Kaye的故事/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-4" class="text-2xl font-bold sm:text-3xl">Mel Kaye的故事</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>真·程序员用十六进制码编程</p>
+<p>主角Mel Kaye，后排最右</p>
+<p>【这是一篇翻译，原文链接<a href="http://www.cs.utah.edu/~elb/folklore/mel.html">在此</a>，这是1983年的一篇仿史诗体文章，所以里边提到“当今”指的都是80年代早期。作者Ed Nather，主角Mel Kaye均已年长去世。TLDR:真·程序员用机器代码编程，真·程序员一个字节一个字节地手动优化存储器物理寻址，真·程序员不但技术高超，而且有原则有个性。】</p>
+<p>最近有一篇展现编程的“大丈夫”一面的文章，里边有这么一句粗暴直接的话：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>真·程序员用FORTRAN编程</span></span></code></pre>
+<p>也许现在的程序员是这样吧，
+在这个堕落腐朽的年代
+到处都充斥着淡啤酒、计算器、还有“用户友好”的软件
+但是在过去美好的日子里，
+“软件”还是一个听上去有点滑稽的新词
+而真·计算机是使用磁鼓和真空管组装起来的，
+真·程序员写的则是机器代码。
+不是FORTRAN，不是RATFOR，甚至，连汇编语言都不是。
+机器·代码。
+实实在在、原汁原味、深不可测的十六进制代码。
+直截了当。</p>
+<p>为了避免新一代程序员
+对这段辉煌的历史一无所知
+我觉得自己义不容辞，我要用文字
+努力填补这一段代沟，
+真·程序员是怎样写代码的
+我把这个程序员叫做Mel，
+因为这就是他的名字。
+LGP-30</p>
+<p>我是在Royal McBee计算机公司上班时第一次碰到Mel的，
+这是隶属于Royal Typewriter的一家子公司，现在已经解散了
+Royal Typewriter制造了LGP-30，
+一种小型的，低价的（以当时的标准）
+磁鼓存储计算机，
+而且刚刚开始制造
+RPC-4000，一种大大改进了的
+更大、更好、更快的——磁鼓存储计算机。
+RPC-4000</p>
+<p>我当时被雇来为这个新机器
+写一个Fortran编译器，而Mel则负责引导我了解这台新机器。</p>
+<p>Mel对编译器不感冒。
+“如果程序不能重写自己的代码，”
+Mel说，“那它能有多挫啊？”</p>
+<p>用十六进制代码，
+Mel写了公司最受欢迎的计算机程序
+程序运行在LGP-30上面
+能跟人玩“二十一点”，
+每次计算机展会上
+它都能戏剧般的吸引到不少人
+IBM的销售都会围成一圈，对它指指点点
+究竟展览对于销售有没有帮助
+我们从来没有讨论过
+21点的程序是用打印机输出的，当时还不知道什么叫显示器</p>
+<p>Mel的任务，是为
+RPC-4000重写二十一点游戏
+(平台移植是什么意思？没听说过)
+新机器有一个一加一寻址模式，
+每一个机器指令
+和它的操作代码
+以及操作所需的内存
+都拥有一个第二地址，用来告诉你
+下一个指令在旋转磁鼓上的具体位置</p>
+<p>用现代术语讲
+就是相当于每个指令都捆绑了一个goto
+放到Pascal的烟管里抽一口吧
+磁鼓</p>
+<p>Mel对RPC-4000情有独钟
+因为他可以优化自己的代码
+他可以手动设置指令在磁鼓上的存储位置，
+然后当一条指令执行完的时候，
+磁头会正好停到下一条指令所处的位置上
+然后下条指令就可以好不耽误时间地立即执行了
+有一个程序也可以做这件事
+叫做“优化汇编器”
+但Mel拒绝使用它。</p>
+<p>“你永远不知道它会把东西放到哪里，”
+他解释道，“所以你只能使用不同的常量。”</p>
+<p>这句评论我花了很久才明白是什么意思，
+因为Mel知道每一条
+操作指令的数字值，
+而且手动分配了磁鼓的存储地址，
+他写的每一条指令，
+都可以被认为是一个数字常量。
+他可以把比如说一条“加值”指令，
+当作一个数值去做乘法，
+如果“加值”指令对应的正好是一个合适数值的话。
+别人要改他的代码可不容易。</p>
+<p>我把Mel手动优化过的代码
+和优化汇编器“按摩”过的代码比较了一下，
+Mel的总是跑得更快。
+因为在那会“自顶向下”的程序设计
+还没被发明，
+而且就算发明了，Mel也不会去使用的。</p>
+<p>他会先把程序循环中最里层的部分写好，
+让这部分内容优先
+运行在磁鼓最合适的位置上。
+优化汇编器做不到这点，它没有这么聪明。
+Mel也从来不会去写延时循环，
+即使Flexowriter这种笨重的输出设备
+需要在输出之间延时才能工作正常。
+新式磁鼓</p>
+<p>他只需把磁鼓上的指令放在特殊位置上，
+这样下一条指令会刚好跳过磁头，
+然后磁鼓只能重新旋转一圈
+才能找到这条指令。这样就正好实现了延时。
+他为这个流程创造了一个很好记名字。
+虽然“最优”是一个绝对化的术语，
+就和“独一无二”一样，但在习惯使用过程中
+它也变得相对化了：
+“不是特别最优”或“不够最优”
+或者“不是特别最优”。
+Mel把导致磁鼓最大延时的存储地址叫做“最劣”址。</p>
+<p>当他写完“二十一点”程序
+并且让它运行起来后
+（就连初始程序都被优化过了，
+他骄傲地说），
+他从销售部门得到一个修改·需求
+程序用了一个优美的（优化过的）
+随机数生成器
+用来洗牌以及处理牌局，
+有的销售人员认为这个游戏太公正了，
+因为有时候客户会输掉。
+他们想要Mel修改程序，
+让可以通过控制台的感知开关
+调整获胜几率，这样就可以让客户能赢了。</p>
+<p>Mel很抗拒
+他觉得这是绝对的不诚实，
+的确也是
+他还觉得这是对他作为一个程序员的人格侮辱，
+这话也没错
+所以他就拒绝做这件事。
+销售部·领导和Mel谈过，
+大·老板也和Mel谈过，程序员·同事也劝过，
+最后Mel还是让步了，去写了代码
+但他把条件写反了，
+于是当感知开关打开以后，
+程序就会作弊，不是会输，而是次次会赢。
+Mel对他的杰作相当满意，
+说他潜意识里有无法控制的道德感，
+并且坚决拒绝修正这个问题。</p>
+<p>Mel离职另谋高就以后，
+大·老板让我看看代码
+看能不能把这个条件判断修改过来。
+虽然不怎么情愿，我还是答应了。
+追踪Mel的代码是一场真正的历险。
+我常常觉得编程是一种艺术形式，
+它的真正价值只能被
+别的熟知这种艰深艺术的人理解；
+一些美妙的细节和智慧的处理，
+常人可能永远都看不到，更不用说去欣赏了，
+软件的过程天然就是这样子的。
+通过阅读一个人的代码，
+你可以了解很多关于这个人的东西，
+即使十六进制代码也是一样的。
+Mel在我的眼里，就是一个不为外人所知的天才。</p>
+<p>也许最让我吃惊的
+是我在里边找到了一个没有条件判断的循环。
+没有条件判断。没有
+常识告诉我这必须是一个闭循环，
+程序走到这里会永远不停地循环下去。
+但实际情况是，程序可以直接跑进这段代码
+然后再安全地抵达了另外一边。
+我花了两个星期才弄明白这是怎么回事。</p>
+<p>RPC-4000计算机有一个相当现代化的功能
+叫做索引注册器。
+它可以让程序员写一个循环，
+在里边使用索引过的指令；
+不过每使用一次，
+索引注册器里的数字
+就会被加到这条指令的地址上面，
+这样它就会指向
+序列中的下一条数据。
+不过他就需要每次
+手动为索引注册器增值。
+Mel从来没这么做过。</p>
+<p>取而代之的是，他会把指令拖到一个机器注册器里，
+为它的地址加1，
+再把它存储回来。
+然后他再直接从注册器中
+执行修改过的指令。
+循环在写的时候就
+把增加的执行时间也算进去了——
+这条指令执行完后，
+下一条就会刚好处在磁头的阅读位置上，
+可以直接继续。
+但循环里边没有条件判断。</p>
+<p>最重要的线索出现了，
+当我我注意到索引注册器位元的时候，
+这个位元处在指令的地址码和操作码之间，
+而且是开启的——
+尽管Mel从来没使用过索引注册器，
+所以此处一直是为0的。
+当我看明白的时候，我简直被亮瞎了。</p>
+<p>他把工作的数据
+放在了存储的最顶端——
+指令能处理的最大的地址值——
+所以，当最后一条数据处理完以后，
+增加指令地址
+就会让地址发生溢出。
+然后就会导致操作码被加1，
+让它成了指令集里的下一条指令：
+一条跳过指令。
+于是理所当然，下一条程序指令
+就到了地址位置0，
+然后程序就开心地运行下去了。</p>
+<p>我没有和Mel再联系过，
+所以我不知道他是不是
+面对着洪水般的编程技术变革
+已经让步了。
+我喜欢想象他没有让步。
+无论如何，
+我已经被他的技术深深折服，
+不想再去找那处有问题的条件判断了。
+我告诉大·老板我找不出。
+大·老板听了也没觉得奇怪。</p>
+<p>当我离开这家公司的时候，
+在你打开对应的感知开关以后，
+“二十一点”还是会作弊的，
+我觉得这样挺不错。
+深入研究了真·程序员的代码，
+我觉得自己有点心累。</p>
+<hr>
+<p>原文</p>
+<p>The Story of Mel, a Real Programmer</p>
+<p>This was posted to USENET by its author, Ed Nather (utastro!nather), on May 21, 1983.</p>
+<p>A recent article devoted to the <em>macho</em> side of programming made the bald and unvarnished statement:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>     Real Programmers write in FORTRAN.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Maybe they do now,</span></span>
+<span class="line"><span> in this decadent era of</span></span>
+<span class="line"><span> Lite beer, hand calculators, and "user-friendly" software</span></span>
+<span class="line"><span> but back in the Good Old Days,</span></span>
+<span class="line"><span> when the term "software" sounded funny</span></span>
+<span class="line"><span> and Real Computers were made out of drums and vacuum tubes,</span></span>
+<span class="line"><span> Real Programmers wrote in machine code.</span></span>
+<span class="line"><span> Not FORTRAN.  Not RATFOR.  Not, even, assembly language.</span></span>
+<span class="line"><span> Machine Code.</span></span>
+<span class="line"><span> Raw, unadorned, inscrutable hexadecimal numbers.</span></span>
+<span class="line"><span> Directly.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Lest a whole new generation of programmers</span></span>
+<span class="line"><span> grow up in ignorance of this glorious past,</span></span>
+<span class="line"><span> I feel duty-bound to describe,</span></span>
+<span class="line"><span> as best I can through the generation gap,</span></span>
+<span class="line"><span> how a Real Programmer wrote code.</span></span>
+<span class="line"><span> I'll call him Mel,</span></span>
+<span class="line"><span> because that was his name.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> I first met Mel when I went to work for Royal McBee Computer Corp.,</span></span>
+<span class="line"><span> a now-defunct subsidiary of the typewriter company.</span></span>
+<span class="line"><span> The firm manufactured the LGP-30,</span></span>
+<span class="line"><span> a small, cheap (by the standards of the day)</span></span>
+<span class="line"><span> drum-memory computer,</span></span>
+<span class="line"><span> and had just started to manufacture</span></span>
+<span class="line"><span> the RPC-4000, a much-improved,</span></span>
+<span class="line"><span> bigger, better, faster --- drum-memory computer.</span></span>
+<span class="line"><span> Cores cost too much,</span></span>
+<span class="line"><span> and weren't here to stay, anyway.</span></span>
+<span class="line"><span> (That's why you haven't heard of the company,</span></span>
+<span class="line"><span> or the computer.)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> I had been hired to write a FORTRAN compiler</span></span>
+<span class="line"><span> for this new marvel and Mel was my guide to its wonders.</span></span>
+<span class="line"><span> Mel didn't approve of compilers.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> "If a program can't rewrite its own code",</span></span>
+<span class="line"><span> he asked, "what good is it?"</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Mel had written,</span></span>
+<span class="line"><span> in hexadecimal,</span></span>
+<span class="line"><span> the most popular computer program the company owned.</span></span>
+<span class="line"><span> It ran on the LGP-30</span></span>
+<span class="line"><span> and played blackjack with potential customers</span></span>
+<span class="line"><span> at computer shows.</span></span>
+<span class="line"><span> Its effect was always dramatic.</span></span>
+<span class="line"><span> The LGP-30 booth was packed at every show,</span></span>
+<span class="line"><span> and the IBM salesmen stood around</span></span>
+<span class="line"><span> talking to each other.</span></span>
+<span class="line"><span> Whether or not this actually sold computers</span></span>
+<span class="line"><span> was a question we never discussed.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Mel's job was to re-write</span></span>
+<span class="line"><span> the blackjack program for the RPC-4000.</span></span>
+<span class="line"><span> (Port?  What does that mean?)</span></span>
+<span class="line"><span> The new computer had a one-plus-one</span></span>
+<span class="line"><span> addressing scheme,</span></span>
+<span class="line"><span> in which each machine instruction,</span></span>
+<span class="line"><span> in addition to the operation code</span></span>
+<span class="line"><span> and the address of the needed operand,</span></span>
+<span class="line"><span> had a second address that indicated where, on the revolving drum,</span></span>
+<span class="line"><span> the next instruction was located.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> In modern parlance,</span></span>
+<span class="line"><span> every single instruction was followed by a GO TO!</span></span>
+<span class="line"><span> Put *that* in Pascal's pipe and smoke it.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Mel loved the RPC-4000</span></span>
+<span class="line"><span> because he could optimize his code:</span></span>
+<span class="line"><span> that is, locate instructions on the drum</span></span>
+<span class="line"><span> so that just as one finished its job,</span></span>
+<span class="line"><span> the next would be just arriving at the "read head"</span></span>
+<span class="line"><span> and available for immediate execution.</span></span>
+<span class="line"><span> There was a program to do that job,</span></span>
+<span class="line"><span> an "optimizing assembler",</span></span>
+<span class="line"><span> but Mel refused to use it.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> "You never know where it's going to put things",</span></span>
+<span class="line"><span> he explained, "so you'd have to use separate constants".</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> It was a long time before I understood that remark.</span></span>
+<span class="line"><span> Since Mel knew the numerical value</span></span>
+<span class="line"><span> of every operation code,</span></span>
+<span class="line"><span> and assigned his own drum addresses,</span></span>
+<span class="line"><span> every instruction he wrote could also be considered</span></span>
+<span class="line"><span> a numerical constant.</span></span>
+<span class="line"><span> He could pick up an earlier "add" instruction, say,</span></span>
+<span class="line"><span> and multiply by it,</span></span>
+<span class="line"><span> if it had the right numeric value.</span></span>
+<span class="line"><span> His code was not easy for someone else to modify.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> I compared Mel's hand-optimized programs</span></span>
+<span class="line"><span> with the same code massaged by the optimizing assembler program,</span></span>
+<span class="line"><span> and Mel's always ran faster.</span></span>
+<span class="line"><span> That was because the "top-down" method of program design</span></span>
+<span class="line"><span> hadn't been invented yet,</span></span>
+<span class="line"><span> and Mel wouldn't have used it anyway.</span></span>
+<span class="line"><span> He wrote the innermost parts of his program loops first,</span></span>
+<span class="line"><span> so they would get first choice</span></span>
+<span class="line"><span> of the optimum address locations on the drum.</span></span>
+<span class="line"><span> The optimizing assembler wasn't smart enough to do it that way.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Mel never wrote time-delay loops, either,</span></span>
+<span class="line"><span> even when the balky Flexowriter</span></span>
+<span class="line"><span> required a delay between output characters to work right.</span></span>
+<span class="line"><span> He just located instructions on the drum</span></span>
+<span class="line"><span> so each successive one was just *past* the read head</span></span>
+<span class="line"><span> when it was needed;</span></span>
+<span class="line"><span> the drum had to execute another complete revolution</span></span>
+<span class="line"><span> to find the next instruction.</span></span>
+<span class="line"><span> He coined an unforgettable term for this procedure.</span></span>
+<span class="line"><span> Although "optimum" is an absolute term,</span></span>
+<span class="line"><span> like "unique", it became common verbal practice</span></span>
+<span class="line"><span> to make it relative:</span></span>
+<span class="line"><span> "not quite optimum" or "less optimum"</span></span>
+<span class="line"><span> or "not very optimum".</span></span>
+<span class="line"><span> Mel called the maximum time-delay locations</span></span>
+<span class="line"><span> the "most pessimum".</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> After he finished the blackjack program</span></span>
+<span class="line"><span> and got it to run</span></span>
+<span class="line"><span> ("Even the initializer is optimized",</span></span>
+<span class="line"><span> he said proudly),</span></span>
+<span class="line"><span> he got a Change Request from the sales department.</span></span>
+<span class="line"><span> The program used an elegant (optimized)</span></span>
+<span class="line"><span> random number generator</span></span>
+<span class="line"><span> to shuffle the "cards" and deal from the "deck",</span></span>
+<span class="line"><span> and some of the salesmen felt it was too fair,</span></span>
+<span class="line"><span> since sometimes the customers lost.</span></span>
+<span class="line"><span> They wanted Mel to modify the program</span></span>
+<span class="line"><span> so, at the setting of a sense switch on the console,</span></span>
+<span class="line"><span> they could change the odds and let the customer win.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Mel balked.</span></span>
+<span class="line"><span> He felt this was patently dishonest,</span></span>
+<span class="line"><span> which it was,</span></span>
+<span class="line"><span> and that it impinged on his personal integrity as a programmer,</span></span>
+<span class="line"><span> which it did,</span></span>
+<span class="line"><span> so he refused to do it.</span></span>
+<span class="line"><span> The Head Salesman talked to Mel,</span></span>
+<span class="line"><span> as did the Big Boss and, at the boss's urging,</span></span>
+<span class="line"><span> a few Fellow Programmers.</span></span>
+<span class="line"><span> Mel finally gave in and wrote the code,</span></span>
+<span class="line"><span> but he got the test backwards,</span></span>
+<span class="line"><span> and, when the sense switch was turned on,</span></span>
+<span class="line"><span> the program would cheat, winning every time.</span></span>
+<span class="line"><span> Mel was delighted with this,</span></span>
+<span class="line"><span> claiming his subconscious was uncontrollably ethical,</span></span>
+<span class="line"><span> and adamantly refused to fix it.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> After Mel had left the company for greener pa$ture$,</span></span>
+<span class="line"><span> the Big Boss asked me to look at the code</span></span>
+<span class="line"><span> and see if I could find the test and reverse it.</span></span>
+<span class="line"><span> Somewhat reluctantly, I agreed to look.</span></span>
+<span class="line"><span> Tracking Mel's code was a real adventure.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> I have often felt that programming is an art form,</span></span>
+<span class="line"><span> whose real value can only be appreciated</span></span>
+<span class="line"><span> by another versed in the same arcane art;</span></span>
+<span class="line"><span> there are lovely gems and brilliant coups</span></span>
+<span class="line"><span> hidden from human view and admiration, sometimes forever,</span></span>
+<span class="line"><span> by the very nature of the process.</span></span>
+<span class="line"><span> You can learn a lot about an individual</span></span>
+<span class="line"><span> just by reading through his code,</span></span>
+<span class="line"><span> even in hexadecimal.</span></span>
+<span class="line"><span> Mel was, I think, an unsung genius.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Perhaps my greatest shock came</span></span>
+<span class="line"><span> when I found an innocent loop that had no test in it.</span></span>
+<span class="line"><span> No test.  *None*.</span></span>
+<span class="line"><span> Common sense said it had to be a closed loop,</span></span>
+<span class="line"><span> where the program would circle, forever, endlessly.</span></span>
+<span class="line"><span> Program control passed right through it, however,</span></span>
+<span class="line"><span> and safely out the other side.</span></span>
+<span class="line"><span> It took me two weeks to figure it out.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> The RPC-4000 computer had a really modern facility</span></span>
+<span class="line"><span> called an index register.</span></span>
+<span class="line"><span> It allowed the programmer to write a program loop</span></span>
+<span class="line"><span> that used an indexed instruction inside;</span></span>
+<span class="line"><span> each time through,</span></span>
+<span class="line"><span> the number in the index register</span></span>
+<span class="line"><span> was added to the address of that instruction,</span></span>
+<span class="line"><span> so it would refer</span></span>
+<span class="line"><span> to the next datum in a series.</span></span>
+<span class="line"><span> He had only to increment the index register</span></span>
+<span class="line"><span> each time through.</span></span>
+<span class="line"><span> Mel never used it.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> Instead, he would pull the instruction into a machine register,</span></span>
+<span class="line"><span> add one to its address,</span></span>
+<span class="line"><span> and store it back.</span></span>
+<span class="line"><span> He would then execute the modified instruction</span></span>
+<span class="line"><span> right from the register.</span></span>
+<span class="line"><span> The loop was written so this additional execution time</span></span>
+<span class="line"><span> was taken into account ---</span></span>
+<span class="line"><span> just as this instruction finished,</span></span>
+<span class="line"><span> the next one was right under the drum's read head,</span></span>
+<span class="line"><span> ready to go.</span></span>
+<span class="line"><span> But the loop had no test in it.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> The vital clue came when I noticed</span></span>
+<span class="line"><span> the index register bit,</span></span>
+<span class="line"><span> the bit that lay between the address</span></span>
+<span class="line"><span> and the operation code in the instruction word,</span></span>
+<span class="line"><span> was turned on ---</span></span>
+<span class="line"><span> yet Mel never used the index register,</span></span>
+<span class="line"><span> leaving it zero all the time.</span></span>
+<span class="line"><span> When the light went on it nearly blinded me.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> He had located the data he was working on</span></span>
+<span class="line"><span> near the top of memory ---</span></span>
+<span class="line"><span> the largest locations the instructions could address ---</span></span>
+<span class="line"><span> so, after the last datum was handled,</span></span>
+<span class="line"><span> incrementing the instruction address</span></span>
+<span class="line"><span> would make it overflow.</span></span>
+<span class="line"><span> The carry would add one to the</span></span>
+<span class="line"><span> operation code, changing it to the next one in the instruction set:</span></span>
+<span class="line"><span> a jump instruction.</span></span>
+<span class="line"><span> Sure enough, the next program instruction was</span></span>
+<span class="line"><span> in address location zero,</span></span>
+<span class="line"><span> and the program went happily on its way.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> I haven't kept in touch with Mel,</span></span>
+<span class="line"><span> so I don't know if he ever gave in to the flood of</span></span>
+<span class="line"><span> change that has washed over programming techniques</span></span>
+<span class="line"><span> since those long-gone days.</span></span>
+<span class="line"><span> I like to think he didn't.</span></span>
+<span class="line"><span> In any event,</span></span>
+<span class="line"><span> I was impressed enough that I quit looking for the</span></span>
+<span class="line"><span> offending test,</span></span>
+<span class="line"><span> telling the Big Boss I couldn't find it.</span></span>
+<span class="line"><span> He didn't seem surprised.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> When I left the company,</span></span>
+<span class="line"><span> the blackjack program would still cheat</span></span>
+<span class="line"><span> if you turned on the right sense switch,</span></span>
+<span class="line"><span> and I think that's how it should be.</span></span>
+<span class="line"><span> I didn't feel comfortable</span></span>
+<span class="line"><span> hacking up the code of a Real Programmer.</span></span></code></pre>
+<p>This is one of hackerdom’s great heroic epics, free verse or no. In a few spare images it captures more about the esthetics and psychology of hacking than all the scholarly volumes on the subject put together.</p>
+<p>[1992 postscript --- the author writes: “The original submission to the net was not in free verse, nor any approximation to it --- it was straight prose style, in non-justified paragraphs. In bouncing around the net it apparently got modified into the `free verse’ form now popular. In other words, it got hacked on the net. That seems appropriate, somehow.”]</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-no-entrance/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-5" class="text-2xl font-bold sm:text-3xl">华人与狗不得入内：谁在自取其辱？</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>今天看到了民间历史爱好者冯学荣写的这篇《<a href="http://blog.sina.com.cn/s/blog_4f0523780101hzhj.html?tj=1">华人与狗不得入内：自取其辱</a>》，我一直不怎么爱看历史，因为“历史是任人随意打扮的死姑娘”，但看了这篇不禁有些愤慨了。</p>
+<p>首先是关于这块牌子的存在，除了冯学荣列的方志敏的《可爱的中国》以外，还有不少，可能《<a href="http://shtong.gov.cn/node2/node70393/node70403/node70564/node70566/userobject1ai70867.html">上海地方志</a>》中的记录可信度最高吧。好像还有人翻案说这种牌匾从来没存在过，我不知道他们能提供什么样的证据。当然冯学荣没质疑这一点，他还提供了证据证明了当时确实有华人禁入的规定。到这里还算老实。</p>
+<p>接下来就太扯了。冯学荣用很难看的姿势去证明这个牌匾是管理公园的中国人自己写的，理由有三，一是外国人会写汉字的不多，二是外国人不会把和狗并列当做一种侮辱这种句式只有中国人想得出，三是二十几个公园只有一个贴了这个告示所以不是普遍现象。</p>
+<p>搞历史的人，偶尔也不得不用一下假想和推理，但思维能扭曲到这程度也实在是够呛了。这个标语是谁写的根本毫无证据。就算是中国人写的，要反映的也只能是洋人的意思，要找一个愿意主动当众辱华的中国人，恐怕比要找一个会写汉字的洋人更难吧？至于将人和动物并列，不管是来自哪个文化背景的，得有多脑残才会认为这不是侮辱啊？至于一个牌匾是不是普遍现象，这点很重要吗？发生了就是发生了，中国近代史基本就是被西方羞辱的历史，这么讲能洗白什么？</p>
+<p>然后我顺便google了一把，你看你看：</p>
+<p><img src="http://i1.15yan.guokr.cn/02t1wjdtr6g03eyjkn8u3a7oyc9bs720.jpg" alt=""></p>
+<p>如果点哪个和印度人有关的条目搜索一下，你会看到一个很有趣的故事：Prititala Waddedar是一名参加了革命党的女教师，1932年，她带着15个人去冲击并放火焚烧了一家写着“印度人与狗不得入内”的俱乐部，为了不被捕就服毒自尽了。然后人家现在是印度的民族英雄。</p>
+<p>关于爱尔兰的那条也是民族屈辱史，爱尔兰人19世纪由于饥荒大规模移民北美，美国的一些场合还出现过“狗和爱尔兰人禁止入内”的告示。</p>
+<p>和英国有关的那条，其实是印度人对于英国人的报复。说是有个印度民族企业家在英国被歧视了，回来开了家旅馆树了个牌子说“英国人和狗不得入内”。这个故事可能不是真的，但在印度很受欢迎。</p>
+<p>还有犹太人的版本，就不细讲了。冯学荣有本事的话，可以去和印度人，爱尔兰人，犹太人解释一下，告诉他们“这是你们自找的”。</p>
+<p>扯远了，回到原文吧。冯学荣接下来花了很大的篇幅解释租界及其规则的合理性。然而这些“合理性”的背后，还不是你强我弱所以你活该被欺负嘛。这段历史对华人是耻辱，对列强来说也一点都不光彩。说“落后就要挨打”没问题，但说“落后就该挨打”就是混蛋。比如在当今美国，黑人平均文化水平偏低犯罪率偏高是事实，但你说半句歧视性言论试试？</p>
+<p>最后摘抄冯学荣的总结：</p>
+<blockquote><p>中国近代史上的“华人与狗不得入内”事件，中国人自己作贱（不守公德）、无理取闹（无视土地使用权）、自取其辱（中文牌子应是中国人书写的），占了大多数成分。</p></blockquote>
+<p>其实自己作践、无理取闹、自取其辱的是谁，难道不是很明显吗？</p></div></article></main><nav class="mt-auto mb-8 flex justify-center gap-4" role="navigation" aria-label="Pagination Navigation"><a aria-disabled="false" href="/zh/9" aria-label="前往上一页" class="group inline-flex items-center gap-1 hover:text-accent select-none"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M5 12l6 6M5 12l6-6" /></svg>上一页</a>10 / 14<a aria-disabled="false" href="/zh/11" aria-label="前往下一页" class="group inline-flex items-center gap-1 hover:text-accent select-none">下一页<svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M13 18l6-6M13 6l6 6" /></svg></a></nav><footer class="app-layout"><div class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4"><div class="flex flex-wrap items-center gap-1"><a href="https://github.com/weiwei" title="Keyboard And Me on Github" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" /></svg><span class="sr-only">Keyboard And Me on Github</span></a><a href="https://www.linkedin.com/in/oldjanx/" title="Keyboard And Me on Linkedin" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 1 0-4 0" /><path d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" /></svg><span class="sr-only">Keyboard And Me on Linkedin</span></a></div><div class="my-2 flex flex-col items-center text-sm whitespace-nowrap sm:flex-row"><span>&#169; 2026</span><span class="hidden sm:inline">&nbsp;|&nbsp;</span><span>保留所有权利。</span></div></div></footer><script type="module">var e=`theme`,t=`light`,n=`dark`;function r(){return localStorage.getItem(e)||(window.matchMedia(`(prefers-color-scheme: dark)`).matches?n:t)}var i=window.__theme?.value??r();function a(){localStorage.setItem(e,i),o()}function o(){let e=document.firstElementChild;e?.setAttribute(`data-theme`,i),e?.classList.toggle(`dark`,i===n),document.querySelector(`#theme-btn`)?.setAttribute(`aria-label`,i);let t=window.getComputedStyle(document.body).backgroundColor;document.querySelector(`meta[name='theme-color']`)?.setAttribute(`content`,t)}function s(){o(),document.querySelector(`#theme-btn`)?.addEventListener(`click`,()=>{i=i===t?n:t,a()})}s(),document.addEventListener(`astro:after-swap`,s),document.addEventListener(`astro:before-swap`,e=>{let t=document.querySelector(`meta[name='theme-color']`)?.getAttribute(`content`);t&&e.newDocument.querySelector(`meta[name='theme-color']`)?.setAttribute(`content`,t)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,({matches:e})=>{i=e?n:t,a()});</script></body></html><script type="module">document.addEventListener(`astro:page-load`,()=>{let e=document.querySelector(`#main-content`)?.dataset,t=`/`.replace(/\/?$/,`/`);e?.layout&&sessionStorage.setItem(`backUrl`,e.homePath??t)});</script>

@@ -1,0 +1,586 @@
+<!DOCTYPE html><html dir="ltr" lang="zh-CN" class="overflow-y-scroll scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"><link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><link rel="canonical" href="https://keyboardand.me/zh/blog/2018-phil-katz/"><meta name="generator" content="Astro v7.3.4"><!-- Font --><style>@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/2213c1e7fbe06cc7.woff") format("woff"), url("/_astro/fonts/b87f789471b4c602.ttf") format("truetype");font-display:swap;font-weight:300;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/c487dbd9c215141e.woff") format("woff"), url("/_astro/fonts/bb0c016d60298234.ttf") format("truetype");font-display:swap;font-weight:400;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/0976c79a1e97c08d.woff") format("woff"), url("/_astro/fonts/b3e69a4f03324880.ttf") format("truetype");font-display:swap;font-weight:500;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/3c46d5a1dde2929d.woff") format("woff"), url("/_astro/fonts/0ff1dfaf1dff21d0.ttf") format("truetype");font-display:swap;font-weight:600;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/e9aa617e80052f4b.woff") format("woff"), url("/_astro/fonts/d9a5ad8b8018e5de.ttf") format("truetype");font-display:swap;font-weight:700;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/5056f1a50e5e7744.woff") format("woff"), url("/_astro/fonts/3e4dac0d0220e48a.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/e734307f8c328338.woff") format("woff"), url("/_astro/fonts/ba3036786bf88603.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/dfa89044152f7da4.woff") format("woff"), url("/_astro/fonts/39aec4e7fc7cc077.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/8bbd58b325585200.woff") format("woff"), url("/_astro/fonts/b33609507afd910d.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/035035a9ddbd14aa.woff") format("woff"), url("/_astro/fonts/50fcf54bf575f53f.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}:root{--font-google-sans-code:"Google Sans Code-1a30c214885cb404","Google Sans Code-1a30c214885cb404 fallback: Courier New",monospace;}</style><!-- Primary meta --><title>Phil Katz的故事 | Keyboard And Me</title><meta name="title" content="Phil Katz的故事 | Keyboard And Me"><meta name="description" content><meta name="author" content="Weiwei"><link rel="sitemap" href="/sitemap-index.xml"><!-- Language alternates --><link rel="alternate" hreflang="zh-CN" href="https://keyboardand.me/zh/blog/2018-phil-katz/"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Keyboard And Me"><meta property="og:title" content="Phil Katz的故事 | Keyboard And Me"><meta property="og:description" content><meta property="og:url" content="https://keyboardand.me/zh/blog/2018-phil-katz/"><meta property="og:image" content="https://keyboardand.me/zh/blog/2018-phil-katz/index.png"><!-- Twitter / X --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://keyboardand.me/zh/blog/2018-phil-katz/"><meta property="twitter:title" content="Phil Katz的故事 | Keyboard And Me"><meta property="twitter:description" content><meta property="twitter:image" content="https://keyboardand.me/zh/blog/2018-phil-katz/index.png"><!-- RSS autodiscovery --><link rel="alternate" type="application/rss+xml" title="Keyboard And Me" href="https://keyboardand.me/zh/rss.xml"><!-- Filled at runtime by theme.ts to match the current background colour --><meta name="theme-color" content=""><!-- Extra head content injected by child layouts (e.g. JSON-LD, article meta) --><meta property="og:type" content="article"><meta property="article:published_time" content="2015-03-26T00:00:00.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Phil Katz的故事 | Keyboard And Me","image":"https://keyboardand.me/zh/blog/2018-phil-katz/index.png","datePublished":"2015-03-26T00:00:00.000Z","author":[{"@type":"Person","name":"Weiwei","url":"https://github.com/weiwei"}]}</script><!--
+      Inline FOUC-prevention script: sets data-theme on <html> before
+      the browser paints. Runs synchronously, no defer/async.
+    --><script>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const theme = stored ?? (prefersDark ? "dark" : "light");
+        const root = document.firstElementChild;
+        root?.setAttribute("data-theme", theme);
+        root?.classList.toggle("dark", theme === "dark");
+        // Expose value so theme.ts can skip re-detection.
+        window.__theme = { value: theme };
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.C1dAp4S4.js"></script><link rel="stylesheet" href="/_astro/Footer.BDxknAL0.css"><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-bztu2lml-1"] { view-transition-name: it\8003\53E4; }@layer astro { ::view-transition-old(it\8003\53E4) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(it\8003\53E4) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(it\8003\53E4) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(it\8003\53E4) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-bztu2lml-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-bztu2lml-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-bztu2lml-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-bztu2lml-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-bztu2lml-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-bztu2lml-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-bztu2lml-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-bztu2lml-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"><a id="skip-to-content" href="#main-content" class="bg-background text-accent absolute inset-s-16 -top-full z-50 px-3 py-2 backdrop-blur-lg transition-all focus:top-4">跳到正文</a><header class="app-layout flex flex-col items-center justify-between sm:flex-row"><div class="border-border bg-background relative flex w-full items-baseline justify-between border-b py-4 sm:items-center sm:py-6"><a href="/zh/" class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none">Keyboard And Me</a><nav id="nav-menu" class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"><button id="menu-btn" class="focus-outline self-end p-2 sm:hidden" aria-label="打开菜单" aria-expanded="false" aria-controls="menu-items" data-label-open="打开菜单" data-label-close="关闭菜单"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="hidden" viewBox="0 0 24 24" id="close-icon"><path stroke="none" d="M0 0h24v24H0z" /><path d="M18 6 6 18M6 6l12 12" /></svg><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep" viewBox="0 0 24 24" id="menu-icon"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 6h16M7 12h13M10 18h10" /></svg></button><ul id="menu-items" class="[&amp;&gt;li&gt;a]:hover:text-accent mt-4 hidden w-44 grid-cols-2 place-content-center gap-2 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0 sm:[&amp;&gt;li]:h-8 [&amp;&gt;li&gt;a]:block [&amp;&gt;li&gt;a]:px-4 [&amp;&gt;li&gt;a]:py-3 [&amp;&gt;li&gt;a]:text-center [&amp;&gt;li&gt;a]:font-medium sm:[&amp;&gt;li&gt;a]:px-2 sm:[&amp;&gt;li&gt;a]:py-1"><li class="col-span-2"><a href="/zh/blog/" class="active-nav">文章</a></li><li class="col-span-2"><a href="/zh/blog/tags/">标签</a></li><li class="col-span-2"><a href="/zh/about/">关于</a></li><li class="col-span-2"><a href="/zh/blog/archives/" title="归档" aria-label="归档" class="group inline-flex items-center gap-1 hover:text-accent focus-outline flex size-full justify-center p-3 sm:relative sm:size-8 sm:p-0"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="hidden sm:absolute sm:top-1/2 sm:left-1/2 sm:block sm:size-6 sm:-translate-x-1/2 sm:-translate-y-1/2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2 2 2 0 0 1-2 2H5a2 2 0 0 1-2-2M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M10 12h4" /></svg><span class="sm:sr-only">归档</span></a></li><li class="col-span-1 flex items-center justify-center"><a href="/zh/search/" title="搜索" aria-label="搜索" class="group inline-flex items-center gap-1 hover:text-accent focus-outline relative size-8"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-1/2 left-1/2 size-6 -translate-x-1/2 -translate-y-1/2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6" /></svg><span class="sr-only">搜索</span></a></li><li class="col-span-2 flex items-center justify-center gap-x-1 sm:gap-x-0" aria-label="语言"><a href="/blog/" lang="en" hreflang="en" title="English" aria-label="English" class="text-sm">EN</a></li><li class="col-span-1 flex items-center justify-center"><button id="theme-btn" class="focus-outline hover:[&amp;&gt;svg]:stroke-accent relative size-12 p-4 sm:size-8" title="切换主题" aria-label="auto" aria-live="polite"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-[50%] left-[50%] translate-[-50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z" /></svg><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-[50%] left-[50%] translate-[-50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M14.828 14.828a4 4 0 1 0-5.656-5.656 4 4 0 0 0 5.656 5.656M6.343 17.657l-1.414 1.414M6.343 6.343 4.929 4.929M17.657 6.343l1.414-1.414M17.657 17.657l1.414 1.414M4 12H2M12 4V2M20 12h2M12 20v2" /></svg></button></li></ul></nav></div></header><script type="module">function e(){let e=document.querySelector(`#menu-btn`),t=document.querySelector(`#menu-items`),n=document.querySelector(`#menu-icon`),r=document.querySelector(`#close-icon`);if(!e||!t||!n||!r)return;let i=e.dataset.labelOpen??`Open menu`,a=e.dataset.labelClose??`Close menu`;e.addEventListener(`click`,()=>{let o=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,o?`false`:`true`),e.setAttribute(`aria-label`,o?i:a),t.classList.toggle(`hidden`),t.classList.toggle(`grid`),n.classList.toggle(`hidden`),r.classList.toggle(`hidden`)})}function t(){let e=document.getElementById(`skip-to-content`);e&&e.addEventListener(`click`,e=>{if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.button!==0)return;e.preventDefault();let t=document.getElementById(`main-content`);t&&(t.setAttribute(`tabindex`,`-1`),t.addEventListener(`blur`,()=>t.removeAttribute(`tabindex`),{once:!0}),t.focus(),t.scrollIntoView({behavior:`smooth`}))})}e(),document.addEventListener(`astro:after-swap`,e),t(),document.addEventListener(`astro:after-swap`,t);</script><div class="app-layout flex items-center justify-start"><a id="back-button" href="/zh/blog/" class="group inline-flex items-center gap-1 hover:text-accent focus-outline hover:text-foreground/75 -ms-2 mt-8 mb-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="m15 6-6 6 6 6" /></svg><span>返回</span></a></div><script type="module">function e(){let e=document.querySelector(`#back-button`),t=sessionStorage.getItem(`backUrl`);t&&e&&(e.href=t)}document.addEventListener(`astro:page-load`,e),e();</script><main id="main-content" class="app-layout"><h1 style="view-transition-name:zh2018-phil-katz" class="text-accent inline-block text-2xl font-bold sm:text-3xl">Phil Katz的故事</h1><div class="my-2 flex items-center gap-2"><div class="text-muted-foreground flex items-center gap-x-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm sm:text-base" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><span aria-hidden="true" class="text-muted-foreground max-sm:hidden hidden">|</span></div><article id="article" class="mt-8 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>PKzip创始人短暂而饱受折磨的一生</p>
+<hr>
+<p>【搬运一篇2008年翻译过的东东。此文最早见于Milwaukee Journal Sentinel，2000年5月21日，网页链接来自JSOnline，但现在已经找不到了。看到以前翻译的东西，感觉现在还是蛮有进步的……】</p>
+<p><img src="http://i1.15yan.guokr.cn/2cjd0mypuk42jc0jr92y9dflv6c3tojs.jpg" alt=""></p>
+<p>4月14日，当人们发现Phil Katz死去的时候，他的身体陷在Southside旅馆房间的一个小桌旁边，怀里抱着一个装过烈酒的空瓶子。</p>
+<p>这位以“zip”而闻名，并且创建了一家价值数百万的软件公司的天才，最终死于长期酗酒导致的胰脏严重内出血。</p>
+<p>他当时孤单一人，和家人已经长期断绝关系，而对于他自己创立的位于Brown Deer的公司PKWare Inc.的员工来说，他也相当于一个陌生人。</p>
+<p>当时他37岁。</p>
+<p>这不是一个光彩的结局，尤其对于一个创建了世界上最有影响的软件（PKZip），不仅让技术信徒们惊叹，更让主流媒体侧目的人来说。</p>
+<p>Katz创作的软件，可以将计算机文件减小至50%到70%，从而节约宝贵的磁盘空间。他的压缩软件为计算机行业带来了一个行业标准，并且让“zip”成为了人尽皆知的计算机术语。</p>
+<p>但他的天才带来的财富并没有把他从后来地狱般的生活习惯中挽回来——妄想症，酗酒，脱衣舞吧。到最后，Katz只是偶尔地进行一些工作，在很晚的时候打开电脑，而用酒精和脱衣女郎填满他的整个白天。</p>
+<p>Katz在Mequon拥有一所独立公寓，但他很少呆在那里。为躲开他的逮捕令，他在机场附近不停更换廉价旅馆居住。他通过位于Franklin的Mailboxes Etc.快递服务获得他的邮件。</p>
+<p>“这个人在世界上连一个朋友都没有，我是说，一个真正的朋友都没有。”Chastity Fischer说，她是经常和Katz在一起的一个脱衣舞女，也是最后见到过Katz的人之一。</p>
+<p>“想象一下生活中一个人都没有，没有人可以打电话。没有人。”</p>
+<h2 id="孤独的高中">孤独的高中</h2>
+<p>Phil Katz是一个安静的患有哮喘的孩子，他最高的运动成就，不过是在Glendale附近跑跑越野摩托车。</p>
+<p>他是1980年Nicolet高中的毕业生。早在“geek（奇客，褒义）”这个说法还没和.com公司联系起来的时候，他就被认为是一个geek（怪人，贬义）了。</p>
+<p>“他一点都不合群，而且是大家指指点点的对象。”和Katz一起毕业的Rick Mayer说，“他说话鼻音有些重。他个子矮小，而且，我不想说他不好看，所以为只能说他看上去很一般吧。”</p>
+<p>听说Katz的去世之后，他高中的同桌，也是数学和物理的高材生，现在是心脏病理学医生的Ray Fedderly翻开他高中的毕业纪念册，在里边找到一条带着些许不安的留言：</p>
+<p>”我享受和你一起渡过数学和物理课的那些时光，在Nicolet这四个糟糕，漫长，无法忍受，折磨人而又美好的四年里。我希望你有光明的前途和幸福的生活（如果可能的话）。希望一个计算器就能为你带来莫大的快乐。”</p>
+<p>“如果我在18岁时就是一个手术医生的话，我应该知道该怎么做的。”Fedderly说，“我现在知道那是在请求帮助。而不是一个玩笑。”</p>
+<p>作为一个天生内向的人，Katz开始了他分析能力方面的追求。</p>
+<p>Katz曾经和他的父亲Walter在周末的下午下棋，晚上为可编程计算器编写代码，那是一个PC还没出现并改变计算机史的时期。</p>
+<p>因为可编程计算器内存只有一点点，Phil和Walter需要做很多非常高效的工作。</p>
+<p>“我记得他最早写的是一个处理月球着陆的游戏程序，”Katz以前的堂兄弟Brian Kiehnau说，他在1977年见到过Katz。</p>
+<p>1980年的时候，Katz在Wisconsin-Milwaukee大学主修计算机科学专业。大约在同一个时候，Walt和Hildegard Katz为他买了第一台计算机，一台原始的IBM PC，有两个软盘驱动器，一个单色显示器，还有64k的内存，和今日的计算机比起来微不足道的配置。</p>
+<p>得到这台PC以后，Katz立即开始在上面编写程序，将他大部分的空闲时间花在电子布告栏系统（BBS）上面，那是互联网的前身。</p>
+<p>BBS很快就变成了Katz的社交圈，在那里，别人懂得他熟练的编程技术，而且可以和他共享对计算机的激情。</p>
+<p>渐渐地，Katz喜欢上了在BBS上共享信息，因为和别人的交流可以让他把程序写得更好。可能在这些经验的影响下，Katz后来的PKWare才走 上了”共享软件“（Shareware）这一道路。用户可以先免费尝试这个软件，如果觉得它有价值的话，再向作者付费。以PKWare为例，用户出47美 元，可以得到一份说明书和免费的升级。</p>
+<p>“他花了很多很多时间和人们交流，帮助别人。他会在一个计算机用户组里边花几个小时和他们在一起。”Hildegard Katz说。“他非常非常乐于助人，这是他最可爱的一点。”</p>
+<p>但在1981年春的时候，悲伤席卷了这个家庭，Phil Katz的生活就开始变得不同了。</p>
+<p>Walter在55岁的时候，由于周而复始的胸痛，进行了心脏手术。几个小时以后，他去世了。</p>
+<p>父亲的去世Phil Katz是一个莫大的打击。很多年过去以后，有一次在Katz喝醉酒和Fischer聊天时还提到这个影响对他有多大。</p>
+<p>“他父亲的去世让他心碎。有一次我和他去他父亲的墓地时，”Fischer说，“他不停地说，如果他父亲活着的话，他们会一起去钓鱼，一起去做‘男人做的事情’。”</p>
+<p>Katz的朋友和家人说，Walter的去世让作为儿子的他更为孤独，并且让他更加和计算机深陷在一起。</p>
+<h2 id="深夜编程">深夜编程</h2>
+<p>1984年，Katz毕业并且拿了计算机科学文凭，并且受雇于Allen-Bradley Co.，他写的是运行“可编程逻辑控制器”的代码，这些代码，操控着Allen-Bradley公司全球客户工厂车间的制造设备。</p>
+<p>Katz在1986年离开Allen-Bradley，又开始为Graysoft工作，这是一家位于Milwaukee的软件公司。到了晚上，他会躲在卧室里写他自己的程序。</p>
+<p>他编写的是一个Arc的替代程序，Arc是当时一个常用的文件压缩工具。Katz使用了一些算法，让程序可以将一些指定的信息合并起来，比如，将每 一个“a-n-d”组合从文本中提取出来，这样会消去文本中的每一个“and”，“hand”，“sand”。这个程序可以将这些以及数以千计的其它字母 组合提取出来，并且在需要的时候将其恢复。</p>
+<p>Katz和他在BBS上的好友共享了这个软件的早期版本，称作PKArc，而且他花了无数的时间改善这个软件。到1987年时，这个软件在线上已经 有了相当的影响力，以至于PKArc已经开始蚕食Arc的开发公司，新泽西的System Enhancement Associates的市场份额。</p>
+<p>“我在邮件中收到一张支票，我想，哇！这很不错嘛，“1994年Katz在Journal Sentinel杂志的采访中这样说，”后来接着的几个月里，我又收到了更多的支票。“</p>
+<p>他转向他的母亲求助。</p>
+<p>“人们不停地打电话给他说，我们想要使用你的软件，我们要给你付钱。”Hildegard说。</p>
+<p>Katz在1987年离开了Graysoft，开始了他独自的奋斗。以前Graysoft的同事，后来1988年加入PKWare的Steve Burg说，PKArc的销售已经让Katz在Graysoft的30,000左右的薪水显得微不足道了。</p>
+<p>刚开始，Katz大部分的工作都是在Hildegard的厨房完成的。他们雇用了电话应答服务来应对洪水般的来电，而且给了Burg一个程序开发员的职位。</p>
+<p>同事们对他的才能印象很深。</p>
+<p>“他是个及其聪明的人，”1988年加入Katz公司，直到去年6月才离开的Doug Hay说，“他记得10年前考试的公式，而大部分人考完后20分钟就忘得一干二净了。”</p>
+<p>在后来被称为arc战争的那段时间里，BBS的用户开始将他们的.arc压缩更换为.zip格式。</p>
+<p>1988年，System Enhancement以版权和注册商标侵权为名起诉了PKWare，看着诉讼费的节节升高，Katz决定和他们达成协议。完整的协议内容不得而知，但当新泽西公司的代表遇到他们的对手时，也许吃了一惊。</p>
+<p>“System Enhancement的律师本来期望见到一家大公司，结果却来到了Hildegard的家里。”Kiehnau说，“他在BBS上留了一个地址，所以律师以为那里会有一幢豪华玻璃建筑之类的东西。真的很搞笑。”</p>
+<p>这起诉讼在BBS上的传播激起了人们对System Enhancement的大范围不满，从而加速了arc格式的死亡，尤其在PKWare很快推出新的，使用更好算法，却又不兼容arc的压缩工具以后。</p>
+<p>钱像洪水般一般地涌来。</p>
+<p>“Phil在很短的时间内就成了一个很有钱的人。”Burg说。</p>
+<p>当Hildegard处理商业事务时，Katz将他几乎全部时间都花在编程上面。他下午很晚才开始工作，一直工作到深夜。早期的PKWare员工说，这样的作息可以让他在工作的时候有一个安静的环境，而且丝毫不受干扰。</p>
+<p>“他很少在我们面前出现。他只做必须做的一些事情，”Kiehnau说，“如果公司创业后两年就破产了，我想他都不会在乎。”</p>
+<p>但Katz无法预测的作息让他的家人很郁闷。“他们会说，你现在拥有这么一个业务，而且这个业务还在增长，可你怎么连人都不在那里？”Kiehnau说。</p>
+<p>在Katz不在的时候，他通过电子传真和Hildegard以及PKWare的管理人员联系，他会监督产品的版本升级，而且偶尔在业务方面对Hildegard做一些指导。</p>
+<p>在业务增长的同时，他的个人生活问题也开始逐渐显露。Hildegard听说一些流言，说他的儿子出没在脱衣舞吧里，和那些女人调情，而且大量饮酒。她因此责问了Katz。了解这一家的人们说，忧心忡忡的母亲和走上歪路的儿子之间的关系，就这样开始变得紧张了。</p>
+<p>当Katz企图从PKWare取钱出去的时候，他们也会发生争吵。Kiehnau说，有时他会一次拿25,000这么多的钱出去。</p>
+<p>“Katz觉着，一个30岁的男人从他自己的公司取钱出来，还要央求自己的母亲，这是一件很荒谬的事情。”Kiehnau说。</p>
+<p>Katz对他的母亲干涉自己的事情越来越无法忍受，直至最后，他不再和他的母亲讲话了。1995年的一天，事情终于有了个了断。</p>
+<p>Hildegard收到一封给她的传真，告诉她她的儿子计划对她持有的25%股份进行敌意购入。他解雇了自己的母亲。</p>
+<p>“发生这一切的那天简直像一个葬礼，”Kiehnau回忆道，“这是Katz的产品，但又是他母亲的业务。我和Cindi（Kiehnau的前妻）接到电话赶到她住的地方，她在不停地哭泣，一边说‘phil为什么要这么做？’”</p>
+<p>同一年，Katz雇佣了Robert Gorman作为市场和销售主管。Gorman之前在Frontier Technologies的销售部门工作，这是另外一家Milwaukee的互联网软件公司。</p>
+<p>发生这次混乱以后，PKWare的业务在1990年代依然很强盛，印第安纳州Greenword的共享软件职业联盟执行主管Richard Holler这样说。</p>
+<p>他说，公司的市场份额很难衡量出来，因为不是所有的共享软件用户最终都会注册。但即使基于Windows的“zip”产品开始偷走PKWare的销售额，PKWare也能撑得住他们的业务。</p>
+<p>“他们依然是商业市场的一个大头，他们和其他使用PKZip压缩算法的软件公司有着持续的合作关系，”Holler说。</p>
+<p>由于Phil Katz这款革命性的软件，在他去世的时候，他的名字在的程序员人群里已经广为流传。不过这一不同寻常的成就即使为他带来了财富，最终还是没有拯救他的性命。</p>
+<h2 id="酒精的惩罚">酒精的惩罚</h2>
+<p>朋友们说，Katz手中有一杯酒的时候，他讲话会更自在，笑起来会更不拘束，呆的时间会长一些，而且梦想也会更高远一些。酒精可以让这个极度害羞的人从他躲藏的贝壳中出来片刻。</p>
+<p>“他一旦开始喝酒，你可以看到他脸上会出现淡淡的微笑。这个时候他就可以和人们谈话，或者讲个笑话什么的。当他不喝酒的时候，他不会讲笑话，他会思考得很深，而且不会那么有趣。”Fischer说，这个舞女在1994年遇到Katz，而且逐渐喜欢上了他。</p>
+<p>但酒精正让他走上了一条不归之路。</p>
+<p>在1991年5月7日，他开着带着PKWARE牌照的1990 Nissan 300ZX时，一名警察让他靠边停车。警察的报告上说，Katz当时坐在驾驶座上，眼睛几乎是闭着的。他被指控为酒后驾车。</p>
+<p>这只是如雨般的官司中的第一滴。</p>
+<p>大约1年以后，Katz再次因酒后驾车被起诉。在1994年和1999年之间，Katz因吊销执照后驾驶被逮捕5次。记录显示法庭共有6次与他驾驶相关的起诉，其中包括两次保释期逃跑。</p>
+<p>一旦法庭开始寻找Katz，他就更少出现在工作场所了。</p>
+<p>“他就这样消失了。”Hay说，“有时候你可以在贸易展览会上看到他，但也仅限于此了。”</p>
+<p>前雇员们说，当Katz去工作的时候，很明显可以看出他的疲劳。</p>
+<p>“他活在胡思乱想中，”一位不愿意透露姓名的前雇员说，“他认为街对面的WITI-TV六频道正在监视他。”</p>
+<p>Katz知道如果法院在PKWare寻找他的话，他们也许还会去他在Mequon乡村俱乐部附近的豪华私人公寓去找他。</p>
+<p>他的邻居们并不知道他的官司问题，对他的躲藏行为觉得很奇怪。很多人说他们从来没见过Katz，即使按理说他应该已经在这里居住5年了。</p>
+<p>“我从来没见过开灯，从来没见过车道上的车轮痕迹，我就住街对面。这简直有些吓人。”一位叫Peter Picus的邻居说。</p>
+<p>1997年8月，由于邻居关于恶臭以及蚊蝇老鼠的投诉，这栋公寓受到了公众的注意。</p>
+<p>邻居和警察都无法找到Katz，于是Mequon的官员取得了一张搜索证明，进入了这栋公寓。Mequon市的前卫生官员Kenneth Metzger说，他们发现了一大堆发臭的垃圾，色情杂志和视频，以及鞭子和链条之类的性玩具。</p>
+<p>“那真是一盘狼藉。我做这一行40多年了，这是我见过的最不像样的场面之一。”Metzger说，“膝盖那么深的垃圾。酒瓶子，罐头瓶子，腐烂的快餐四处都是。这人究竟怎么了，堕落成这个样子。”</p>
+<p>虽然Metzger和他的同僚对四处躲藏的Katz所知甚少，他们可以看出他是个有钱的人。在垃圾堆里边，他们发现了信用卡，现金，一台笔记本电脑，还有从没打开过的珠宝。</p>
+<p>Katz的朋友们说，这些信息的公开对他造成了很深的伤害。有些人说，这意味着结局就要上演了。</p>
+<p>“他们劫掠了他的房间，而且将发现的一切告诉了他们公司所有的人。他的母亲知道了，每个人都知道了。”Fischer说。</p>
+<p>“他知道人们会对他下什么样的定论，”她说。“他觉得自己被侵犯。他完全不去PKWare了。他不想让私人生活和他的雇员们搅在一起，没人想这样做。”</p>
+<p>在这个时候，Katz最亲近的人，只有脱衣舞吧里的舞女了。</p>
+<p>Fischer说Katz给她和其他舞女买了大量的礼品，经常带着她们成群结队去拉斯维加斯。有几个还和他一起去了1998年的Comdex计算机展会。</p>
+<p>“我会和他在一张床上睡觉。他从不会碰我或者偷看什么的，”她说，“有时候她会哭着说，‘抱着我，Chastity’，那你只得抱他一整个晚上。”</p>
+<p>“他不是一个肮脏的人，”她说，“他也不是一个怪人。我对着我的《圣经》起誓。他是我见过最无害，最慷慨，最不自私的人。”</p>
+<p>他的一些舞女朋友利用了他的慷慨，偷走他的信用卡为她们自己买东西。这让他的妄想症更为加重了。Katz开始保存任何写着他名字或者账户的邮件。他把这些东西都摞在他的1991 Nissan Pathfinder车子的后备箱里。</p>
+<p>“那辆Pathfinder非常恶心。后座简直完全不能用。”Fischer说，“从地面向上堆满了纸片。”</p>
+<p>由于害怕逮捕令，Katz一直在四处游荡。再加上他的酒后驾车指控，法庭记录显示，有半打对他不利的裁决，总共需要他支付30,000美元。</p>
+<p>Katz在Mitchell国际机场附近不停地更换旅馆，在每一家停留三到四天，然后搬到几百米外的另外一家去住。</p>
+<p>“你知道他在干什么吗？他每天都呆在旅馆房间里，”Fischer说，“可能只有在吃饭的时候，他才会出去一下。”</p>
+<p>Fischer说Katz有时候会在深夜在电话上给她留言，请求她来陪他。在他们谈话的时候，他有时会很愉快地谈起他的家庭，他的公司，以及他童年的时光。</p>
+<p>他说他和母亲以及妹妹的分开是一件很难过的事情，即使Hildegard被他解雇后他们再没有说过话，他还一直给她寄送鲜花和email。</p>
+<p>整个过程中，Katz会喝很多的酒。</p>
+<p>Fischer说他每天至少喝掉一升的Rumple minze和两瓶Bacardi rum。</p>
+<p>“他会喝到自己呕吐，我们还得看着他。我从来没陪过一个必须得看着的酗酒狂。看得我们也开始恶心了，”Fischer说，“我们会说，Phil你知道，这多不好啊，你在自己害自己，而我们还得看着你这么做。”</p>
+<p>Hildegard Katz说她儿子曾经进行过酗酒治疗。“我们都试图帮他。但和别的酗酒狂一样，你越对他们说你需要帮忙，他们就越会离你远一些，因为他们不想听到这个。”Hildegard说。</p>
+<p>“我以为他在康复治疗后真的好转了。”</p>
+<p>但他并没有好转。</p>
+<p>Fischer说，Katz去世几个星期前，她在一家Southside旅馆中见过他一次，那时她就觉得他已经不行了。他只穿着内衣，不停地、无法控制地打嗝，而且胃胀得怕人。</p>
+<p>“他服了几片安定，不这样他就没办法睡着。”她说，“他会有那种酒精引起的抽搐。我会和他玩一些电脑游戏，但他会时不时地跑去厕所。”</p>
+<p>“他那会情况已经很糟糕了，他会无法控制地在内裤中小便。他的肝脏已经完全不行了。他会吐血。”她说。</p>
+<p>帮Katz换掉内裤以后，Fischer离开了旅馆。</p>
+<p>此后她再也没有见到过他。</p>
+<p>在Katz去世后两天，人们才发现他的尸体。而PKWare的员工在几乎一个星期后才听到他去世的消息。</p>
+<p>接下来的日子里，PKWare公司收到数百封来自软件迷们哀悼的email。大部分人没有见过Katz，但知道他做过的事情。他去世的消息在《伦敦时报》，《纽约时报》以及abcnews.com等媒体上广为刊载。</p>
+<p>但在Phil Katz生命结束后，最难过的是那些遭受痛苦时间最长的人。Hildegard要远程去辨识她五年没有见面的儿子的尸体。</p>
+<p>后来，她回忆了儿子的去世。</p>
+<p>“我收到人们寄来的email，看到这么多从没见过Katz，或者和他说过话的人这么感激他，这让我感到有些惊异。有一个人说他救过他很多次。Phil很喜欢帮助别人。”</p>
+<p>“这是一个悲剧般的浪费，对于这么一个重要的人，对于他的能量和才华。”</p></article><hr class="my-8 border-dashed"><div id="btt-btn-container" class="fixed inset-e-4 bottom-8 z-50 md:sticky md:inset-e-auto md:float-end md:me-1 translate-y-14 opacity-0 transition duration-500"><button data-button="back-to-top" class="group bg-background relative px-2 py-1 size-14 rounded-full shadow-xl md:h-8 md:w-fit md:rounded-md md:shadow-none md:focus-visible:rounded-none md:bg-background/35 md:bg-clip-padding md:backdrop-blur-lg"><span id="progress-indicator" class="absolute inset-0 -z-10 block size-14 scale-110 rounded-full bg-transparent md:hidden md:h-8 md:rounded-md"></span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block rotate-90 md:hidden" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M5 12l6 6M5 12l6-6" /></svg><span class="group-hover:text-accent sr-only text-sm md:not-sr-only"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-4" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M12 5v14M16 9l-4-4M8 9l4-4" /></svg>回到顶部</span></button></div><script data-astro-rerun>
+  function backToTop() {
+    const rootElement = document.documentElement;
+    const btnContainer = document.querySelector("#btt-btn-container");
+    const backToTopBtn = document.querySelector("[data-button='back-to-top']");
+    const progressIndicator = document.querySelector("#progress-indicator");
+
+    if (!rootElement || !btnContainer || !backToTopBtn || !progressIndicator)
+      return;
+
+    backToTopBtn.addEventListener("click", () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+
+    let lastVisible = null;
+    function handleScroll() {
+      const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+      const scrollTop = rootElement.scrollTop;
+      const scrollPercent = Math.floor((scrollTop / scrollTotal) * 100);
+
+      progressIndicator.style.setProperty(
+        "background-image",
+        `conic-gradient(var(--accent), var(--accent) ${scrollPercent}%, transparent ${scrollPercent}%)`
+      );
+
+      const isVisible = scrollTop / scrollTotal > 0.3;
+
+      if (isVisible !== lastVisible) {
+        btnContainer.classList.toggle("opacity-100", isVisible);
+        btnContainer.classList.toggle("translate-y-0", isVisible);
+        btnContainer.classList.toggle("opacity-0", !isVisible);
+        btnContainer.classList.toggle("translate-y-14", !isVisible);
+        lastVisible = isVisible;
+      }
+    }
+
+    let ticking = false;
+    document.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+  backToTop();
+</script><ul class="mt-4 mb-8 flex flex-wrap gap-4 sm:my-8"><li><a data-astro-transition-scope="astro-bztu2lml-1" href="/zh/blog/tags/it考古/" class="flex items-center gap-0.5 border-foreground border-b-2 border-dashed hover:border-accent hover:text-accent hover:-mt-0.5 focus-visible:text-accent focus-visible:border-none text-sm"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="opacity-80 size-4" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 9h14M5 15h14M11 4 7 20M17 4l-4 16" /></svg>IT考古</a></li></ul><div class="flex flex-none flex-col items-center justify-center gap-1 md:items-start"><span class="italic">分享本文：</span><div class="text-center"><a href="https://x.com/intent/post?url=https://keyboardand.me/zh/blog/2018-phil-katz/" title="分享到 X" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="m4 4 11.733 16H20L8.267 4zM4 20l6.768-6.768m2.46-2.46L20 4" /></svg><span class="sr-only">分享到 X</span></a><a href="https://t.me/share/url?url=https://keyboardand.me/zh/blog/2018-phil-katz/" title="分享到 Telegram" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="m15 10-4 4 6 6 4-16-18 7 4 2 2 6 3-4" /></svg><span class="sr-only">分享到 Telegram</span></a><a href="mailto:?subject=See%20this%20post&amp;body=https://keyboardand.me/zh/blog/2018-phil-katz/" title="通过邮件分享" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="m3 7 9 6 9-6" /></svg><span class="sr-only">通过邮件分享</span></a></div></div><hr class="my-8 border-dashed"><div data-pagefind-ignore class="my-8 grid grid-cols-1 gap-6 sm:grid-cols-2"><a href="/zh/blog/2018-sara-coleridge/" class="flex w-full gap-1 hover:opacity-75"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block flex-none rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M5 12l6 6M5 12l6-6" /></svg><div><span>上一篇</span><div class="text-accent/85 text-sm">莎拉·柯勒律治和她的《美丽的课》</div></div></a><a href="/zh/blog/2018-oracle/" class="flex w-full justify-end gap-1 text-end hover:opacity-75 sm:col-start-2"><div><span>下一篇</span><div class="text-accent/85 text-sm">互联网先知的故事</div></div><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block flex-none rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M13 18l6-6M13 6l6 6" /></svg></a></div></main><footer class="app-layout mt-auto"><div class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4"><div class="flex flex-wrap items-center gap-1"><a href="https://github.com/weiwei" title="Keyboard And Me on Github" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" /></svg><span class="sr-only">Keyboard And Me on Github</span></a><a href="https://www.linkedin.com/in/oldjanx/" title="Keyboard And Me on Linkedin" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 1 0-4 0" /><path d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" /></svg><span class="sr-only">Keyboard And Me on Linkedin</span></a></div><div class="my-2 flex flex-col items-center text-sm whitespace-nowrap sm:flex-row"><span>&#169; 2026</span><span class="hidden sm:inline">&nbsp;|&nbsp;</span><span>保留所有权利。</span></div></div></footer><script type="module">var e=`theme`,t=`light`,n=`dark`;function r(){return localStorage.getItem(e)||(window.matchMedia(`(prefers-color-scheme: dark)`).matches?n:t)}var i=window.__theme?.value??r();function a(){localStorage.setItem(e,i),o()}function o(){let e=document.firstElementChild;e?.setAttribute(`data-theme`,i),e?.classList.toggle(`dark`,i===n),document.querySelector(`#theme-btn`)?.setAttribute(`aria-label`,i);let t=window.getComputedStyle(document.body).backgroundColor;document.querySelector(`meta[name='theme-color']`)?.setAttribute(`content`,t)}function s(){o(),document.querySelector(`#theme-btn`)?.addEventListener(`click`,()=>{i=i===t?n:t,a()})}s(),document.addEventListener(`astro:after-swap`,s),document.addEventListener(`astro:before-swap`,e=>{let t=document.querySelector(`meta[name='theme-color']`)?.getAttribute(`content`);t&&e.newDocument.querySelector(`meta[name='theme-color']`)?.setAttribute(`content`,t)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,({matches:e})=>{i=e?n:t,a()});</script></body></html><script data-astro-rerun>
+  function createProgressBar() {
+    const progressContainer = document.createElement("div");
+    progressContainer.className =
+      "progress-container fixed top-0 z-10 h-1 w-full bg-background";
+
+    const progressBar = document.createElement("div");
+    progressBar.className = "progress-bar h-1 w-0 bg-accent";
+    progressBar.id = "myBar";
+
+    progressContainer.appendChild(progressBar);
+    document.body.appendChild(progressContainer);
+  }
+  createProgressBar();
+
+  function updateScrollProgress() {
+    document.addEventListener("scroll", () => {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (document) {
+        const myBar = document.getElementById("myBar");
+        if (myBar) {
+          myBar.style.width = scrolled + "%";
+        }
+      }
+    });
+  }
+  updateScrollProgress();
+
+  function addHeadingLinks() {
+    const headings = Array.from(
+      document.querySelectorAll("h2, h3, h4, h5, h6")
+    );
+    for (const heading of headings) {
+      heading.classList.add("group");
+      const link = document.createElement("a");
+      link.className =
+        "heading-link ms-2 no-underline opacity-75 md:opacity-0 md:group-hover:opacity-100 md:focus:opacity-100";
+      link.href = "#" + heading.id;
+
+      const span = document.createElement("span");
+      span.ariaHidden = "true";
+      span.innerText = "#";
+      link.appendChild(span);
+      heading.appendChild(link);
+    }
+  }
+  addHeadingLinks();
+
+  function attachCopyButtons() {
+    const copyButtonLabel = "Copy";
+    const codeBlocks = Array.from(document.querySelectorAll("pre"));
+
+    for (const codeBlock of codeBlocks) {
+      const wrapper = document.createElement("div");
+      wrapper.style.position = "relative";
+
+      const computedStyle = getComputedStyle(codeBlock);
+      const hasFileNameOffset =
+        computedStyle.getPropertyValue("--file-name-offset").trim() !== "";
+
+      const topClass = hasFileNameOffset
+        ? "top-(--file-name-offset)"
+        : "-top-3";
+
+      const copyButton = document.createElement("button");
+      copyButton.className = `copy-code absolute end-3 ${topClass} rounded bg-muted border border-muted px-2 py-1 text-xs leading-4 text-foreground font-medium`;
+      copyButton.innerHTML = copyButtonLabel;
+      codeBlock.setAttribute("tabindex", "0");
+      codeBlock.appendChild(copyButton);
+
+      codeBlock?.parentNode?.insertBefore(wrapper, codeBlock);
+      wrapper.appendChild(codeBlock);
+
+      copyButton.addEventListener("click", async () => {
+        await copyCode(codeBlock, copyButton);
+      });
+    }
+
+    async function copyCode(block, button) {
+      const code = block.querySelector("code");
+      const text = code?.innerText;
+
+      await navigator.clipboard.writeText(text ?? "");
+
+      button.innerText = "Copied";
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 700);
+    }
+  }
+  attachCopyButtons();
+
+  /** Accessible image lightbox for article images. */
+  function initLightbox() {
+    const article = document.getElementById("article");
+    if (!article) return;
+
+    const prefersReducedMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    let overlay = null;
+    let lastFocused = null;
+
+    // Defer attribute mutations so they don't push the LCP timestamp.
+    // Event listeners below use delegation and don't need the attributes to exist yet.
+    requestAnimationFrame(() => {
+      const images = Array.from(article.querySelectorAll("img"));
+      for (const image of images) {
+        if (image.closest("a")) continue;
+        image.setAttribute("role", "button");
+        image.setAttribute("tabindex", "0");
+        image.setAttribute("aria-haspopup", "dialog");
+        image.setAttribute(
+          "aria-label",
+          image.alt ? `Zoom image: ${image.alt}` : "Zoom image"
+        );
+      }
+    });
+
+    function open(src, alt, trigger) {
+      if (overlay) return;
+      lastFocused = trigger ?? document.activeElement;
+
+      overlay = document.createElement("div");
+      overlay.setAttribute("role", "dialog");
+      overlay.setAttribute("aria-modal", "true");
+      overlay.setAttribute(
+        "aria-label",
+        alt ? `Image preview: ${alt}` : "Image preview"
+      );
+      overlay.className =
+        "fixed inset-0 z-50 flex cursor-zoom-out items-center justify-center bg-black/70 backdrop-blur-sm opacity-0 transition-opacity duration-200 motion-reduce:transition-none";
+
+      const closeButton = document.createElement("button");
+      closeButton.type = "button";
+      closeButton.setAttribute("aria-label", "Close image preview");
+      closeButton.className =
+        "absolute end-4 top-4 rounded p-2 text-3xl leading-none text-white";
+      closeButton.innerHTML = "&#10005;";
+      closeButton.addEventListener("click", close);
+
+      const image = document.createElement("img");
+      image.src = src;
+      image.alt = "";
+      image.className =
+        "max-h-[90dvh] max-w-[90dvw] cursor-default object-contain";
+
+      overlay.append(closeButton, image);
+      overlay.addEventListener("click", e => {
+        if (e.target === overlay && currentScale <= 1) close();
+      });
+
+      let currentScale = 1;
+      let translateX = 0;
+      let translateY = 0;
+      let initialDist = 0;
+      let initialScale = 1;
+      let panStartX = 0;
+      let panStartY = 0;
+      let panStartTranslateX = 0;
+      let panStartTranslateY = 0;
+      let lastTapTime = 0;
+
+      function applyTransform() {
+        image.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+      }
+
+      function resetTransform() {
+        currentScale = 1;
+        translateX = 0;
+        translateY = 0;
+        image.style.transform = "";
+      }
+
+      overlay.addEventListener(
+        "touchstart",
+        e => {
+          const t = e.touches;
+          if (t.length === 2) {
+            initialDist = Math.hypot(
+              t[1].clientX - t[0].clientX,
+              t[1].clientY - t[0].clientY
+            );
+            initialScale = currentScale;
+          } else if (t.length === 1) {
+            const now = Date.now();
+            if (now - lastTapTime < 300) {
+              e.preventDefault();
+              if (currentScale > 1) {
+                resetTransform();
+              } else {
+                currentScale = 2;
+                translateX = 0;
+                translateY = 0;
+                applyTransform();
+              }
+              lastTapTime = 0;
+              panStartX = t[0].clientX;
+              panStartY = t[0].clientY;
+              panStartTranslateX = translateX;
+              panStartTranslateY = translateY;
+            } else {
+              lastTapTime = now;
+              if (currentScale > 1) {
+                panStartX = t[0].clientX;
+                panStartY = t[0].clientY;
+                panStartTranslateX = translateX;
+                panStartTranslateY = translateY;
+              }
+            }
+          }
+        },
+        { passive: false }
+      );
+
+      overlay.addEventListener(
+        "touchmove",
+        e => {
+          const t = e.touches;
+          if (t.length === 2) {
+            e.preventDefault();
+            const dist = Math.hypot(
+              t[1].clientX - t[0].clientX,
+              t[1].clientY - t[0].clientY
+            );
+            currentScale = Math.min(
+              4,
+              Math.max(1, initialScale * (dist / initialDist))
+            );
+            applyTransform();
+          } else if (t.length === 1) {
+            if (currentScale > 1) {
+              e.preventDefault();
+              translateX =
+                panStartTranslateX + (t[0].clientX - panStartX) / currentScale;
+              translateY =
+                panStartTranslateY + (t[0].clientY - panStartY) / currentScale;
+              const maxX = Math.max(
+                0,
+                (image.clientWidth - overlay.clientWidth / currentScale) / 2
+              );
+              const maxY = Math.max(
+                0,
+                (image.clientHeight - overlay.clientHeight / currentScale) / 2
+              );
+              translateX = Math.min(maxX, Math.max(-maxX, translateX));
+              translateY = Math.min(maxY, Math.max(-maxY, translateY));
+              applyTransform();
+            } else {
+              e.preventDefault();
+            }
+          }
+        },
+        { passive: false }
+      );
+
+      overlay.addEventListener("touchend", e => {
+        if (e.touches.length === 0 && currentScale <= 1.05) {
+          resetTransform();
+        }
+      });
+
+      overlay.addEventListener("touchcancel", e => {
+        if (e.touches.length === 0 && currentScale <= 1.05) {
+          resetTransform();
+        }
+      });
+
+      document.body.appendChild(overlay);
+      document.body.style.overflow = "hidden";
+      document.addEventListener("keydown", onKeyDown);
+      window.__closeLightbox = close;
+
+      requestAnimationFrame(() => overlay?.classList.add("opacity-100"));
+      closeButton.focus();
+    }
+
+    function close() {
+      if (!overlay) return;
+      const el = overlay;
+      overlay = null;
+      window.__closeLightbox = null;
+
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+      lastFocused?.focus();
+      lastFocused = null;
+
+      if (prefersReducedMotion()) {
+        el.remove();
+        return;
+      }
+      const remove = () => el.remove();
+      el.addEventListener("transitionend", remove, { once: true });
+      setTimeout(remove, 250); // fallback in case transitionend never fires
+      el.classList.remove("opacity-100");
+    }
+
+    function onKeyDown(e) {
+      if (e.key === "Escape") {
+        close();
+      } else if (e.key === "Tab") {
+        trapFocus(e);
+      }
+    }
+
+    // Keep keyboard focus inside the open dialog.
+    function trapFocus(e) {
+      if (!overlay) return;
+      const focusables = overlay.querySelectorAll(
+        'a[href], button, [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+
+    function triggerFromEvent(e) {
+      const image = e.target.closest("img");
+      if (!image || !article.contains(image) || image.closest("a")) return null;
+      return image;
+    }
+
+    function activate(image) {
+      open(image.currentSrc || image.src, image.alt, image);
+    }
+
+    article.addEventListener("click", e => {
+      const image = triggerFromEvent(e);
+      if (!image) return;
+      e.preventDefault();
+      activate(image);
+    });
+
+    article.addEventListener("keydown", e => {
+      if (e.key !== "Enter" && e.key !== " " && e.key !== "Spacebar") return;
+      const image = triggerFromEvent(e);
+      if (!image) return;
+      e.preventDefault();
+      activate(image);
+    });
+  }
+  initLightbox();
+
+  if (!window.__lightboxSwapBound) {
+    window.__lightboxSwapBound = true;
+    document.addEventListener("astro:before-swap", () =>
+      window.__closeLightbox?.()
+    );
+  }
+
+  document.addEventListener("astro:after-swap", () =>
+    window.scrollTo({ left: 0, top: 0, behavior: "instant" })
+  );
+</script>

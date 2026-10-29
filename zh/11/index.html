@@ -1,0 +1,593 @@
+<!DOCTYPE html><html dir="ltr" lang="zh-CN" class="overflow-y-scroll scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"><link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><link rel="canonical" href="https://keyboardand.me/zh/11/"><meta name="generator" content="Astro v7.3.4"><!-- Font --><style>@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/2213c1e7fbe06cc7.woff") format("woff"), url("/_astro/fonts/b87f789471b4c602.ttf") format("truetype");font-display:swap;font-weight:300;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/c487dbd9c215141e.woff") format("woff"), url("/_astro/fonts/bb0c016d60298234.ttf") format("truetype");font-display:swap;font-weight:400;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/0976c79a1e97c08d.woff") format("woff"), url("/_astro/fonts/b3e69a4f03324880.ttf") format("truetype");font-display:swap;font-weight:500;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/3c46d5a1dde2929d.woff") format("woff"), url("/_astro/fonts/0ff1dfaf1dff21d0.ttf") format("truetype");font-display:swap;font-weight:600;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/e9aa617e80052f4b.woff") format("woff"), url("/_astro/fonts/d9a5ad8b8018e5de.ttf") format("truetype");font-display:swap;font-weight:700;font-style:italic;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/5056f1a50e5e7744.woff") format("woff"), url("/_astro/fonts/3e4dac0d0220e48a.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/e734307f8c328338.woff") format("woff"), url("/_astro/fonts/ba3036786bf88603.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/dfa89044152f7da4.woff") format("woff"), url("/_astro/fonts/39aec4e7fc7cc077.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/8bbd58b325585200.woff") format("woff"), url("/_astro/fonts/b33609507afd910d.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404";src:url("/_astro/fonts/035035a9ddbd14aa.woff") format("woff"), url("/_astro/fonts/50fcf54bf575f53f.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-1a30c214885cb404 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}:root{--font-google-sans-code:"Google Sans Code-1a30c214885cb404","Google Sans Code-1a30c214885cb404 fallback: Courier New",monospace;}</style><!-- Primary meta --><title>第 11 页 | Keyboard And Me</title><meta name="title" content="第 11 页 | Keyboard And Me"><meta name="description" content="Weiwei的日志：编程、翻译和语言。"><meta name="author" content="Weiwei"><link rel="sitemap" href="/sitemap-index.xml"><!-- Language alternates --><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Keyboard And Me"><meta property="og:title" content="第 11 页 | Keyboard And Me"><meta property="og:description" content="Weiwei的日志：编程、翻译和语言。"><meta property="og:url" content="https://keyboardand.me/zh/11/"><meta property="og:image" content="https://keyboardand.me/og.png"><!-- Twitter / X --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://keyboardand.me/zh/11/"><meta property="twitter:title" content="第 11 页 | Keyboard And Me"><meta property="twitter:description" content="Weiwei的日志：编程、翻译和语言。"><meta property="twitter:image" content="https://keyboardand.me/og.png"><!-- RSS autodiscovery --><link rel="alternate" type="application/rss+xml" title="Keyboard And Me" href="https://keyboardand.me/zh/rss.xml"><!-- Filled at runtime by theme.ts to match the current background colour --><meta name="theme-color" content=""><!-- Extra head content injected by child layouts (e.g. JSON-LD, article meta) --><!--
+      Inline FOUC-prevention script: sets data-theme on <html> before
+      the browser paints. Runs synchronously, no defer/async.
+    --><script>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const theme = stored ?? (prefersDark ? "dark" : "light");
+        const root = document.firstElementChild;
+        root?.setAttribute("data-theme", theme);
+        root?.classList.toggle("dark", theme === "dark");
+        // Expose value so theme.ts can skip re-detection.
+        window.__theme = { value: theme };
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.C1dAp4S4.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><link rel="stylesheet" href="/_astro/Footer.BDxknAL0.css"><style>[data-astro-transition-scope="astro-pypwivhu-1"] { view-transition-name: zh2018-no-sears; }@layer astro { ::view-transition-old(zh2018-no-sears) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-no-sears) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-no-sears) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-no-sears) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-2"] { view-transition-name: zh2018-oracle; }@layer astro { ::view-transition-old(zh2018-oracle) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-oracle) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-oracle) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-oracle) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-3"] { view-transition-name: zh2018-phil-katz; }@layer astro { ::view-transition-old(zh2018-phil-katz) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-phil-katz) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-phil-katz) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-phil-katz) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-4"] { view-transition-name: zh2018-sara-coleridge; }@layer astro { ::view-transition-old(zh2018-sara-coleridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-sara-coleridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-sara-coleridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-sara-coleridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-pypwivhu-5"] { view-transition-name: zh2018-temple-os-terry-davis; }@layer astro { ::view-transition-old(zh2018-temple-os-terry-davis) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(zh2018-temple-os-terry-davis) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(zh2018-temple-os-terry-davis) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(zh2018-temple-os-terry-davis) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-pypwivhu-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-pypwivhu-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"><a id="skip-to-content" href="#main-content" class="bg-background text-accent absolute inset-s-16 -top-full z-50 px-3 py-2 backdrop-blur-lg transition-all focus:top-4">跳到正文</a><header class="app-layout flex flex-col items-center justify-between sm:flex-row"><div class="border-border bg-background relative flex w-full items-baseline justify-between border-b py-4 sm:items-center sm:py-6"><a href="/zh/" class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none">Keyboard And Me</a><nav id="nav-menu" class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"><button id="menu-btn" class="focus-outline self-end p-2 sm:hidden" aria-label="打开菜单" aria-expanded="false" aria-controls="menu-items" data-label-open="打开菜单" data-label-close="关闭菜单"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="hidden" viewBox="0 0 24 24" id="close-icon"><path stroke="none" d="M0 0h24v24H0z" /><path d="M18 6 6 18M6 6l12 12" /></svg><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep" viewBox="0 0 24 24" id="menu-icon"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 6h16M7 12h13M10 18h10" /></svg></button><ul id="menu-items" class="[&amp;&gt;li&gt;a]:hover:text-accent mt-4 hidden w-44 grid-cols-2 place-content-center gap-2 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0 sm:[&amp;&gt;li]:h-8 [&amp;&gt;li&gt;a]:block [&amp;&gt;li&gt;a]:px-4 [&amp;&gt;li&gt;a]:py-3 [&amp;&gt;li&gt;a]:text-center [&amp;&gt;li&gt;a]:font-medium sm:[&amp;&gt;li&gt;a]:px-2 sm:[&amp;&gt;li&gt;a]:py-1"><li class="col-span-2"><a href="/zh/blog/">文章</a></li><li class="col-span-2"><a href="/zh/blog/tags/">标签</a></li><li class="col-span-2"><a href="/zh/about/">关于</a></li><li class="col-span-2"><a href="/zh/blog/archives/" title="归档" aria-label="归档" class="group inline-flex items-center gap-1 hover:text-accent focus-outline flex size-full justify-center p-3 sm:relative sm:size-8 sm:p-0"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="hidden sm:absolute sm:top-1/2 sm:left-1/2 sm:block sm:size-6 sm:-translate-x-1/2 sm:-translate-y-1/2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2 2 2 0 0 1-2 2H5a2 2 0 0 1-2-2M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M10 12h4" /></svg><span class="sm:sr-only">归档</span></a></li><li class="col-span-1 flex items-center justify-center"><a href="/zh/search/" title="搜索" aria-label="搜索" class="group inline-flex items-center gap-1 hover:text-accent focus-outline relative size-8"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-1/2 left-1/2 size-6 -translate-x-1/2 -translate-y-1/2" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6" /></svg><span class="sr-only">搜索</span></a></li><li class="col-span-2 flex items-center justify-center gap-x-1 sm:gap-x-0" aria-label="语言"><a href="/" lang="en" hreflang="en" title="English" aria-label="English" class="text-sm">EN</a></li><li class="col-span-1 flex items-center justify-center"><button id="theme-btn" class="focus-outline hover:[&amp;&gt;svg]:stroke-accent relative size-12 p-4 sm:size-8" title="切换主题" aria-label="auto" aria-live="polite"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-[50%] left-[50%] translate-[-50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z" /></svg><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="absolute top-[50%] left-[50%] translate-[-50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M14.828 14.828a4 4 0 1 0-5.656-5.656 4 4 0 0 0 5.656 5.656M6.343 17.657l-1.414 1.414M6.343 6.343 4.929 4.929M17.657 6.343l1.414-1.414M17.657 17.657l1.414 1.414M4 12H2M12 4V2M20 12h2M12 20v2" /></svg></button></li></ul></nav></div></header><script type="module">function e(){let e=document.querySelector(`#menu-btn`),t=document.querySelector(`#menu-items`),n=document.querySelector(`#menu-icon`),r=document.querySelector(`#close-icon`);if(!e||!t||!n||!r)return;let i=e.dataset.labelOpen??`Open menu`,a=e.dataset.labelClose??`Close menu`;e.addEventListener(`click`,()=>{let o=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,o?`false`:`true`),e.setAttribute(`aria-label`,o?i:a),t.classList.toggle(`hidden`),t.classList.toggle(`grid`),n.classList.toggle(`hidden`),r.classList.toggle(`hidden`)})}function t(){let e=document.getElementById(`skip-to-content`);e&&e.addEventListener(`click`,e=>{if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.button!==0)return;e.preventDefault();let t=document.getElementById(`main-content`);t&&(t.setAttribute(`tabindex`,`-1`),t.addEventListener(`blur`,()=>t.removeAttribute(`tabindex`),{once:!0}),t.focus(),t.scrollIntoView({behavior:`smooth`}))})}e(),document.addEventListener(`astro:after-swap`,e),t(),document.addEventListener(`astro:after-swap`,t);</script><main id="main-content" data-layout="index" data-home-path="/zh/11/" class="app-layout my-1"><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-no-sears/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-1" class="text-2xl font-bold sm:text-3xl">你很可能不需要“亲密育儿法”</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>《西尔斯亲密育儿百科》这本书现在在中国很受追捧。里边除了讲“育儿百科”以外，另外一个重点就是兜售西尔斯的所谓“亲密育儿法”，用英语讲叫Attachment Parenting。我这里的目的是给亲密育儿法浇点冷水。
+不好意思没找到合适的图你就将就看看吧。</p>
+<p>亲密育儿法的基本精神可以用一句话概括：父母应该尽可能满足婴儿的一切需求，否则将来宝宝长大了变成没心没肺不招人爱的怪物可别怪我。后面这句话是我加上的，西尔斯自己没说，但是整本书字里行间都充满了这样的暗示，相信看过书的人都能感觉到。</p>
+<p>亲密育儿法的心理学依据是心理学中所谓的“依附理论”，这个理论基本意思是说儿童小时候需要从父母那里获取足够的安全感，否则会导致长大后性格缺陷甚至心理疾病。这个理论本身没错，但是到了西尔斯这里就明显有点发挥过度了。实际上只有长期对儿童的精神需求的忽视才会导致儿童心理发育的问题，会去主动买育儿书的父母，一定是非常关心宝宝发育的家长，这种问题在他们身上是肯定不会有的。</p>
+<p>亲密育儿的操作上也会有很多问题，第一个问题就是对父母的需求实在太高了。你几乎需要一天24小时不间断地满足宝宝的需求，这对于家长的体力和精神都是极大的挑战，看看每一个实施亲密育儿的妈妈就知道了，她们总是处于身心疲惫随时崩溃的边缘，就算已经做了很多，还要时时担心自己哪里做得不够。这样的状态带出来的宝宝，你相信他会更好嘛，你相信嘛？</p>
+<p>有很多的研究表明对婴幼儿进行纪律性的训练也是可以做到的，而且这种训练只要做得恰当，对于婴幼儿会大有好处。亲密育儿法一味地强调婴幼儿需求，排斥别的可能性，这种态度很不对劲。</p>
+<p>亲密育儿法推崇的一些东西其实是没有足够科学依据的，下面拣主要的列几条。</p>
+<ol>
+<li>
+<p>纯母乳喂养。母乳喂养很好，纯母乳喂养很好，值得提倡，这些都没错。但是毫无根据地贬低混合喂养或者奶粉喂养就过了。妈妈们完全可以根据自己的情况选择不同的喂养方式。母乳邪教的人总是把混合喂养和奶粉喂养说得跟犯了多大的罪一样，平白无故给妈妈们添加了很多无谓的压力。母乳喂养对母亲的最大好处是大幅减小得乳腺癌的可能性，而最新的研究表明，和奶粉喂养相比，母乳对婴儿的好处并不明显。</p>
+</li>
+<li>
+<p>母子同睡。在诸多数据都表明同睡对婴儿有压迫和窒息风险的情况下西尔斯还在给同睡开脱，这个说法实在叫人叹气。过度疲劳的父母和宝宝同睡风险更大，实施亲密育儿的父母则基本一直是处于过度疲劳的状态中的。正式的育儿指南，比如美国儿科学会的指南，就明确地指出大人和婴儿最好分床睡觉。</p>
+</li>
+<li>
+<p>西尔斯还说婴儿要多抱，而且恨不得让你一天24小时抱着。西尔斯认为多抱有利于婴儿智力和感情发育，可惜这些都没有任何科学根据。西尔斯说把婴儿背身上是人类自古以来的传统，拜托了那是因为古人和原始部落的人又要下地干活又要带娃实在没别的选择好不好？这一条催生了多少婴儿背带的生意啊。这下好，吃奶要抱，睡觉要抱，出去玩还得抱，还嫌妈妈不够累是不是？</p>
+</li>
+<li>
+<p>西尔斯反对睡眠训练。事实上没有任何证据证明合理控制下的婴儿哭泣会对婴儿有任何长期不良影响。不训练睡眠的结果就是一些宝宝会一直需要妈妈陪睡和哄睡，妈妈不在就睡不安稳，然后妈妈们一天到晚脱不开身，个个累得像狗。</p>
+</li>
+</ol>
+<p>当妈妈的本来心理压力就大，看了这本书后会更觉得自己这里那里做得不够，心理压力就更大了。而如果真的照着书上的一条一条去做，又会发现自己累得稀里糊涂，结果还是有好多做不到，于是心理压力更大。其实父母心理压力大对婴儿的负面影响更值得关注好不好？因为真的有研究表明父母的压力会影响婴幼儿的身心健康。</p>
+<p>实际上做父母的本能就是跟孩子亲密，根本不用看这些东西就知道怎么做。当父母的首先要调节好自己的精力和状态，才能带好宝宝。一个把父母拖得疲惫不堪的育儿法肯定不是什么好育儿法。育儿本来就是很累的一件事情，但差不多就行了，你的多付出也许会为你多换来一点心安，但实际上可能真的弊大于利，仔细想想吧。</p>
+<p>我前面一直强调证据证据，什么是可靠的证据呢？能查到科学论文的，有可靠统计结果的，被别人重复实验并且确认过的，这些才是可靠的证据。自己想当然推理出来，没有数据支持的，就不是可靠证据。很可惜西尔斯的亲密育儿理论并不完全是基于可靠证据的。</p>
+<p>如果你已经买了这本书，里边关于婴儿发育阶段以及常见问题这块的东西还是挺可靠的，关于亲密育儿的那块随便看看就行了，能做的可以做做，做不到的也别勉强，真的没关系的。这只是众多育儿方法的一种而已，而且就目前的情况来看，肯定不是最高明的一种。</p>
+<p>另外如果你是一名有自己事业或者注重女权的妈妈，那你就更不用去看什么亲密育儿法了。亲密育儿法要求妈妈完全的角色投入，是一种传统伦理味道很浓郁而实际证据很稀薄的育儿法。好歹现在也是21世纪了，我相信妈妈们可以有更多的选择，而不是只能被宝宝绑着。</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-oracle/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-2" class="text-2xl font-bold sm:text-3xl">互联网先知的故事</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>一个古老的极客圈文艺游戏</p>
+<hr>
+<p>人类是好奇的动物。自从有了互联网，就不断有人在上面提问，不管是为了解决手头哦的实际问题，还是单纯好奇。提问的途径也有很多，过去只有电子邮件，论坛或新闻组，后来有了问答网站。问答网站一开始很简单，能做的只是你问我答而已。后来问答网站功能越来越强，风格也开始发生差异化，有的强调个人荣誉，给你提供能写到简历里的东西；有的强调人际交流，让你在里边流连忘返；有的是专家坐镇，让你得到绝对权威的答案；有的则是充分发挥每个用户的作用，让人们都有自己的表达机会。到了移动时代，问答的场所又被搬到了移动终端上面，成为了你手机里的应用。</p>
+<p>关于“问答”这种典型互联网行为的文章，你也许可以找到成千上万篇，但这篇不是。</p>
+<p>这篇要写的是一个非典型的互联网现象，这个现象的表现形式也是问答，但和为了长知识或者解决问题的问答不一样，这里的问答只是一个游戏的形式，它的根本目的是通过问答实现即兴的幽默文字创作，并且在一个圈子里分享这些创作成果。</p>
+<p>这个现象，或者说这个游戏吧，它的名字叫做The Internet Oracle，也就是“互联网先知”。</p>
+<p><img src="http://i1.15yan.guokr.cn/gexycgn8igpnjplch5w0ycr5ytx57c87.jpg" alt=""></p>
+<p>极具旧时年代风格的先知logo</p>
+<p>人是爱游戏的动物，至少大部分人都是。人是爱创作的动物，至少一小部分人是。这个世界上的很多有趣的东西都是这一小批爱玩爱创造的人做出来的。这些创造的目的，不是为了解决或大或小的问题，也不是为了让自己名留青史，而是纯粹为了好玩。除了自己从创造中获取乐趣以外，能和一群人一起创造并且分享创造的成果，也是一件很开心的事情。这种游戏自古以来就在各阶层人群里流行着。如果你是文人，你可以和伙伴们聚在一起吟诗作对，如果你不是文人，你可以和伙伴们结伴到妹子出没的地方唱山歌。</p>
+<p>“互联网先知”就是这样的一个存在。</p>
+<h2 id="认识先知">认识先知</h2>
+<p>如果你到互联网先知的<a href="http://internetoracle.org/">网站</a>，你会发现里边一开始就写着：</p>
+<blockquote><p>你是否被棘手的困难所纠缠？你是否被想不通的问题所困扰？你是不是为了找到答案而心急如焚？互联网先知可以帮助你！互联网先知无所不知，和所有的伟大先知一样，他会告诉你问题的答案。作为报答，先知也许会要求你提供一点小小的服务……</p></blockquote>
+<p>如果你再翻几页，就会看到先知过去回答过的问题，比如说这个：</p>
+<p>Usenet先知对你的问题作了深思熟虑。你的问题是：</p>
+<blockquote><p>你确定要退出（Y/N）?</p></blockquote>
+<p>作为回答，先知如是说：
+} y
+} 你完全确定吗？（Y/N）
+} y
+} 百分之百确定，不是开玩笑吗？（Y/N）
+} y
+} 你愿意为此签订具备法律约束力的协议吗？（Y/N）
+} y
+} 用你自己的血签字？（Y/N）
+} y
+} 一式三份？（Y/N）
+} y
+} 为什么？这个程序对你还不够好用吗？（Y/N）
+} n
+} 呵，我算是知道了。你随随便便地打开程序，使用了我的代码，然后不解释
+} 一下就退出程序，你觉得这样做合适吗？（Y/N）
+} y
+} 哼！我不在你身上浪费时间了。爱见不见！
+}
+} **恭喜你通过了《计算机辅助自我判断和决策》过程！**</p>
+<p>从这段问答，你大概应该能够体会到这个游戏的内容了。你可以提出任意一个问题，然后你会得到一个答案，答案的内容是明显的即兴文字创作。参与这个游戏也很简单：</p>
+<ol>
+<li>向先知写一封电子邮件，里边包含你的问题。</li>
+<li>先知收到你的信，把你的问题转给另一个人。</li>
+<li>另一个人回答你的问题，并把答案发给先知。</li>
+<li>先知把答案存档并且发一份给你。</li>
+<li>先知把一个来自其他参与者的问题发给你。</li>
+<li>你回答先知发给你的问题并寄回。</li>
+<li>如此继续……</li>
+</ol>
+<p>只要你参与了这个游戏，就可以源源不断地进行下去了。“先知”其实是一个分配电子邮件的程序，它起到的是类似棋牌游戏里面“发牌者”这样的身份，是一个自动发牌员。</p>
+<p>不过先知也是一个虚拟的游戏主角。所有的问题都是用向先知提问的口气提出的，所有的回答也必须要以先知的口吻进行。先知作为一个神或者接近于神的存在，有时自然要体现出自己“神”的一面，这也给答案带来了很多趣味，比如说这个：</p>
+<p>Usenet先知认真思考了你的问题。你问的是：</p>
+<blockquote><p>无所不知的先知啊，我在这里向你卑微地恳求一个问题的答案：</p><p>怎样才能写出世界上最好的数据压缩算法？</p></blockquote>
+<p>作为回答，先知如是说：
+} .</p>
+<p>先知给了你一个答案，但这个答案是用世界上最好的数据压缩算法压缩过的，一切都在这一个圆点里面，你就自己领会吧。</p>
+<p>先知的历史</p>
+<hr>
+<p>早在1976年，就有一个叫Peter Langston的Unix程序员就想出了这个点子，他写了一个叫“先知（Oracle）”的游戏程序，所做的就是类似上面描述的事情。当时的计算机不用说光盘硬盘了，连软盘都没有，这个游戏是放在磁带上面发出去的。直到1988年你还能在一些Unix系统里看到这个游戏。</p>
+<p><img src="http://i1.15yan.guokr.cn/paorceesbm3h6rah2xgo50zo1tr50ugl.jpg" alt=""></p>
+<p>Peter Langston是70年代的Unix游戏程序员，退休后就跑去玩音乐去了。</p>
+<p>到了1989年，一个叫Lars Huttar的程序员听说了这个程序，感觉挺好玩的，于是自己就写了个类似功能的东西，并且共享到了Usenet上面。这个程序没过多久就被印第安纳大学的Steve Kinzler看到了。Steve是学校里的系统管理员，觉得这个挺好玩的，就把程序放到了学校的服务器上，于是这个游戏就在学校里流行起来了。</p>
+<p><img src="http://i1.15yan.guokr.cn/5jptsevgs14nrjpyiczo47ueskzvslmq.jpg" alt=""></p>
+<p>据说这是Lars Huttar的照片</p>
+<p>不管是最早Peter的Oracle程序，还是后来Steve部署的Oracle程序，它们都只能单独运行在Unix系统上面。Unix是多用户系统，可以让多人通过网络登录，所以这个程序是可以实现多人玩的，只要你能登录服务器就可以了。</p>
+<p><img src="http://i1.15yan.guokr.cn/4xncel0olaigq9or9zqnzquq1u01848r.jpg" alt=""></p>
+<p>Steve Kinzler的近照。由于不是网络名人，要找一张清晰照片真的很难……到现在他还在管理着Oracle程序。</p>
+<p>不过毕竟一台机器能登录的人数量是有限的，怎样能让大家不登陆机器也能参与呢？来自美国普渡大学的学生Ray Moody想了个注意，就是用电子邮件的方式实现问答。Ray把他改进后的程序发出来后，Steve又把它架在了服务器上，于是从此以后，所有的人都可以上网玩这个游戏了。</p>
+<p>1989年开始，Steve就开始向Usenet的rec.humor下面的新闻组里投递问答精选，后来就有人帮忙申请了rec.humor.oracle这个新闻组，“Usenet先知”的名声便传开了。1996年开始，Steve建立了一个相关的网站，并且把名字改为“互联网先知(The Internet Oracle)”，通过这个网站，你可以看到所有的问答内容，并为它们评分。</p>
+<p>随着先知受欢迎程度的提高，Steve还招募了几十位义务管理员，他们负责为答案收集评分并且维护答案合辑，这些人被称作“祭司”。先知的新闻组最多的时候有25000人订阅，听上去似乎不太多，但考虑到互联网早期全世界的网民加起来都没有上海浦东的人口多，25000这个数字已经很了不起了。</p>
+<h2 id="先知的文化">先知的文化</h2>
+<p>先知游戏的参与者大多是早期的互联网极客，所以很多问答都和计算机有关，我们前面看到的两个例子就是这样。除了计算机，还有一个受欢迎的主题就是禅。也许是因为“禅”的神秘性和先知有一定的相通之处吧，这个话题也是长盛不衰的，比如说这个例子：</p>
+<p>Usenet先知认真思考了你的问题。你问的是：</p>
+<p>> 为什么是牛？</p>
+<p>作为回答，先知如是说：</p>
+<p>} 無。</p>
+<p>你欠先知两个大大的吻。</p>
+<p>这段对话咋一看毫无头绪，问题没来由，答案也没道理。其实主要是因为答案不好翻译。“無”是禅宗用语，英文读作Mu，和牛叫的声音一样。而Mu又和接吻的声音相近，所以这样整个答案就串起来了。另外结尾的“你欠先知……”也是经常可以在答案中见到的，这就是先知要求你提供的作为报偿的“小小的服务”。</p>
+<p>除了计算机和禅以外，神话、历史、时事、政治、科学、流行文化等方面的内容，都会成为先知问答的主题。先知的答案也不总是这么简短，很多时候先知会给出很长的答案，最长的可能有这篇文章这么长。答案有时候是文字游戏，有时候是详尽而又荒诞的分析，有时候则是先知通过讲故事的方式让你自己领悟答案。</p>
+<p>先知最不喜欢别人问的问题来自一个绕口令，就是所谓的“啄木鸟问题”：</p>
+<blockquote><p>如果啄木鸟能啄木那么啄木鸟能啄多少木？</p></blockquote>
+<p>因为这个问题在早期已经被人问滥了。所以后来先知碰到这个问题，就会祭出大杀器：*ZOT*，就是用法杖释放一道闪电，把提问的人就地消灭。所以，如果你提问表现出对先知的不敬，后果会是很危险的。</p>
+<p>为了表示你对先知的尊重，提问最好用谦卑和赞叹的口气开始，比如：</p>
+<blockquote><p>高高在上无所不能的先知啊，请回答一下我这个不起眼的问题吧……</p></blockquote>
+<p>随着时间的积累，先知的问答里还出现了一些常见的角色，例如一个名叫Zadoc的一无是处的大祭司，先知的女朋友Lisa，一个名叫Og的原始人，他们会反复出现在先知的故事里，并且个性鲜明。</p>
+<h2 id="结尾">结尾</h2>
+<p>先知游戏的典型特点就是匿名性，问答邮件在中转的过程中都会被隐去身份。虽然先知程序也允许提问或者回答的人在邮件里保留一个签名，但实际上极少有人这样做。大家都热衷于维护先知这个角色，并以能为它添加内容为乐。</p>
+<p>匿名创作一直存在，在互联网之前人们就可以匿名写作，有了互联网，匿名写作就医更容易了。我们看到的大部分匿名写作，在发表的时候其实还是有个名字的，我们叫它假名、笔名、网名、或者昵称。而在互联网先知这个游戏里面，匿名是完全彻底的，你看不到任何个人信息，所有的写作都不会留下任何个人标记，最后表现出来的，则是一个生动的角色，以及一系列有趣的问答内容。</p>
+<p>所以这是真正单纯的为了乐趣而作。</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-phil-katz/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-3" class="text-2xl font-bold sm:text-3xl">Phil Katz的故事</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>PKzip创始人短暂而饱受折磨的一生</p>
+<hr>
+<p>【搬运一篇2008年翻译过的东东。此文最早见于Milwaukee Journal Sentinel，2000年5月21日，网页链接来自JSOnline，但现在已经找不到了。看到以前翻译的东西，感觉现在还是蛮有进步的……】</p>
+<p><img src="http://i1.15yan.guokr.cn/2cjd0mypuk42jc0jr92y9dflv6c3tojs.jpg" alt=""></p>
+<p>4月14日，当人们发现Phil Katz死去的时候，他的身体陷在Southside旅馆房间的一个小桌旁边，怀里抱着一个装过烈酒的空瓶子。</p>
+<p>这位以“zip”而闻名，并且创建了一家价值数百万的软件公司的天才，最终死于长期酗酒导致的胰脏严重内出血。</p>
+<p>他当时孤单一人，和家人已经长期断绝关系，而对于他自己创立的位于Brown Deer的公司PKWare Inc.的员工来说，他也相当于一个陌生人。</p>
+<p>当时他37岁。</p>
+<p>这不是一个光彩的结局，尤其对于一个创建了世界上最有影响的软件（PKZip），不仅让技术信徒们惊叹，更让主流媒体侧目的人来说。</p>
+<p>Katz创作的软件，可以将计算机文件减小至50%到70%，从而节约宝贵的磁盘空间。他的压缩软件为计算机行业带来了一个行业标准，并且让“zip”成为了人尽皆知的计算机术语。</p>
+<p>但他的天才带来的财富并没有把他从后来地狱般的生活习惯中挽回来——妄想症，酗酒，脱衣舞吧。到最后，Katz只是偶尔地进行一些工作，在很晚的时候打开电脑，而用酒精和脱衣女郎填满他的整个白天。</p>
+<p>Katz在Mequon拥有一所独立公寓，但他很少呆在那里。为躲开他的逮捕令，他在机场附近不停更换廉价旅馆居住。他通过位于Franklin的Mailboxes Etc.快递服务获得他的邮件。</p>
+<p>“这个人在世界上连一个朋友都没有，我是说，一个真正的朋友都没有。”Chastity Fischer说，她是经常和Katz在一起的一个脱衣舞女，也是最后见到过Katz的人之一。</p>
+<p>“想象一下生活中一个人都没有，没有人可以打电话。没有人。”</p>
+<h2 id="孤独的高中">孤独的高中</h2>
+<p>Phil Katz是一个安静的患有哮喘的孩子，他最高的运动成就，不过是在Glendale附近跑跑越野摩托车。</p>
+<p>他是1980年Nicolet高中的毕业生。早在“geek（奇客，褒义）”这个说法还没和.com公司联系起来的时候，他就被认为是一个geek（怪人，贬义）了。</p>
+<p>“他一点都不合群，而且是大家指指点点的对象。”和Katz一起毕业的Rick Mayer说，“他说话鼻音有些重。他个子矮小，而且，我不想说他不好看，所以为只能说他看上去很一般吧。”</p>
+<p>听说Katz的去世之后，他高中的同桌，也是数学和物理的高材生，现在是心脏病理学医生的Ray Fedderly翻开他高中的毕业纪念册，在里边找到一条带着些许不安的留言：</p>
+<p>”我享受和你一起渡过数学和物理课的那些时光，在Nicolet这四个糟糕，漫长，无法忍受，折磨人而又美好的四年里。我希望你有光明的前途和幸福的生活（如果可能的话）。希望一个计算器就能为你带来莫大的快乐。”</p>
+<p>“如果我在18岁时就是一个手术医生的话，我应该知道该怎么做的。”Fedderly说，“我现在知道那是在请求帮助。而不是一个玩笑。”</p>
+<p>作为一个天生内向的人，Katz开始了他分析能力方面的追求。</p>
+<p>Katz曾经和他的父亲Walter在周末的下午下棋，晚上为可编程计算器编写代码，那是一个PC还没出现并改变计算机史的时期。</p>
+<p>因为可编程计算器内存只有一点点，Phil和Walter需要做很多非常高效的工作。</p>
+<p>“我记得他最早写的是一个处理月球着陆的游戏程序，”Katz以前的堂兄弟Brian Kiehnau说，他在1977年见到过Katz。</p>
+<p>1980年的时候，Katz在Wisconsin-Milwaukee大学主修计算机科学专业。大约在同一个时候，Walt和Hildegard Katz为他买了第一台计算机，一台原始的IBM PC，有两个软盘驱动器，一个单色显示器，还有64k的内存，和今日的计算机比起来微不足道的配置。</p>
+<p>得到这台PC以后，Katz立即开始在上面编写程序，将他大部分的空闲时间花在电子布告栏系统（BBS）上面，那是互联网的前身。</p>
+<p>BBS很快就变成了Katz的社交圈，在那里，别人懂得他熟练的编程技术，而且可以和他共享对计算机的激情。</p>
+<p>渐渐地，Katz喜欢上了在BBS上共享信息，因为和别人的交流可以让他把程序写得更好。可能在这些经验的影响下，Katz后来的PKWare才走 上了”共享软件“（Shareware）这一道路。用户可以先免费尝试这个软件，如果觉得它有价值的话，再向作者付费。以PKWare为例，用户出47美 元，可以得到一份说明书和免费的升级。</p>
+<p>“他花了很多很多时间和人们交流，帮助别人。他会在一个计算机用户组里边花几个小时和他们在一起。”Hildegard Katz说。“他非常非常乐于助人，这是他最可爱的一点。”</p>
+<p>但在1981年春的时候，悲伤席卷了这个家庭，Phil Katz的生活就开始变得不同了。</p>
+<p>Walter在55岁的时候，由于周而复始的胸痛，进行了心脏手术。几个小时以后，他去世了。</p>
+<p>父亲的去世Phil Katz是一个莫大的打击。很多年过去以后，有一次在Katz喝醉酒和Fischer聊天时还提到这个影响对他有多大。</p>
+<p>“他父亲的去世让他心碎。有一次我和他去他父亲的墓地时，”Fischer说，“他不停地说，如果他父亲活着的话，他们会一起去钓鱼，一起去做‘男人做的事情’。”</p>
+<p>Katz的朋友和家人说，Walter的去世让作为儿子的他更为孤独，并且让他更加和计算机深陷在一起。</p>
+<h2 id="深夜编程">深夜编程</h2>
+<p>1984年，Katz毕业并且拿了计算机科学文凭，并且受雇于Allen-Bradley Co.，他写的是运行“可编程逻辑控制器”的代码，这些代码，操控着Allen-Bradley公司全球客户工厂车间的制造设备。</p>
+<p>Katz在1986年离开Allen-Bradley，又开始为Graysoft工作，这是一家位于Milwaukee的软件公司。到了晚上，他会躲在卧室里写他自己的程序。</p>
+<p>他编写的是一个Arc的替代程序，Arc是当时一个常用的文件压缩工具。Katz使用了一些算法，让程序可以将一些指定的信息合并起来，比如，将每 一个“a-n-d”组合从文本中提取出来，这样会消去文本中的每一个“and”，“hand”，“sand”。这个程序可以将这些以及数以千计的其它字母 组合提取出来，并且在需要的时候将其恢复。</p>
+<p>Katz和他在BBS上的好友共享了这个软件的早期版本，称作PKArc，而且他花了无数的时间改善这个软件。到1987年时，这个软件在线上已经 有了相当的影响力，以至于PKArc已经开始蚕食Arc的开发公司，新泽西的System Enhancement Associates的市场份额。</p>
+<p>“我在邮件中收到一张支票，我想，哇！这很不错嘛，“1994年Katz在Journal Sentinel杂志的采访中这样说，”后来接着的几个月里，我又收到了更多的支票。“</p>
+<p>他转向他的母亲求助。</p>
+<p>“人们不停地打电话给他说，我们想要使用你的软件，我们要给你付钱。”Hildegard说。</p>
+<p>Katz在1987年离开了Graysoft，开始了他独自的奋斗。以前Graysoft的同事，后来1988年加入PKWare的Steve Burg说，PKArc的销售已经让Katz在Graysoft的30,000左右的薪水显得微不足道了。</p>
+<p>刚开始，Katz大部分的工作都是在Hildegard的厨房完成的。他们雇用了电话应答服务来应对洪水般的来电，而且给了Burg一个程序开发员的职位。</p>
+<p>同事们对他的才能印象很深。</p>
+<p>“他是个及其聪明的人，”1988年加入Katz公司，直到去年6月才离开的Doug Hay说，“他记得10年前考试的公式，而大部分人考完后20分钟就忘得一干二净了。”</p>
+<p>在后来被称为arc战争的那段时间里，BBS的用户开始将他们的.arc压缩更换为.zip格式。</p>
+<p>1988年，System Enhancement以版权和注册商标侵权为名起诉了PKWare，看着诉讼费的节节升高，Katz决定和他们达成协议。完整的协议内容不得而知，但当新泽西公司的代表遇到他们的对手时，也许吃了一惊。</p>
+<p>“System Enhancement的律师本来期望见到一家大公司，结果却来到了Hildegard的家里。”Kiehnau说，“他在BBS上留了一个地址，所以律师以为那里会有一幢豪华玻璃建筑之类的东西。真的很搞笑。”</p>
+<p>这起诉讼在BBS上的传播激起了人们对System Enhancement的大范围不满，从而加速了arc格式的死亡，尤其在PKWare很快推出新的，使用更好算法，却又不兼容arc的压缩工具以后。</p>
+<p>钱像洪水般一般地涌来。</p>
+<p>“Phil在很短的时间内就成了一个很有钱的人。”Burg说。</p>
+<p>当Hildegard处理商业事务时，Katz将他几乎全部时间都花在编程上面。他下午很晚才开始工作，一直工作到深夜。早期的PKWare员工说，这样的作息可以让他在工作的时候有一个安静的环境，而且丝毫不受干扰。</p>
+<p>“他很少在我们面前出现。他只做必须做的一些事情，”Kiehnau说，“如果公司创业后两年就破产了，我想他都不会在乎。”</p>
+<p>但Katz无法预测的作息让他的家人很郁闷。“他们会说，你现在拥有这么一个业务，而且这个业务还在增长，可你怎么连人都不在那里？”Kiehnau说。</p>
+<p>在Katz不在的时候，他通过电子传真和Hildegard以及PKWare的管理人员联系，他会监督产品的版本升级，而且偶尔在业务方面对Hildegard做一些指导。</p>
+<p>在业务增长的同时，他的个人生活问题也开始逐渐显露。Hildegard听说一些流言，说他的儿子出没在脱衣舞吧里，和那些女人调情，而且大量饮酒。她因此责问了Katz。了解这一家的人们说，忧心忡忡的母亲和走上歪路的儿子之间的关系，就这样开始变得紧张了。</p>
+<p>当Katz企图从PKWare取钱出去的时候，他们也会发生争吵。Kiehnau说，有时他会一次拿25,000这么多的钱出去。</p>
+<p>“Katz觉着，一个30岁的男人从他自己的公司取钱出来，还要央求自己的母亲，这是一件很荒谬的事情。”Kiehnau说。</p>
+<p>Katz对他的母亲干涉自己的事情越来越无法忍受，直至最后，他不再和他的母亲讲话了。1995年的一天，事情终于有了个了断。</p>
+<p>Hildegard收到一封给她的传真，告诉她她的儿子计划对她持有的25%股份进行敌意购入。他解雇了自己的母亲。</p>
+<p>“发生这一切的那天简直像一个葬礼，”Kiehnau回忆道，“这是Katz的产品，但又是他母亲的业务。我和Cindi（Kiehnau的前妻）接到电话赶到她住的地方，她在不停地哭泣，一边说‘phil为什么要这么做？’”</p>
+<p>同一年，Katz雇佣了Robert Gorman作为市场和销售主管。Gorman之前在Frontier Technologies的销售部门工作，这是另外一家Milwaukee的互联网软件公司。</p>
+<p>发生这次混乱以后，PKWare的业务在1990年代依然很强盛，印第安纳州Greenword的共享软件职业联盟执行主管Richard Holler这样说。</p>
+<p>他说，公司的市场份额很难衡量出来，因为不是所有的共享软件用户最终都会注册。但即使基于Windows的“zip”产品开始偷走PKWare的销售额，PKWare也能撑得住他们的业务。</p>
+<p>“他们依然是商业市场的一个大头，他们和其他使用PKZip压缩算法的软件公司有着持续的合作关系，”Holler说。</p>
+<p>由于Phil Katz这款革命性的软件，在他去世的时候，他的名字在的程序员人群里已经广为流传。不过这一不同寻常的成就即使为他带来了财富，最终还是没有拯救他的性命。</p>
+<h2 id="酒精的惩罚">酒精的惩罚</h2>
+<p>朋友们说，Katz手中有一杯酒的时候，他讲话会更自在，笑起来会更不拘束，呆的时间会长一些，而且梦想也会更高远一些。酒精可以让这个极度害羞的人从他躲藏的贝壳中出来片刻。</p>
+<p>“他一旦开始喝酒，你可以看到他脸上会出现淡淡的微笑。这个时候他就可以和人们谈话，或者讲个笑话什么的。当他不喝酒的时候，他不会讲笑话，他会思考得很深，而且不会那么有趣。”Fischer说，这个舞女在1994年遇到Katz，而且逐渐喜欢上了他。</p>
+<p>但酒精正让他走上了一条不归之路。</p>
+<p>在1991年5月7日，他开着带着PKWARE牌照的1990 Nissan 300ZX时，一名警察让他靠边停车。警察的报告上说，Katz当时坐在驾驶座上，眼睛几乎是闭着的。他被指控为酒后驾车。</p>
+<p>这只是如雨般的官司中的第一滴。</p>
+<p>大约1年以后，Katz再次因酒后驾车被起诉。在1994年和1999年之间，Katz因吊销执照后驾驶被逮捕5次。记录显示法庭共有6次与他驾驶相关的起诉，其中包括两次保释期逃跑。</p>
+<p>一旦法庭开始寻找Katz，他就更少出现在工作场所了。</p>
+<p>“他就这样消失了。”Hay说，“有时候你可以在贸易展览会上看到他，但也仅限于此了。”</p>
+<p>前雇员们说，当Katz去工作的时候，很明显可以看出他的疲劳。</p>
+<p>“他活在胡思乱想中，”一位不愿意透露姓名的前雇员说，“他认为街对面的WITI-TV六频道正在监视他。”</p>
+<p>Katz知道如果法院在PKWare寻找他的话，他们也许还会去他在Mequon乡村俱乐部附近的豪华私人公寓去找他。</p>
+<p>他的邻居们并不知道他的官司问题，对他的躲藏行为觉得很奇怪。很多人说他们从来没见过Katz，即使按理说他应该已经在这里居住5年了。</p>
+<p>“我从来没见过开灯，从来没见过车道上的车轮痕迹，我就住街对面。这简直有些吓人。”一位叫Peter Picus的邻居说。</p>
+<p>1997年8月，由于邻居关于恶臭以及蚊蝇老鼠的投诉，这栋公寓受到了公众的注意。</p>
+<p>邻居和警察都无法找到Katz，于是Mequon的官员取得了一张搜索证明，进入了这栋公寓。Mequon市的前卫生官员Kenneth Metzger说，他们发现了一大堆发臭的垃圾，色情杂志和视频，以及鞭子和链条之类的性玩具。</p>
+<p>“那真是一盘狼藉。我做这一行40多年了，这是我见过的最不像样的场面之一。”Metzger说，“膝盖那么深的垃圾。酒瓶子，罐头瓶子，腐烂的快餐四处都是。这人究竟怎么了，堕落成这个样子。”</p>
+<p>虽然Metzger和他的同僚对四处躲藏的Katz所知甚少，他们可以看出他是个有钱的人。在垃圾堆里边，他们发现了信用卡，现金，一台笔记本电脑，还有从没打开过的珠宝。</p>
+<p>Katz的朋友们说，这些信息的公开对他造成了很深的伤害。有些人说，这意味着结局就要上演了。</p>
+<p>“他们劫掠了他的房间，而且将发现的一切告诉了他们公司所有的人。他的母亲知道了，每个人都知道了。”Fischer说。</p>
+<p>“他知道人们会对他下什么样的定论，”她说。“他觉得自己被侵犯。他完全不去PKWare了。他不想让私人生活和他的雇员们搅在一起，没人想这样做。”</p>
+<p>在这个时候，Katz最亲近的人，只有脱衣舞吧里的舞女了。</p>
+<p>Fischer说Katz给她和其他舞女买了大量的礼品，经常带着她们成群结队去拉斯维加斯。有几个还和他一起去了1998年的Comdex计算机展会。</p>
+<p>“我会和他在一张床上睡觉。他从不会碰我或者偷看什么的，”她说，“有时候她会哭着说，‘抱着我，Chastity’，那你只得抱他一整个晚上。”</p>
+<p>“他不是一个肮脏的人，”她说，“他也不是一个怪人。我对着我的《圣经》起誓。他是我见过最无害，最慷慨，最不自私的人。”</p>
+<p>他的一些舞女朋友利用了他的慷慨，偷走他的信用卡为她们自己买东西。这让他的妄想症更为加重了。Katz开始保存任何写着他名字或者账户的邮件。他把这些东西都摞在他的1991 Nissan Pathfinder车子的后备箱里。</p>
+<p>“那辆Pathfinder非常恶心。后座简直完全不能用。”Fischer说，“从地面向上堆满了纸片。”</p>
+<p>由于害怕逮捕令，Katz一直在四处游荡。再加上他的酒后驾车指控，法庭记录显示，有半打对他不利的裁决，总共需要他支付30,000美元。</p>
+<p>Katz在Mitchell国际机场附近不停地更换旅馆，在每一家停留三到四天，然后搬到几百米外的另外一家去住。</p>
+<p>“你知道他在干什么吗？他每天都呆在旅馆房间里，”Fischer说，“可能只有在吃饭的时候，他才会出去一下。”</p>
+<p>Fischer说Katz有时候会在深夜在电话上给她留言，请求她来陪他。在他们谈话的时候，他有时会很愉快地谈起他的家庭，他的公司，以及他童年的时光。</p>
+<p>他说他和母亲以及妹妹的分开是一件很难过的事情，即使Hildegard被他解雇后他们再没有说过话，他还一直给她寄送鲜花和email。</p>
+<p>整个过程中，Katz会喝很多的酒。</p>
+<p>Fischer说他每天至少喝掉一升的Rumple minze和两瓶Bacardi rum。</p>
+<p>“他会喝到自己呕吐，我们还得看着他。我从来没陪过一个必须得看着的酗酒狂。看得我们也开始恶心了，”Fischer说，“我们会说，Phil你知道，这多不好啊，你在自己害自己，而我们还得看着你这么做。”</p>
+<p>Hildegard Katz说她儿子曾经进行过酗酒治疗。“我们都试图帮他。但和别的酗酒狂一样，你越对他们说你需要帮忙，他们就越会离你远一些，因为他们不想听到这个。”Hildegard说。</p>
+<p>“我以为他在康复治疗后真的好转了。”</p>
+<p>但他并没有好转。</p>
+<p>Fischer说，Katz去世几个星期前，她在一家Southside旅馆中见过他一次，那时她就觉得他已经不行了。他只穿着内衣，不停地、无法控制地打嗝，而且胃胀得怕人。</p>
+<p>“他服了几片安定，不这样他就没办法睡着。”她说，“他会有那种酒精引起的抽搐。我会和他玩一些电脑游戏，但他会时不时地跑去厕所。”</p>
+<p>“他那会情况已经很糟糕了，他会无法控制地在内裤中小便。他的肝脏已经完全不行了。他会吐血。”她说。</p>
+<p>帮Katz换掉内裤以后，Fischer离开了旅馆。</p>
+<p>此后她再也没有见到过他。</p>
+<p>在Katz去世后两天，人们才发现他的尸体。而PKWare的员工在几乎一个星期后才听到他去世的消息。</p>
+<p>接下来的日子里，PKWare公司收到数百封来自软件迷们哀悼的email。大部分人没有见过Katz，但知道他做过的事情。他去世的消息在《伦敦时报》，《纽约时报》以及abcnews.com等媒体上广为刊载。</p>
+<p>但在Phil Katz生命结束后，最难过的是那些遭受痛苦时间最长的人。Hildegard要远程去辨识她五年没有见面的儿子的尸体。</p>
+<p>后来，她回忆了儿子的去世。</p>
+<p>“我收到人们寄来的email，看到这么多从没见过Katz，或者和他说过话的人这么感激他，这让我感到有些惊异。有一个人说他救过他很多次。Phil很喜欢帮助别人。”</p>
+<p>“这是一个悲剧般的浪费，对于这么一个重要的人，对于他的能量和才华。”</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-sara-coleridge/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-4" class="text-2xl font-bold sm:text-3xl">莎拉·柯勒律治和她的《美丽的课》</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>小赫伯特有很多东西要学</p>
+<p>莎拉·柯勒律治（Sara Coleridge，1802-1852）是一位英国女作家以及翻译。在莎拉的年代，女性是没有机会接受正规教育的，但莎拉的父亲是著名英国诗人和哲学家塞缪尔·柯勒律治，他和威廉·华兹华斯等湖畔派诗人常有来往，所以莎拉从不缺人指导，也从不缺书看。莎拉在少年的时候就自学了希腊语和拉丁语的典籍，25岁的时候，她已经又学会了法语、德语、意大利语和西班牙语。华兹华斯后来还写了一首诗，赞她为当世三大才女之一。
+莎拉年轻时候的画像，美美哒。</p>
+<p>莎拉有一个叔叔叫亨利·柯勒律治，也是一个挺有成就的文人。由于不为人所知的原因（也许是爱情吧），莎拉后来嫁给了亨利，还生了好几个孩子。作为文化世家，莎拉自然很注重子女的教育的，于是她自己用诗歌的方式写了一本用来教育子女的书。书里边的诗歌用的是母亲给孩子讲述的方式，所以看着很亲切。虽然书里提到的基本都是她的大儿子赫伯特，但换个名字就可以用在别的孩子身上了。
+6岁的赫伯特，为什么穿着裙子呢？</p>
+<p>这本书的名字叫《Pretty Lessons in Verse, for Good Children; With Some Lessons in Latin, in Easy Rhyme》，翻译成中文就是《给好孩子看的写成诗歌的美丽课程，还教一点拉丁语，都押韵的哦》。好长的名字呀。
+Google Books自动生成的封面，题目太长。都放不下了。</p>
+<p>书里内容，你可以想象，就是一个妈妈教孩子识字并认识这个世界，再加上一些淳淳教导。这真是一本充满爱的书。诗是很难翻译的东西，爱就更难翻译了。我只能尽我所能汇总一下，摘一些有趣的东西出来。
+识字和认识世界</p>
+<p>像《月份》、《星期》、《水果》、《四季》这样题目的歌谣，很明显都是教赫伯特识字并且认东西的。你可以在很多幼儿书籍里找到这样的歌谣，但以莎拉的水平和见识，肯定不会满足于这么简单的东西。所以我们有这么一首：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>《来自远方的好东西》</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>茶叶来自中国；</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>稻米来自卡罗莱纳、</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>印度、还有意大利——</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>都是海外遥远的国家。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>咖啡来自摩卡;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>健康的木薯</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>还有小巧的蜂鸟</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>都来自西印度。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>……</span></span></code></pre>
+<p>这首歌谣总共有十五段，我只节选了两段。当时的英国正处于强盛时期，人们能享用到世界各地的物产。所以妈妈不止要教赫伯特认东西，还要让他胸怀世界。</p>
+<p>除了胸怀世界，好孩子还应该有探索未知的好奇心，比如这首：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>《西梅》</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>把美味的干话梅给你</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>是我们的一个好机会；</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>小赫伯特会快快吃完，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>但首先他要学点知识。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>你看这个干皱的东西</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>曾经是粒饱满的李子，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>它一样曾经长在树上，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>不过来自遥远的地方。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>商店里卖的无花果干</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>也曾是梨一样的水果。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>我们最好经常停下来，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>研究一下什么是什么。</span></span></code></pre>
+<p>小赫伯特遇到的问题也都会得到妈妈的解答，比如《Splash和Flash》、《Desert和Dessert》、《怎样拼写chestnut》……真是一位细心的妈妈呀。
+《酒是什么做的》</p>
+<p>除了这些日常事物，莎拉还教了赫伯特诗的语言：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>《美好的东西有美好的名字》</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>太阳叫做Phoebus，月亮叫做Phoebe，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>这是诗里的名称，我的赫伯特要认识。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>鲜花般美好的少女，我们叫她Hebe，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Cynthia这个词，也是月亮的名字。</span></span></code></pre>
+<p>教导</p>
+<p>莎拉写了很多教导孩子的歌谣，有的是很直接的教诲，比如《妈妈给赫伯特的建议》里边就教导说遇到不顺心的事不要发脾气，摔倒了不要哭要像个大男人，听奶奶的话好好读书，对妹妹温柔要爱她教导她……在《用餐礼仪》里则教导小赫伯特在饭桌前要听话，别浪费粮食，别窃窃私语或大声说笑，并且要感激提供饮食的人。其实这些教导还是有些《弟子规》的即视感的，品格修养和待人接物对于孩子们都是很重要的功课。</p>
+<p>小赫伯特也不总是一个听话的好孩子，所以我们还能看到《写给不愿意去散步的赫伯特》以及《不愿躺在小床里的小男孩》这样的歌谣。莎拉不会错过每一个教育的机会，比如《赫伯特和他的新摇篮（感谢妈妈的好朋友）》。有趣的一点是，这本书里直接教导孩子的歌谣不算多，但和睡觉有关的就有五首。可见不管是哪个时代，孩子的睡觉都是妈妈最操心的问题啊。
+《睡觉觉》，边睡边复习上次学过的几个雅词。</p>
+<p>有的歌谣还讲了一些深层次的道理，比如一首叫《天意》的讲了虽然神掌控着一切，但我们遇事还是要自己坐出正确的选择，另一首叫《孩子的眼泪》讲孩子的哭泣来得快去得也快，但长大后才会经历真的痛苦，这时候就要从信仰中找到安慰并且获取快乐。</p>
+<p>莎拉还编了一些寓言故事给赫伯特。这样的歌谣都比较长，我就介绍两个吧。下面这个故事是对《坎特伯雷故事》中一篇的改编：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>《起疑心的公鸡和母鸡》</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>母鸡跟公鸡说猫有歹心想吃小鸡，结果被猫听到，觉得这个主意不错啊，于是就把小鸡抓走了。后来所有的家禽都闹起来猫才放弃。这个故事告诉我们一个道理，就是坏的语言会带来坏的行为，所以不能乱说别人坏话。</span></span></code></pre>
+<p>还有这篇：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>《野金丝雀和家金丝雀》</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>家金丝雀飞到了野外森林里，碰到了野金丝雀，刚开始相见甚欢，后来野金丝雀说：“你的毛色黄的像乌鸦的脚爪，跟我们一起生活吧，不久你就能恢复本来的颜色了。”家金丝雀听了说：“才不要呢，你们颜色这么绿，是营养不良造成的吧？”于是他们就不欢而散了。这个故事告诉我们，不要乱评价别人的着装。</span></span></code></pre>
+<p>类似的寓言还有很多，有些其实只要列出题目你就能猜到里边的大体内容了，比如《慷慨谦虚的蜜蜂》，《占巢的鸟》等。
+当妈妈的快乐
+拉丁语</p>
+<p>拉丁语是古典教育必不可少的一个环节。莎拉的拉丁语学习歌谣跟我们经常在路上听到的学习英语的歌谣差不多，“父亲是pater，母亲是mater”这样的。不过作为亲子教育，妈妈还要经常给小赫伯特讲道理，比如这首：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>大男孩赫伯特不应该</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>像小孩子一样流泪哭泣</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>不然玩具和礼物</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>妈妈也许就不给你买</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>拉丁文是他必做的功课</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>puer 就是拉丁文里的男孩</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>donum 是拉丁文里的礼物</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>gaudium 则是拉丁文里的欢喜</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>当赫伯特学会了这些名词</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>还学会了四种变格</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>他的爸爸，婶婶，所有亲戚</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>该会多么的快乐</span></span></code></pre>
+<p>拉丁文学起来真的好累啊，有好多东西要背，小赫伯特都哭了。但是学习还是很重要的，所以妈妈还要淳淳教导加上威逼利诱，真是不容易啊。</p>
+<p>为了鼓励小赫伯特学习，在另一首诗歌里面，莎拉把学识比作各种各样的东西——一首美丽的歌、一位尊贵的大人、一位值得感激的老师、一个庞大的王国、一片厚重的云彩、一块待雕琢的玉石……——就这样，赫伯特又学会了一大堆各种各样的名词。
+现在我们来学习和航海有关的拉丁文词汇……
+别的一些话，以及结尾</p>
+<p>19世纪的英国，女性在社会上的地位是很低的，这本书出版出来的时候只能在有限的圈子里传播，但就算如此，后来这本书也出到了第五版。
+莎拉还把歌谣做成卡片，单词也按音节划分开以方便赫伯特阅读。图中为莎拉的手迹，字写的好像比较一般啊。</p>
+<p>小赫伯特很争气，22岁时他以最优成绩拿了牛津大学的古典文学和数学的双学位，他后来还参与了《新英语词典》的编著，负责的是搜集整理新词的艰巨任务。这本词典是《牛津英文词典》的前身，所以你在现在的《牛津词典》里还能感受到他的身影。然而可惜的是，在赫伯特的工作完成后不久，他就得了肺结核去世了，那时才刚满30岁。
+赫伯特17岁，萌萌哒。</p>
+<p>最后一点点珍宝，和很多同时代的人一样，莎拉也是吸食鸦片的：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>罂粟花儿开满地</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>我的赫伯特多喜欢</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>白的像如珍珠暗的像夜</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>有的鲜红如染料</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>清新的颜色他最爱，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>美丽的不能再美丽。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>但我的宝贝不知道，</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>它们对我有多重要。</span></span></code></pre>
+<p>（完）</p></div></article><article class="border-border border-b py-10 last:border-b-0"><a href="/zh/blog/2018-temple-os-terry-davis/" class="text-accent inline-block decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"><h2 data-astro-transition-scope="astro-pypwivhu-5" class="text-2xl font-bold sm:text-3xl">为上帝工作的程序员</h2></a><div class="text-muted-foreground flex items-center gap-x-2 my-2"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 min-w-5.5 scale-90" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005" /></svg><time class="text-sm" datetime="2015-03-26T00:00:00.000Z">2015年3月26日</time></div><div class="mt-6 w-full app-prose max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"><p>一个精神分裂症患者和他编写的操作系统</p>
+<p>如果你打开templeos.org这个网站，你可以下载到这个叫TempleOS的操作系统，这个名称翻译过来就是“神殿操作系统”的意思。你下载到的是一个只有17兆大小的光盘镜像，然后你可以把这个操作系统安装到你的计算机里面，当然为了方便，你也可以把它安装到虚拟机里。</p>
+<p>当你进入这个操作系统，首先戳到你眼帘的是一个上世纪风格的界面。命令行下充满各种难以看懂的信息，各种闪烁和滚动着的文字提示。最后在屏幕正中央出现了一副天平，上面架着一把利剑，这些也都是古老的剪贴画风格的图像。
+TempleOS 操作系统</p>
+<p>从屏幕上你可以看到这是一个“公共领域（Public Domain）”的操作系统，也就是说人人都可以随意使用和修改它。这个系统还有很不错的文档，你可以顺着帮助文档学会使用这个系统，还可以在系统里找到开发和调试的工具。根据屏幕提示，你可以使用F6键随机地调出《圣经》里的某个单词，或者使用Shift+F6调用出随机的《圣经》段落……你可以玩一个叫AfterEgypt的游戏，里边模拟的是圣经里摩西带领以色列人离开埃及以后的故事。这个系统的开发语言叫HolyC，文件系统叫“红海”。所有的这一切，都呼应《圣经》的内容，也呼应着这个操作系统的名字——神殿系统。</p>
+<p>TempleOS总共有超过12万行的代码，是Terry Davis花费了10年功夫全职打造出来的成果。10年前，Terry Davis受到上帝的召唤，然后开始着手用代码为上帝修建一所神殿，于是就有了今天的TempleOS。Terry说，你可以在这个操作系统里供奉上帝，并且得到上帝的喻示。这个系统之所以做成简单的640x480 16色低分辨率，是因为这是上帝的旨意，这样的话孩子们为上帝作画就更容易了，“这就跟割礼一样有用。”</p>
+<p>当然，这些对我们来说可能都只是疯话而已。</p>
+<hr>
+<p>Terry Davis 本人</p>
+<p>Terry Davis出生于1969年，幼年的Terry由于智力超群还被分到了天才班。他从小就开始接触计算机编程，并且一路写程序写到大学，最后在1994年拿了亚利桑那州立大学的计算机硕士学位，毕业后Terry就参加了工作。到这里一切进展还不错。</p>
+<p>1996年3月，Terry开始出现幻觉，觉得总是有人在跟踪他。他认为要么是他的公司在偷偷做背景调查，要么是他的一些项目惊动了政府机密部门，于是他开车离开了住所想要逃离这一切。最后他开车到了德克萨斯州，然后他又怀疑自己的车子被安装了跟踪装置，于是在沙漠里弃车步行。步行的途中有警车路过要载他一程，他上了车，车开了没多久，他就打开车门一跃而出，结果摔断了自己的锁骨。</p>
+<p>受伤的Terry被送到了医院，然而他的幻觉还没有停止。为了防止有人“加害于他”，他不顾自己的骨折从医院里跑出来，并且企图偷一辆小货车逃跑，结果被警察抓住了。这回他被关到了监狱里。在监狱里他把自己的眼镜架掰断，试图用它去把监狱的开关弄短路从而越狱，然而不幸的是他接着发现自己的眼镜架是塑料的，根本没法通电……</p>
+<p>接着Terry又被送到了医院，这回他去的是精神科，并且检查出了精神分裂症和抑郁躁狂症。出院后他的情况并未见好，他开始模仿耶稣，把自己的财物都施舍出去，并且抛弃住所开始四处流浪。他说他以前信奉无神论，“也许是因为这个，上帝向我现身并且拯救了我”。不管怎样，到1996年6月的时候，Terry貌似已经恢复的差不多了，他回到了亚利桑那州，并且颇有远见地开始研发自己的3D打印机。然而在九十年代搞3D打印基本上是注定失败的，在一次实验事故以后，他就放弃了自己的项目。</p>
+<p>1997年以后他的精神状况又变的不太稳定，于是只能搬回去和父母住在了一起。接下来的几年里，由于无法参加工作，他就在家鼓捣各种东西，包括试图写一本《1984》的续集，但什么都没做成。直到2003年他收到了神谕，说是让他写一个操作系统作为献给上帝的神殿，于是他确定了自己的目标，并且一做就是10年。</p>
+<hr>
+<p>我不知道配什么图了，只好拿一张弹空气吉他的弹到入神的红毛猩猩来充数。</p>
+<p>也许Terry创建一个操作系统的想法已经酝酿很久了，早在2004年，Terry就在OSNews网站发布了自己的操作系统。Terry说他的目的是“降低门槛，让业余爱好者也可以参与贡献”，并且希望“创造一个Commodore 64时代的氛围”，这样每个人都可以按自己的意愿去写软件。Commodore 64是一种80年代的个人计算机，它的最大特性就是有很高的DIY潜力，允许用户自己进行各种鼓捣。Terry之所以采取了这种设计思路，很可能也是对他自己童年时代的一种怀念吧。</p>
+<p>Terry的操作系统是完全开源的，任何人都可以查看他写的代码。Terry会时不时地在网上更新他的进度，并且写一些关于他的操作系统的文章，有时候这些消息会被IT新闻网站收录，并且引发一些讨论。Terry有时也会参入到这些讨论中来，但是由于他的精神状态不稳定，经常讲着讲着就离题了，开始说自己被跟踪的事情，并且会莫名其妙地攻击别人，最后导致自己被封号。下面是他的一些“名言”：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>耶稣说“ 我三日內要再建立起来（一个神殿）”，而我可以三天写出一个编译器。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>阿三黑鬼白痴博士。（注：这句话骂完后就被封号了）</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1999年我开车撞死了一个黑鬼警察……（注：并没有发生过，但是在美国网站提到“黑鬼”也是会被封号的）</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>我他妈的写了个编译器。Linus也没写出编译器来，还要被Stallman奚落。（注：Linus是Linux的作者，Stallman是自由软件的太上老君，Stallman的确奚落过Linux）</span></span></code></pre>
+<p>TempleOS可以说算是一个技术奇迹。现在市场上流行的操作系统都是合众人之力而成的作品，但TempleOS是彻彻底底的一人之功。Terry为了创建这个操作系统，自己创造了一门编程语言，自己开发了一套编译器，自己设计了一个集成开发环境，自己制作了一个文件系统，自己写了操作系统的内核，自己开发硬件驱动，自己写了一系列的软件应用。这相当于一个人盖房子，没有去买各种材料，而是自己砍树、自己挖土、自己烧砖，自己砌墙，自己盖屋顶……一切都是自己亲自完成。要完成这件工作，作者需要对操作系统的方方面面都有深入的了解，这样的程序员是很少见的。更值得一提的是，TempleOS还颇具前瞻性地使用了一些新技术，比如它本身是一个64位操作系统，而且从底层支持“即时编译”。所以我们可以说，这个看似简陋的房子里面还安装了纯手工DIY的太阳能供电系统。</p>
+<p>这个系统最大的问题恐怕是不合时宜，毕竟现在大家都住上华美的高楼大厦了，谁会在意一个DIY的简陋房屋呢。就这样，每隔一段时间，在网络的某个角落都会看到一条关于TempleOS的新闻，然后大家跟着讨论一阵子，讨论完后一切又归于平静，仿佛什么都没发生过。Terry的操作系统里有很完善的文档说明，他还做了很多视频来解释代码的原理。所以Terry对于推广他的系统还是很用心的。但遗憾的是，没人会去真的使用这个操作系统。</p>
+<p>TempleOS算是在2013年大功告成了，但是后面Terry还在不停地对它修修补补。我们不知道他的工作究竟什么时候会结束。</p>
+<hr>
+<p>画家Louis Wain的猫，他也是精神分裂症患者</p>
+<p>著名的技术界人士Paul Graham曾经把黑客和画家相比，说他们有很多相似的地方：</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>黑客与画家的共同之处，在于他们都是创作者。与作曲家、建筑师、作家一样，黑客和画家都是试图创作出优秀的作品……</span></span></code></pre>
+<p>这里所指的黑客其实是编程高手，所以Terry Davis也可以称得上是“黑客”了。有患精神疾病的画家在作画，也会有患精神疾病的程序员在写程序。虽然精神疾病让他们无法正常工作生活，但是精神疾病似乎并没有影响他的创作能力和激情。这是一种无法遏制的自我表达，有时候就这一点已经足够，是否能被认可已经不重要了。</p></div></article></main><nav class="mt-auto mb-8 flex justify-center gap-4" role="navigation" aria-label="Pagination Navigation"><a aria-disabled="false" href="/zh/10" aria-label="前往上一页" class="group inline-flex items-center gap-1 hover:text-accent select-none"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M5 12l6 6M5 12l6-6" /></svg>上一页</a>11 / 14<a aria-disabled="false" href="/zh/12" aria-label="前往下一页" class="group inline-flex items-center gap-1 hover:text-accent select-none">下一页<svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block rtl:rotate-180" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M5 12h14M13 18l6-6M13 6l6 6" /></svg></a></nav><footer class="app-layout"><div class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4"><div class="flex flex-wrap items-center gap-1"><a href="https://github.com/weiwei" title="Keyboard And Me on Github" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" /></svg><span class="sr-only">Keyboard And Me on Github</span></a><a href="https://www.linkedin.com/in/oldjanx/" title="Keyboard And Me on Linkedin" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" /><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 1 0-4 0" /><path d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" /></svg><span class="sr-only">Keyboard And Me on Linkedin</span></a></div><div class="my-2 flex flex-col items-center text-sm whitespace-nowrap sm:flex-row"><span>&#169; 2026</span><span class="hidden sm:inline">&nbsp;|&nbsp;</span><span>保留所有权利。</span></div></div></footer><script type="module">var e=`theme`,t=`light`,n=`dark`;function r(){return localStorage.getItem(e)||(window.matchMedia(`(prefers-color-scheme: dark)`).matches?n:t)}var i=window.__theme?.value??r();function a(){localStorage.setItem(e,i),o()}function o(){let e=document.firstElementChild;e?.setAttribute(`data-theme`,i),e?.classList.toggle(`dark`,i===n),document.querySelector(`#theme-btn`)?.setAttribute(`aria-label`,i);let t=window.getComputedStyle(document.body).backgroundColor;document.querySelector(`meta[name='theme-color']`)?.setAttribute(`content`,t)}function s(){o(),document.querySelector(`#theme-btn`)?.addEventListener(`click`,()=>{i=i===t?n:t,a()})}s(),document.addEventListener(`astro:after-swap`,s),document.addEventListener(`astro:before-swap`,e=>{let t=document.querySelector(`meta[name='theme-color']`)?.getAttribute(`content`);t&&e.newDocument.querySelector(`meta[name='theme-color']`)?.setAttribute(`content`,t)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,({matches:e})=>{i=e?n:t,a()});</script></body></html><script type="module">document.addEventListener(`astro:page-load`,()=>{let e=document.querySelector(`#main-content`)?.dataset,t=`/`.replace(/\/?$/,`/`);e?.layout&&sessionStorage.setItem(`backUrl`,e.homePath??t)});</script>
