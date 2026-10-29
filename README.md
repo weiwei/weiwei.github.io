@@ -63,7 +63,9 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
   ```
 
 - To embed a YouTube video, use an `.mdx` post (`pnpm new-post my-post --mdx`,
-  or rename `.md` to `.mdx`) and write, with no import needed:
+  or rename `.md` to `.mdx`) and put this line in the post on its own, with a
+  blank line before and after (just the line: no ``` fences around it, or it
+  shows as code). No import needed:
 
   ```mdx
   <YouTube id="dQw4w9WgXcQ" title="Video title" />
