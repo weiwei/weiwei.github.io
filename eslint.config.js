@@ -18,5 +18,7 @@ export default [
     },
   },
   { rules: { "no-console": "error" } },
+  // Command-line scripts report to the terminal
+  { files: ["scripts/**"], rules: { "no-console": "off" } },
   { ignores: ["dist/**", ".astro/**", "public/pagefind/**"] },
 ];

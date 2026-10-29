@@ -5,7 +5,7 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
 
 ## Prepare
 
-* Install [fnm](https://github.com/Schniz/fnm) and pnpm. The Node version is
+- Install [fnm](https://github.com/Schniz/fnm) and pnpm. The Node version is
   pinned in `.node-version`; fnm switches to it when you `cd` into the repo.
 
   ```bash
@@ -14,7 +14,7 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
   npm i -g pnpm
   ```
 
-* Clone the repo and install dependencies.
+- Clone the repo and install dependencies.
 
   ```bash
   git clone git@github.com:weiwei/weiwei.github.io.git
@@ -24,21 +24,30 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
 
 ## Write
 
-* Run `pnpm dev` and open http://localhost:4321.
-* Posts live in `src/content/blog/`. Folders are only for organizing; they
-  don't show up in URLs.
-* The file name decides the language and the URL:
+- Run `pnpm dev` and open http://localhost:4321.
+- Start a new post from the template (a draft dated today, in this year's folder):
 
-  | File                                  | URL                    |
-  | ------------------------------------- | ---------------------- |
-  | `2026/my-post.md`                     | `/blog/my-post/`       |
-  | `2026/my-post.zh.md`                  | `/zh/blog/my-post/`    |
-  | `2026/my-post/index.zh.md` (+ images) | `/zh/blog/my-post/`    |
+  ```bash
+  pnpm new-post my-post                  # src/content/blog/2026/my-post.md
+  pnpm new-post my-post --zh             # src/content/blog/2026/my-post.zh.md
+  pnpm new-post my-post --bundle         # src/content/blog/2026/my-post/index.md (+ images)
+  pnpm new-post my-post --title "My Post"
+  ```
+
+- Posts live in `src/content/blog/`. Folders are only for organizing; they
+  don't show up in URLs.
+- The file name decides the language and the URL:
+
+  | File                                  | URL                 |
+  | ------------------------------------- | ------------------- |
+  | `2026/my-post.md`                     | `/blog/my-post/`    |
+  | `2026/my-post.zh.md`                  | `/zh/blog/my-post/` |
+  | `2026/my-post/index.zh.md` (+ images) | `/zh/blog/my-post/` |
 
   Posts with the same name in different languages are linked as translations.
   Set `slug:` in the front matter to override the name.
 
-* Front matter:
+- Front matter:
 
   ```yaml
   ---
@@ -46,27 +55,27 @@ Weiwei's personal website, built with [Astro](https://astro.build) on top of the
   pubDatetime: 2026-09-22
   description: Optional one-line summary shown in lists
   tags: [programming]
-  series: [Every Layout]   # optional
-  draft: true              # optional, hides the post
-  lang: es                 # optional, if the text isn't in the section's language
+  series: [Every Layout] # optional
+  draft: true # optional, hides the post (still shown in `pnpm dev`)
+  lang: es # optional, if the text isn't in the section's language
   ---
   ```
 
-* Pages (About) live in `src/content/pages/`, same naming rules.
-* Run `pnpm build` before committing; it type-checks, builds and indexes search.
+- Pages (About) live in `src/content/pages/`, same naming rules.
+- Run `pnpm build` before committing; it type-checks, builds and indexes search.
 
 ## Customize
 
-* Site settings: `astro-paper.config.ts`
-* Interface text per language: `src/i18n/lang/{en,zh}.ts`
-* Languages: `src/i18n/locales.ts`
-* Styles and colors: `src/styles/`
+- Site settings: `astro-paper.config.ts`
+- Interface text per language: `src/i18n/lang/{en,zh}.ts`
+- Languages: `src/i18n/locales.ts`
+- Styles and colors: `src/styles/`
 
 See the [AstroPaper docs](https://github.com/satnaing/astro-paper#readme) for more.
 
 ## Deploy
 
-* Vercel builds every push with `pnpm build` (see `vercel.json`): `main` goes
+- Vercel builds every push with `pnpm build` (see `vercel.json`): `main` goes
   to production at https://keyboardand.me/, other branches get preview URLs.
-* GitHub Actions also publishes `main` to the `gh-pages` branch, served at
+- GitHub Actions also publishes `main` to the `gh-pages` branch, served at
   https://weiwei.github.io/ (see `.github/workflows/gh-pages.yml`).

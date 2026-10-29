@@ -15,3 +15,5 @@
 
 # Ignore MDX files
 *.mdx
+# Posts and pages: prose, formatted by hand
+src/content/

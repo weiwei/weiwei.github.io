@@ -40,6 +40,8 @@ export async function loadCjkFont(text: string): Promise<ArrayBuffer | null> {
     if (!fontUrl) throw new Error("no TTF/OTF source in Google Fonts CSS");
     return await fetch(fontUrl).then(res => res.arrayBuffer());
   } catch (error) {
+    // Build-time warning: the image falls back to empty boxes for CJK text
+    // eslint-disable-next-line no-console
     console.warn(`OG image: couldn't load CJK font for "${text}":`, error);
     return null;
   }
