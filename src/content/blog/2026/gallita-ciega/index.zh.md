@@ -3,7 +3,6 @@ title: "Gallita Ciega"
 pubDatetime: 2026-10-28
 description: ""
 tags: ["birding", "语言"]
-draft: true
 ---
 
 这个话要从“瞎子摸人”这个游戏说起。这个游戏在西班牙语里叫 Gallita Ciega, “瞎鸡仔”，也正常吧。
